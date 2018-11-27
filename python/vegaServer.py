@@ -20,7 +20,8 @@ async def get_devices(ws):
         json_mess = jsn.loads(mess)
         if json_mess['cmd'] == 'get_device_appdata_resp':
             devices_list = json_mess['devices_list']
-            sensor = {'cmd': 'get_devices','data': {'sensors': [{"devEui": item['devEui'], "description": item['devName']} for item in devices_list]}}
+            sensor = {'cmd': 'get_devices', 'data': {
+                'sensors': [{"devEui": item['devEui'], "description": item['devName']} for item in devices_list]}}
             js_str = jsn.dumps(sensor)
             return js_str
 
@@ -41,8 +42,9 @@ async def get_device_data(devEuiArr, ws):
             ts = json_mess['data_list'][0]['ts']
             temp = (data[3] - data[4]) / 10
             res_list.append({"devEui": json_mess['devEui'], "temperature": temp, "timestamp": ts})
-        if len(res_list) == len(devEui_list):
-            return jsn.dumps({"cmd": "get_device_data", "data": res_list})
+            if len(res_list) == len(devEui_list):
+                break
+    return jsn.dumps({"cmd": "get_device_data", "data": res_list})
 
 
 async def get_device_history(dev_eui, ts, ws):
@@ -62,7 +64,9 @@ async def get_device_history(dev_eui, ts, ws):
                                                               for item in json_mess['data_list']]}
             result.append(obj)
             if len(result) == len(devEui_list):
-                return jsn.dumps({"cmd": "get_device_history", "data": result})
+                break  # return jsn.dumps({"cmd": "get_device_history", "data": result})
+
+    return jsn.dumps({"cmd": "get_device_history", "data": result})
 
 
 async def producer(message, params):
