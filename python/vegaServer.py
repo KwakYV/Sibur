@@ -33,11 +33,13 @@ async def get_device_data(devEuiArr, ws):
     devEui_list = devEuiArr
     cmd_dict = {item: cli_str % (item) for item in devEui_list}
     res_list = []
+    if len(devEui_list) == 0:
+        return jsn.dumps({"cmd": "get_device_data", "data": res_list})
     for devEui, cmd in cmd_dict.items():
         await ws.send(cmd)
     async for mess in ws:
         json_mess = jsn.loads(mess)
-        if json_mess['cmd'] == 'get_data_resp':
+        if json_mess['cmd'] == 'get_data_resp' and len(json_mess['data_list']) != 0:
             data = bytes.fromhex(json_mess['data_list'][0]['data'])
             ts = json_mess['data_list'][0]['ts']
             temp = (data[3] - data[4]) / 10
@@ -53,6 +55,8 @@ async def get_device_history(dev_eui, ts, ws):
     date_from = ts
     calc = lambda b: (b[3] - b[4]) / 10
     result = []
+    if len(devEui_list) == 0:
+        return jsn.dumps({"cmd": "get_device_history", "data": result})
     for dev_eui in devEui_list:
         cmd = cli_str % (dev_eui, date_from)
         await ws.send(cmd)
@@ -65,7 +69,27 @@ async def get_device_history(dev_eui, ts, ws):
             result.append(obj)
             if len(result) == len(devEui_list):
                 break  # return jsn.dumps({"cmd": "get_device_history", "data": result})
+    return jsn.dumps({"cmd": "get_device_history", "data": result})
 
+
+async def get_device_history1(dev_eui, ts, ws):
+    cli_str = '{"cmd":"get_data_req", "devEui":"%s", "select": {"date_from": %d}}'
+    devEui_list = dev_eui
+    date_from = ts
+    calc = lambda b: (b[3] - b[4]) / 10
+    result = []
+    for dev_eui in devEui_list:
+        cmd = cli_str % (dev_eui, date_from)
+        await ws.send(cmd)
+        while True:
+            mess = await ws.recv()
+            json_mess = jsn.loads(mess)
+            if json_mess['cmd'] == 'get_data_resp ':
+                obj = {"devEui": json_mess['devEui'], "history": [{'utc_timestamp': item['ts'],
+                                                                   'temperature': calc(bytes.fromhex(item['data']))}
+                                                                  for item in json_mess['data_list']]}
+                result.append(obj)
+                break  # return jsn.dumps({"cmd": "get_device_history", "data": result})
     return jsn.dumps({"cmd": "get_device_history", "data": result})
 
 
@@ -91,7 +115,9 @@ async def producer(message, params):
 
 async def echo(ws, path):
     async for message in ws:
+        print('Incoming message <======' + message)
         prod_mess = await producer(message, v_params)
+        print('Outgoing message =======>' + prod_mess)
         await ws.send(prod_mess)
 
 
