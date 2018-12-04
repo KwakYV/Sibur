@@ -40,9 +40,9 @@ async def get_device_data(devEuiArr, ws):
     async for mess in ws:
         json_mess = jsn.loads(mess)
         if json_mess['cmd'] == 'get_data_resp' and len(json_mess['data_list']) != 0:
-            data = bytes.fromhex(json_mess['data_list'][0]['data'])
+            data = json_mess['data_list'][0]['data']
             ts = json_mess['data_list'][0]['ts']
-            temp = (data[3] - data[4]) / 10
+            temp = int((data[8:10] + data[6:8]), 16) / 10
             res_list.append({"devEui": json_mess['devEui'], "temperature": temp, "timestamp": ts})
             if len(res_list) == len(devEui_list):
                 break
@@ -53,7 +53,7 @@ async def get_device_history(dev_eui, ts, ws):
     cli_str = '{"cmd":"get_data_req", "devEui":"%s", "select": {"date_from": %d}}'
     devEui_list = dev_eui
     date_from = ts
-    calc = lambda b: (b[3] - b[4]) / 10
+    calc = lambda b: int((b[8:10] + b[6:8]), 16) / 10
     result = []
     if len(devEui_list) == 0:
         return jsn.dumps({"cmd": "get_device_history", "data": result})
@@ -64,7 +64,7 @@ async def get_device_history(dev_eui, ts, ws):
         json_mess = jsn.loads(mess)
         if json_mess['cmd'] == 'get_data_resp':
             obj = {"devEui": json_mess['devEui'], "history": [{'utc_timestamp': item['ts'],
-                                                               'temperature': calc(bytes.fromhex(item['data']))}
+                                                               'temperature': calc(item['data'])}
                                                               for item in json_mess['data_list']]}
             result.append(obj)
             if len(result) == len(devEui_list):
@@ -76,7 +76,7 @@ async def get_device_history1(dev_eui, ts, ws):
     cli_str = '{"cmd":"get_data_req", "devEui":"%s", "select": {"date_from": %d}}'
     devEui_list = dev_eui
     date_from = ts
-    calc = lambda b: (b[3] - b[4]) / 10
+    calc = lambda b: int((b[8:10] + b[6:8]), 16) / 10
     result = []
     for dev_eui in devEui_list:
         cmd = cli_str % (dev_eui, date_from)
@@ -86,7 +86,7 @@ async def get_device_history1(dev_eui, ts, ws):
             json_mess = jsn.loads(mess)
             if json_mess['cmd'] == 'get_data_resp ':
                 obj = {"devEui": json_mess['devEui'], "history": [{'utc_timestamp': item['ts'],
-                                                                   'temperature': calc(bytes.fromhex(item['data']))}
+                                                                   'temperature': calc(item['data'])}
                                                                   for item in json_mess['data_list']]}
                 result.append(obj)
                 break  # return jsn.dumps({"cmd": "get_device_history", "data": result})
