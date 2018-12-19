@@ -1,9 +1,11 @@
 import asyncio
 import websockets
 import json as jsn
-# import time as tm
+import time as tm
 import configparser
 import traceback
+import logging as lg
+import logging.handlers as handlers
 
 ########################################################
 # Read configuration parameters for web  socket server #
@@ -13,14 +15,47 @@ config.read('config.properties')
 v_params = config['config.vega']
 h_params = config['websocket.server']
 f_params = config['websocket.logs']
+factory = config['config.factory']
 
 
-def calcterm(str):
-    ma=[4,20]
-    temp=[-50,150]
-    value = str[14:16]+str[12:14]
-    d = int(value, 16)/100
-    return round((d - ma[0])/(ma[1] - ma[0])*(temp[1] - temp[0]) - 50, 2)
+########################################################
+# Prepare logging                                      #
+########################################################
+logger = lg.getLogger('NetWork server for GF')
+logger.setLevel(lg.INFO)
+
+formatter = lg.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
+loghandler = handlers.RotatingFileHandler('trace.log', maxBytes=20000000, backupCount=10)
+loghandler.setLevel(lg.INFO)
+loghandler.setFormatter(formatter)
+
+errorhandler = handlers.RotatingFileHandler('error.log', maxBytes=20000000, backupCount=10)
+errorhandler.setLevel(lg.ERROR)
+errorhandler.setFormatter(formatter)
+
+logger.addHandler(loghandler)
+logger.addHandler(errorhandler)
+
+
+def get_tp_11(data):
+    ma = [4, 20]
+    temp = [-50, 150]
+    value = data[14:16] + data[12:14]
+    d = int(value, 16) / 100
+    return round((d - ma[0]) / (ma[1] - ma[0]) * (temp[1] - temp[0]) - 50, 2)
+
+
+def get_td_11(data):
+    return int((data[8:10] + data[6:8]), 16) / 10
+
+
+def calcterm(a_val):
+    return_val = {
+        "GF": get_tp_11(a_val),
+        "ZapSib": get_td_11(a_val)
+    }
+    return return_val[factory['plant']]
 
 
 async def get_devices(ws):
@@ -62,7 +97,6 @@ async def get_device_history(dev_eui, ts, ws):
     cli_str = '{"cmd":"get_data_req", "devEui":"%s", "select": {"date_from": %d}}'
     devEui_list = dev_eui
     date_from = ts
-    #calc = lambda b: int((b[8:10] + b[6:8]), 16) / 10
     result = []
     if len(devEui_list) == 0:
         return jsn.dumps({"cmd": "get_device_history", "data": result})
@@ -77,7 +111,7 @@ async def get_device_history(dev_eui, ts, ws):
                                                               for item in json_mess['data_list']]}
             result.append(obj)
             if len(result) == len(devEui_list):
-                break  # return jsn.dumps({"cmd": "get_device_history", "data": result})
+                break
     return jsn.dumps({"cmd": "get_device_history", "data": result})
 
 
@@ -85,7 +119,6 @@ async def get_device_history1(dev_eui, ts, ws):
     cli_str = '{"cmd":"get_data_req", "devEui":"%s", "select": {"date_from": %d}}'
     devEui_list = dev_eui
     date_from = ts
-    #calc = lambda b: int((b[8:10] + b[6:8]), 16) / 10
     result = []
     for dev_eui in devEui_list:
         cmd = cli_str % (dev_eui, date_from)
@@ -98,7 +131,7 @@ async def get_device_history1(dev_eui, ts, ws):
                                                                    'temperature': calcterm(item['data'])}
                                                                   for item in json_mess['data_list']]}
                 result.append(obj)
-                break  # return jsn.dumps({"cmd": "get_device_history", "data": result})
+                break
     return jsn.dumps({"cmd": "get_device_history", "data": result})
 
 
@@ -118,15 +151,17 @@ async def producer(message, params):
             else:
                 return "Bad function name"
         except Exception as ex:
+            logger.error(ex)
             traceback.print_exc()
             return 'Bad message format'
 
 
 async def echo(ws, path):
+    logger.info('Start back-end server')
     async for message in ws:
-        print('Incoming message <======' + message)
+        logger.info('Incoming message <======' + message)
         prod_mess = await producer(message, v_params)
-        print('Outgoing message =======>' + prod_mess)
+        logger.info('Outgoing message =======>' + prod_mess)
         await ws.send(prod_mess)
 
 
