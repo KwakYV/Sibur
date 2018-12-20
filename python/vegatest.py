@@ -8,39 +8,46 @@ import time as tm
 # 393337386C37570C
 
 async def main():
-    async with websockets.connect('ws://192.168.10.10:8765/') as ws:
-
-        await ws.send('{"cmd":"get_devices"}')
+    async with websockets.connect('ws://192.168.10.12:8766/') as ws:
+        await ws.send('{"cmd":"get_device_data", "devEui":[]}')
         response = await ws.recv()
         print(response)
 
+        await ws.send('{"cmd": "get_device_history", "devEui":["343438357137550E"], "utc_timestamp":1542716804000}')
+        response = await ws.recv()
+        print(response)
+
+        await ws.send('{"cmd": "get_devices"}')
+        response = await ws.recv()
+        print(response)
+    #async with websockets.connect('ws://192.168.10.10:8766/') as ws:
+    #async with websockets.connect('ws://10.0.100.253:8765/') as ws:
+'''
+        auth_cmd = '{"cmd":"auth_req", "login":"%s", "password":"%s"}' % ('root', '123')
+        await ws.send(auth_cmd)
+        res = ws.recv()
+        print(res)
+
+        await ws.send('{"cmd":"get_device_appdata_req"}')
+        async for mess in ws:
+            msg = jsn.loads(mess)
+            if msg["cmd"] == "get_device_appdata_resp":
+                break
+        print(msg)
+        #363833354C38620F
+        #cli_str = '{"cmd":"get_data_req", "devEui":"363833354C38620F", "select": {"limit": 1}}'
+        #await ws.send(cli_str)
+        #async for mess in ws:
+        #    print(mess)
         # add timestamp
-        await ws.send('{"cmd":"get_device_data", "devEui":["393337386C37570C", "3638333577387110", "363833355C38770F", "363833357B386B10"]}')
-        response = await ws.recv()
-        print(response)
+        #await  ws.send('{"cmd":"get_device_appdata_req"}')
+
+'''
 
 
-        await ws.send('{"cmd": "get_device_history", "devEui":["393337386C37570C", "3638333577387110", "363833355C38770F", "363833357B386B10"], "utc_timestamp":1540494000}')
-        response = await ws.recv()
-        print(response)
-        # data = jsn.loads(response)
-        # methods = data['command_list']
-        # await ws.send('{"cmd":"get_device_appdata_req"}')
 
-        #await ws.send(
-         #   '{"cmd":"get_data_req", "devEui":"393337386C37570C", "select": {"date_from": 354541184, "limit": 100}}')
-        #data_resp = await ws.recv()
 
-        #device_data = jsn.loads(data_resp)
-        #print(device_data)
-        # list_data = device_data['data_list']
-        # data = [bytes.fromhex(val['data']) for val in list_data]
-        # print(data)
 
-        # await  ws.send('{"cmd":"get_device_appdata_req"}')
-        # dev_list_data = await ws.recv()
-        # json_dev_list = jsn.loads(dev_list_data)
-        # print(dev_list_data)
 
 
 async def get_devices():

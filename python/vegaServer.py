@@ -12,6 +12,7 @@ config = configparser.ConfigParser()
 config.read('config.properties')
 v_params = config['config.vega']
 h_params = config['websocket.server']
+f_params = config['websocket.logs']
 
 
 async def get_devices(ws):
