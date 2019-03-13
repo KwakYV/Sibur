@@ -1,0 +1,7 @@
+---
+all:
+  children:
+    netservers:
+      hosts:
+        192.168.10.10:
+...

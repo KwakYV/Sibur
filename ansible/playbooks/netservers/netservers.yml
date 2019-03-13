@@ -1,0 +1,43 @@
+---
+- hosts: netservers
+  remote_user: "{{ iiot_user }}"
+  tasks:
+
+    - name: Create install directory
+      file: path="{{ install_path }}" state=directory mode=0755 access_time=now owner="{{ iiot_user }}" group="{{ iiot_user }}"
+
+    - name: Create work directory
+      file: path="{{ working_dir }}" state=directory mode=0755 access_time=now owner="{{ iiot_user }}" group="{{ iiot_user }}"
+
+    - name: Create iot-vega-server directory
+      file: path="{{ iot_path }}" state=directory mode=0777 access_time=now owner="{{ iiot_user }}" group="{{ iiot_user }}"
+
+#    - name: Unpack archive
+#      unarchive: src="{{ source_path }}/{{ release }}.tar" dest="{{ install_path }}" mode=0755
+
+#    - name: Unpack iot archive
+#      unarchive: src="{{ source_path }}/iot-vega-server.tar" dest="{{ iot_path }}"
+
+#    - name: Get list of sh files
+#      command: ls "{{ install_path }}{{ release }}/"
+#      register: sh_list
+
+#    - name: Copy sh files to working directory
+#      copy:
+#        src: "{{ install_path }}{{ release }}/{{ item }}"
+#        dest: "{{ working_dir }}"
+#        remote_src: yes
+#        mode: 0755
+#      when: "{{ item.find('.sh') != -1 }}"
+#      loop: "{{ sh_list.stdout_lines }}"
+
+#    - name: Prepare websocket volume
+#      command: "cp -r {{ install_path }}{{ release }}/websocket {{ working_dir }}"
+
+#    - name: Install docker containers and run them
+#      shell: "{{ install_path }}{{ release }}/install.sh >> installation.log"
+#      args:
+#        chdir: "{{ install_path }}{{ release }}"
+#        creates: installation.log
+#      become: yes
+...

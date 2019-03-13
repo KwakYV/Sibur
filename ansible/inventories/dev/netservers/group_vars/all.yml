@@ -1,0 +1,8 @@
+---
+iiot_user: iiot
+install_path: /home/iiot/install_dir/
+source_path: /Users/kwak_yv/back/
+release: release2.0
+working_dir: /home/iiot/siiot/back/
+iot_path: "{{ working_dir }}/iot-vega-server/"
+ansible_become_pass: "{{ sudo_pass }}"
