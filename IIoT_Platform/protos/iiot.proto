@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package protos;
+
+service Iot{
+    rpc GetDevices(DeviceDataRequest) returns (DeviceDataResponse) {}
+}
+
+
+message DeviceDataRequest{
+    string cmd = 1;
+}
+
+message DeviceDataResponse{
+    string cmd=1;
+    repeated Sensor sensors = 2;
+}
+
+message Sensor {
+    string devEui = 1;
+    string description = 2;
+}
+
+
+
