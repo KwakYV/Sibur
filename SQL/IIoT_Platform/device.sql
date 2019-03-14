@@ -7,7 +7,7 @@ DROP TABLE IF EXISTS iiot.device CASCADE
 
 CREATE TABLE iiot.device
 (
-        id integer NOT NULL   DEFAULT NEXTVAL(('iiotseq'::text)::regclass),
+        id integer NOT NULL   DEFAULT NEXTVAL(('iiot.iiotseq'::text)::regclass),
         deveui bytea NOT NULL,
         deveuistr varchar(50) NOT NULL,
         name varchar(250) NULL,

@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS iiot.factory CASCADE
 
 CREATE TABLE iiot.factory
 (
-        id integer NOT NULL   DEFAULT NEXTVAL(('iiotseq'::text)::regclass),
+        id integer NOT NULL   DEFAULT NEXTVAL(('iiot.iiotseq'::text)::regclass),
         code varchar(50) NOT NULL,
         name varchar(150) NULL,
         description varchar(300) NULL

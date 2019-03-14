@@ -12,7 +12,7 @@ DROP TABLE IF EXISTS iiot.iiotseq CASCADE
 
 CREATE TABLE iiot.measurement
 (
-        id integer NOT NULL   DEFAULT NEXTVAL(('iiotseq'::text)::regclass),
+        id integer NOT NULL   DEFAULT NEXTVAL(('iiot.iiotseq'::text)::regclass),
         code varchar(50) NOT NULL,
         description varchar(100) NULL
 )

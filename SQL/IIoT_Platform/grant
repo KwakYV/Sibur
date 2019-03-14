@@ -1,8 +1,9 @@
-GRANT ALL ON TABLE iiot."DATA" TO iiot;
-GRANT ALL ON TABLE iiot."DEVICEPARAMS" TO iiot;
-GRANT ALL ON TABLE iiot."DEVICETYPE" TO iiot;
-GRANT ALL ON TABLE iiot."Device" TO iiot;
-GRANT ALL ON TABLE iiot."FACTORY" TO iiot;
-GRANT ALL ON TABLE iiot."GATEWAY" TO iiot;
-GRANT ALL ON TABLE iiot."LN_DEVPARAM_DEV" TO iiot;
-GRANT ALL ON TABLE iiot."MEASUREMENT" TO iiot;
+GRANT ALL ON TABLE iiot.data TO iiot;
+GRANT ALL ON TABLE iiot.deviceparams TO iiot;
+GRANT ALL ON TABLE iiot.devicetype TO iiot;
+GRANT ALL ON TABLE iiot.device TO iiot;
+GRANT ALL ON TABLE iiot.factory TO iiot;
+GRANT ALL ON TABLE iiot.gateway TO iiot;
+GRANT ALL ON TABLE iiot.ln_devparam_dev TO iiot;
+GRANT ALL ON TABLE iiot.measurement TO iiot;
+GRANT ALL ON SEQUENCE iiot.iiotseq to iiot;
