@@ -1,0 +1,15 @@
+2019-03-14 16:00:51,930 - IIot platform - ERROR - Object of type bytes is not JSON serializable
+2019-03-14 17:08:57,859 - IIot platform - ERROR - 'ClientDevicesResponse' object has no attribute 'MessageToJson'
+2019-03-14 17:09:50,072 - IIot platform - ERROR - 'ClientDevicesResponse' object has no attribute 'MessageToJson'
+2019-03-15 10:31:54,390 - IIot platform - ERROR - Assignment not allowed to field "devicelist" in protocol message object.
+2019-03-15 10:38:04,858 - IIot platform - ERROR - 'ClientDevicesResponse' object has no attribute 'add'
+2019-03-15 16:28:46,575 - IIot platform - ERROR - 'DeviceDataRequest' object has no attribute 'getDevEuiList'
+2019-03-15 17:09:31,816 - IIot platform - ERROR - get_bind() got an unexpected keyword argument 'list'
+2019-03-15 17:10:25,999 - IIot platform - ERROR - get_bind() got an unexpected keyword argument 'list'
+2019-03-15 17:11:58,627 - IIot platform - ERROR - get_bind() got an unexpected keyword argument 'list'
+2019-03-15 17:12:19,320 - IIot platform - ERROR - get_bind() got an unexpected keyword argument 'list'
+2019-03-15 17:12:30,236 - IIot platform - ERROR - get_bind() got an unexpected keyword argument 'lst'
+2019-03-15 17:13:35,669 - IIot platform - ERROR - get_bind() got an unexpected keyword argument 'lst'
+2019-03-15 17:16:13,471 - IIot platform - ERROR - get_bind() got an unexpected keyword argument 'lst'
+2019-03-15 17:22:57,746 - IIot platform - ERROR - 'ResultProxy' object has no attribute 'fatchall'
+2019-03-15 17:23:29,701 - IIot platform - ERROR - 'list' object has no attribute 'SerializeToString'

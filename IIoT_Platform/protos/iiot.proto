@@ -1,24 +1,47 @@
 syntax = "proto3";
-
+import "google/protobuf/timestamp.proto";
 package protos;
 
 service Iot{
-    rpc GetDevices(DeviceDataRequest) returns (DeviceDataResponse) {}
+    rpc GetDevices(Request) returns (Response) {}
 }
 
+// Global response message
+// All methods will return current type of message
+message Response{
+    string type = 1;
+    ClientDevicesResponse devicelist = 2;
+    DeviceDataResponse devicedata = 3;
+}
+
+// Global request message
+// Container for all type of request messages
+// Type field classifies incoming request message.
+message Request{
+    string type = 1;
+    DeviceDataRequest devicedata = 2;
+}
 
 message DeviceDataRequest{
-    string cmd = 1;
+    repeated string devEuiList =1;
 }
 
 message DeviceDataResponse{
-    string cmd=1;
-    repeated Sensor sensors = 2;
+    repeated Sensor sensors = 1;
+}
+
+
+//Response message for list of devices
+message ClientDevicesResponse{
+    repeated Sensor sensors = 1;
 }
 
 message Sensor {
     string devEui = 1;
     string description = 2;
+    double temperature = 3;
+    double battery = 4;
+    google.protobuf.Timestamp ts = 5;
 }
 
 

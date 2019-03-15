@@ -12,30 +12,46 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
+from google.protobuf import timestamp_pb2 as google_dot_protobuf_dot_timestamp__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='iiot.proto',
-  package='',
+  package='protos',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\niiot.proto\" \n\x11\x44\x65viceDataRequest\x12\x0b\n\x03\x63md\x18\x01 \x01(\t\";\n\x12\x44\x65viceDataResponse\x12\x0b\n\x03\x63md\x18\x01 \x01(\t\x12\x18\n\x07sensors\x18\x02 \x03(\x0b\x32\x07.Sensor\"-\n\x06Sensor\x12\x0e\n\x06\x64\x65vEui\x18\x01 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x02 \x01(\t2>\n\x03Iot\x12\x37\n\nGetDevices\x12\x12.DeviceDataRequest\x1a\x13.DeviceDataResponse\"\x00\x62\x06proto3')
-)
+  serialized_pb=_b('\n\niiot.proto\x12\x06protos\x1a\x1fgoogle/protobuf/timestamp.proto\"{\n\x08Response\x12\x0c\n\x04type\x18\x01 \x01(\t\x12\x31\n\ndevicelist\x18\x02 \x01(\x0b\x32\x1d.protos.ClientDevicesResponse\x12.\n\ndevicedata\x18\x03 \x01(\x0b\x32\x1a.protos.DeviceDataResponse\"F\n\x07Request\x12\x0c\n\x04type\x18\x01 \x01(\t\x12-\n\ndevicedata\x18\x02 \x01(\x0b\x32\x19.protos.DeviceDataRequest\"\'\n\x11\x44\x65viceDataRequest\x12\x12\n\ndevEuiList\x18\x01 \x03(\t\"5\n\x12\x44\x65viceDataResponse\x12\x1f\n\x07sensors\x18\x01 \x03(\x0b\x32\x0e.protos.Sensor\"8\n\x15\x43lientDevicesResponse\x12\x1f\n\x07sensors\x18\x01 \x03(\x0b\x32\x0e.protos.Sensor\"{\n\x06Sensor\x12\x0e\n\x06\x64\x65vEui\x18\x01 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x02 \x01(\t\x12\x13\n\x0btemperature\x18\x03 \x01(\x01\x12\x0f\n\x07\x62\x61ttery\x18\x04 \x01(\x01\x12&\n\x02ts\x18\x05 \x01(\x0b\x32\x1a.google.protobuf.Timestamp28\n\x03Iot\x12\x31\n\nGetDevices\x12\x0f.protos.Request\x1a\x10.protos.Response\"\x00\x62\x06proto3')
+  ,
+  dependencies=[google_dot_protobuf_dot_timestamp__pb2.DESCRIPTOR,])
 
 
 
 
-_DEVICEDATAREQUEST = _descriptor.Descriptor(
-  name='DeviceDataRequest',
-  full_name='DeviceDataRequest',
+_RESPONSE = _descriptor.Descriptor(
+  name='Response',
+  full_name='protos.Response',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='cmd', full_name='DeviceDataRequest.cmd', index=0,
+      name='type', full_name='protos.Response.type', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='devicelist', full_name='protos.Response.devicelist', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='devicedata', full_name='protos.Response.devicedata', index=2,
+      number=3, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
@@ -51,28 +67,59 @@ _DEVICEDATAREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=14,
-  serialized_end=46,
+  serialized_start=55,
+  serialized_end=178,
 )
 
 
-_DEVICEDATARESPONSE = _descriptor.Descriptor(
-  name='DeviceDataResponse',
-  full_name='DeviceDataResponse',
+_REQUEST = _descriptor.Descriptor(
+  name='Request',
+  full_name='protos.Request',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='cmd', full_name='DeviceDataResponse.cmd', index=0,
+      name='type', full_name='protos.Request.type', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='sensors', full_name='DeviceDataResponse.sensors', index=1,
-      number=2, type=11, cpp_type=10, label=3,
+      name='devicedata', full_name='protos.Request.devicedata', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=180,
+  serialized_end=250,
+)
+
+
+_DEVICEDATAREQUEST = _descriptor.Descriptor(
+  name='DeviceDataRequest',
+  full_name='protos.DeviceDataRequest',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='devEuiList', full_name='protos.DeviceDataRequest.devEuiList', index=0,
+      number=1, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -89,29 +136,22 @@ _DEVICEDATARESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=48,
-  serialized_end=107,
+  serialized_start=252,
+  serialized_end=291,
 )
 
 
-_SENSOR = _descriptor.Descriptor(
-  name='Sensor',
-  full_name='Sensor',
+_DEVICEDATARESPONSE = _descriptor.Descriptor(
+  name='DeviceDataResponse',
+  full_name='protos.DeviceDataResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='devEui', full_name='Sensor.devEui', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='description', full_name='Sensor.description', index=1,
-      number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
+      name='sensors', full_name='protos.DeviceDataResponse.sensors', index=0,
+      number=1, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
@@ -127,34 +167,153 @@ _SENSOR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=109,
-  serialized_end=154,
+  serialized_start=293,
+  serialized_end=346,
 )
 
+
+_CLIENTDEVICESRESPONSE = _descriptor.Descriptor(
+  name='ClientDevicesResponse',
+  full_name='protos.ClientDevicesResponse',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='sensors', full_name='protos.ClientDevicesResponse.sensors', index=0,
+      number=1, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=348,
+  serialized_end=404,
+)
+
+
+_SENSOR = _descriptor.Descriptor(
+  name='Sensor',
+  full_name='protos.Sensor',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='devEui', full_name='protos.Sensor.devEui', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='description', full_name='protos.Sensor.description', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='temperature', full_name='protos.Sensor.temperature', index=2,
+      number=3, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='battery', full_name='protos.Sensor.battery', index=3,
+      number=4, type=1, cpp_type=5, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='ts', full_name='protos.Sensor.ts', index=4,
+      number=5, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=406,
+  serialized_end=529,
+)
+
+_RESPONSE.fields_by_name['devicelist'].message_type = _CLIENTDEVICESRESPONSE
+_RESPONSE.fields_by_name['devicedata'].message_type = _DEVICEDATARESPONSE
+_REQUEST.fields_by_name['devicedata'].message_type = _DEVICEDATAREQUEST
 _DEVICEDATARESPONSE.fields_by_name['sensors'].message_type = _SENSOR
+_CLIENTDEVICESRESPONSE.fields_by_name['sensors'].message_type = _SENSOR
+_SENSOR.fields_by_name['ts'].message_type = google_dot_protobuf_dot_timestamp__pb2._TIMESTAMP
+DESCRIPTOR.message_types_by_name['Response'] = _RESPONSE
+DESCRIPTOR.message_types_by_name['Request'] = _REQUEST
 DESCRIPTOR.message_types_by_name['DeviceDataRequest'] = _DEVICEDATAREQUEST
 DESCRIPTOR.message_types_by_name['DeviceDataResponse'] = _DEVICEDATARESPONSE
+DESCRIPTOR.message_types_by_name['ClientDevicesResponse'] = _CLIENTDEVICESRESPONSE
 DESCRIPTOR.message_types_by_name['Sensor'] = _SENSOR
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
+
+Response = _reflection.GeneratedProtocolMessageType('Response', (_message.Message,), dict(
+  DESCRIPTOR = _RESPONSE,
+  __module__ = 'iiot_pb2'
+  # @@protoc_insertion_point(class_scope:protos.Response)
+  ))
+_sym_db.RegisterMessage(Response)
+
+Request = _reflection.GeneratedProtocolMessageType('Request', (_message.Message,), dict(
+  DESCRIPTOR = _REQUEST,
+  __module__ = 'iiot_pb2'
+  # @@protoc_insertion_point(class_scope:protos.Request)
+  ))
+_sym_db.RegisterMessage(Request)
 
 DeviceDataRequest = _reflection.GeneratedProtocolMessageType('DeviceDataRequest', (_message.Message,), dict(
   DESCRIPTOR = _DEVICEDATAREQUEST,
   __module__ = 'iiot_pb2'
-  # @@protoc_insertion_point(class_scope:DeviceDataRequest)
+  # @@protoc_insertion_point(class_scope:protos.DeviceDataRequest)
   ))
 _sym_db.RegisterMessage(DeviceDataRequest)
 
 DeviceDataResponse = _reflection.GeneratedProtocolMessageType('DeviceDataResponse', (_message.Message,), dict(
   DESCRIPTOR = _DEVICEDATARESPONSE,
   __module__ = 'iiot_pb2'
-  # @@protoc_insertion_point(class_scope:DeviceDataResponse)
+  # @@protoc_insertion_point(class_scope:protos.DeviceDataResponse)
   ))
 _sym_db.RegisterMessage(DeviceDataResponse)
+
+ClientDevicesResponse = _reflection.GeneratedProtocolMessageType('ClientDevicesResponse', (_message.Message,), dict(
+  DESCRIPTOR = _CLIENTDEVICESRESPONSE,
+  __module__ = 'iiot_pb2'
+  # @@protoc_insertion_point(class_scope:protos.ClientDevicesResponse)
+  ))
+_sym_db.RegisterMessage(ClientDevicesResponse)
 
 Sensor = _reflection.GeneratedProtocolMessageType('Sensor', (_message.Message,), dict(
   DESCRIPTOR = _SENSOR,
   __module__ = 'iiot_pb2'
-  # @@protoc_insertion_point(class_scope:Sensor)
+  # @@protoc_insertion_point(class_scope:protos.Sensor)
   ))
 _sym_db.RegisterMessage(Sensor)
 
@@ -162,20 +321,20 @@ _sym_db.RegisterMessage(Sensor)
 
 _IOT = _descriptor.ServiceDescriptor(
   name='Iot',
-  full_name='Iot',
+  full_name='protos.Iot',
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
-  serialized_start=156,
-  serialized_end=218,
+  serialized_start=531,
+  serialized_end=587,
   methods=[
   _descriptor.MethodDescriptor(
     name='GetDevices',
-    full_name='Iot.GetDevices',
+    full_name='protos.Iot.GetDevices',
     index=0,
     containing_service=None,
-    input_type=_DEVICEDATAREQUEST,
-    output_type=_DEVICEDATARESPONSE,
+    input_type=_REQUEST,
+    output_type=_RESPONSE,
     serialized_options=None,
   ),
 ])
