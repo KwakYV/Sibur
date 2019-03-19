@@ -7,6 +7,7 @@ import traceback
 import logging as lg
 import logging.handlers as handlers
 from controller.protocontroller import *
+from protos.iiot_pb2 import *
 
 
 ########################################################
@@ -57,13 +58,13 @@ async def producer(message):
         req = Request()
         req.ParseFromString(message)
 
-        if req.type == 'get_devices':
+        if req.type == MessageTypeRequest.DEVICE_LIST_REQUEST:
             return await get_devices()
 
-        elif req.type == 'get_device_data':
+        elif req.type == MessageTypeRequest.DEVICE_DATA_REQUEST:
             return await get_device_data(req.devicedata)
 
-        elif req.type == 'get_device_history':
+        elif req.type == MessageTypeRequest.DEVICE_DATA_HISTORY_REQUEST:
             return await get_device_history(req.devicehistory)
         else:
             return "Bad function name"

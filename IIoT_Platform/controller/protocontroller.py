@@ -12,7 +12,7 @@ def getDevices():
         sensor = client_response.sensors.add()
         sensor.devEui = device[0]
         sensor.description = device[1]
-    response = Response(type='get_devices', devicelist=client_response)
+    response = Response(type=MessageTypeResponse.DEVICE_LIST_RESPONSE, devicelist=client_response)
     return response.SerializeToString()
 
 
@@ -24,7 +24,7 @@ def getDeviceData(data):
         sensor.devEui = devdata[0]
         #TODO: Parse payLoad if there is no parsed data
         sensor.temperature = 23.4
-    response = Response(type='get_device_data', devicedata=res_device_data)
+    response = Response(type=MessageTypeResponse.DEVICE_DATA_RESPONSE, devicedata=res_device_data)
     return response.SerializeToString()
 
 
@@ -44,5 +44,5 @@ def getDeviceDataHistory(dev_lst, ts):
             hist = sensor.history.add()
             hist.ts.seconds = int(time.mktime(val[0].timetuple()))
             hist.value = float(val[1])
-    response = Response(type='get_device_history', devicehistory=hist_response)
+    response = Response(type=MessageTypeResponse.DEVICE_DATA_HISTORY_RESPONSE, devicehistory=hist_response)
     return response.SerializeToString()

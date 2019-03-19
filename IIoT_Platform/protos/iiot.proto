@@ -24,6 +24,7 @@ message Request{
     DeviceDataHistoryRequest devicehistory = 3;
 }
 
+
 // Request message for requesting devices' data
 message DeviceDataRequest{
     repeated string devEuiList =1;
@@ -64,4 +65,15 @@ message History {
     double value = 2;
 }
 
+enum MessageTypeRequest{
+    DEVICE_LIST_REQUEST = 0;
+    DEVICE_DATA_REQUEST = 1;
+    DEVICE_DATA_HISTORY_REQUEST = 2;
 
+}
+
+enum MessageTypeResponse{
+    DEVICE_LIST_RESPONSE = 0;
+    DEVICE_DATA_RESPONSE = 1;
+    DEVICE_DATA_HISTORY_RESPONSE = 2;
+}

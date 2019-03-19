@@ -3,6 +3,7 @@
 
 import sys
 _b=sys.version_info[0]<3 and (lambda x:x) or (lambda x:x.encode('latin1'))
+from google.protobuf.internal import enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
@@ -20,10 +21,70 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='protos',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\niiot.proto\x12\x06protos\x1a\x1fgoogle/protobuf/timestamp.proto\"\xb5\x01\n\x08Response\x12\x0c\n\x04type\x18\x01 \x01(\t\x12\x31\n\ndevicelist\x18\x02 \x01(\x0b\x32\x1d.protos.ClientDevicesResponse\x12.\n\ndevicedata\x18\x03 \x01(\x0b\x32\x1a.protos.DeviceDataResponse\x12\x38\n\rdevicehistory\x18\x04 \x01(\x0b\x32!.protos.DeviceDataHistoryResponse\"\x7f\n\x07Request\x12\x0c\n\x04type\x18\x01 \x01(\t\x12-\n\ndevicedata\x18\x02 \x01(\x0b\x32\x19.protos.DeviceDataRequest\x12\x37\n\rdevicehistory\x18\x03 \x01(\x0b\x32 .protos.DeviceDataHistoryRequest\"\'\n\x11\x44\x65viceDataRequest\x12\x12\n\ndevEuiList\x18\x01 \x03(\t\"5\n\x12\x44\x65viceDataResponse\x12\x1f\n\x07sensors\x18\x01 \x03(\x0b\x32\x0e.protos.Sensor\"V\n\x18\x44\x65viceDataHistoryRequest\x12\x12\n\ndevEuiList\x18\x01 \x03(\t\x12&\n\x02ts\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\"<\n\x19\x44\x65viceDataHistoryResponse\x12\x1f\n\x07sensors\x18\x01 \x03(\x0b\x32\x0e.protos.Sensor\"8\n\x15\x43lientDevicesResponse\x12\x1f\n\x07sensors\x18\x01 \x03(\x0b\x32\x0e.protos.Sensor\"\x9d\x01\n\x06Sensor\x12\x0e\n\x06\x64\x65vEui\x18\x01 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x02 \x01(\t\x12\x13\n\x0btemperature\x18\x03 \x01(\x01\x12\x0f\n\x07\x62\x61ttery\x18\x04 \x01(\x01\x12&\n\x02ts\x18\x05 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12 \n\x07history\x18\x06 \x03(\x0b\x32\x0f.protos.History\"@\n\x07History\x12&\n\x02ts\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\r\n\x05value\x18\x02 \x01(\x01\x32\x38\n\x03Iot\x12\x31\n\nGetDevices\x12\x0f.protos.Request\x1a\x10.protos.Response\"\x00\x62\x06proto3')
+  serialized_pb=_b('\n\niiot.proto\x12\x06protos\x1a\x1fgoogle/protobuf/timestamp.proto\"\xb5\x01\n\x08Response\x12\x0c\n\x04type\x18\x01 \x01(\t\x12\x31\n\ndevicelist\x18\x02 \x01(\x0b\x32\x1d.protos.ClientDevicesResponse\x12.\n\ndevicedata\x18\x03 \x01(\x0b\x32\x1a.protos.DeviceDataResponse\x12\x38\n\rdevicehistory\x18\x04 \x01(\x0b\x32!.protos.DeviceDataHistoryResponse\"\x7f\n\x07Request\x12\x0c\n\x04type\x18\x01 \x01(\t\x12-\n\ndevicedata\x18\x02 \x01(\x0b\x32\x19.protos.DeviceDataRequest\x12\x37\n\rdevicehistory\x18\x03 \x01(\x0b\x32 .protos.DeviceDataHistoryRequest\"\'\n\x11\x44\x65viceDataRequest\x12\x12\n\ndevEuiList\x18\x01 \x03(\t\"5\n\x12\x44\x65viceDataResponse\x12\x1f\n\x07sensors\x18\x01 \x03(\x0b\x32\x0e.protos.Sensor\"V\n\x18\x44\x65viceDataHistoryRequest\x12\x12\n\ndevEuiList\x18\x01 \x03(\t\x12&\n\x02ts\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\"<\n\x19\x44\x65viceDataHistoryResponse\x12\x1f\n\x07sensors\x18\x01 \x03(\x0b\x32\x0e.protos.Sensor\"8\n\x15\x43lientDevicesResponse\x12\x1f\n\x07sensors\x18\x01 \x03(\x0b\x32\x0e.protos.Sensor\"\x9d\x01\n\x06Sensor\x12\x0e\n\x06\x64\x65vEui\x18\x01 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x02 \x01(\t\x12\x13\n\x0btemperature\x18\x03 \x01(\x01\x12\x0f\n\x07\x62\x61ttery\x18\x04 \x01(\x01\x12&\n\x02ts\x18\x05 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12 \n\x07history\x18\x06 \x03(\x0b\x32\x0f.protos.History\"@\n\x07History\x12&\n\x02ts\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\r\n\x05value\x18\x02 \x01(\x01*g\n\x12MessageTypeRequest\x12\x17\n\x13\x44\x45VICE_LIST_REQUEST\x10\x00\x12\x17\n\x13\x44\x45VICE_DATA_REQUEST\x10\x01\x12\x1f\n\x1b\x44\x45VICE_DATA_HISTORY_REQUEST\x10\x02*k\n\x13MessageTypeResponse\x12\x18\n\x14\x44\x45VICE_LIST_RESPONSE\x10\x00\x12\x18\n\x14\x44\x45VICE_DATA_RESPONSE\x10\x01\x12 \n\x1c\x44\x45VICE_DATA_HISTORY_RESPONSE\x10\x02\x32\x38\n\x03Iot\x12\x31\n\nGetDevices\x12\x0f.protos.Request\x1a\x10.protos.Response\"\x00\x62\x06proto3')
   ,
   dependencies=[google_dot_protobuf_dot_timestamp__pb2.DESCRIPTOR,])
 
+_MESSAGETYPEREQUEST = _descriptor.EnumDescriptor(
+  name='MessageTypeRequest',
+  full_name='protos.MessageTypeRequest',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='DEVICE_LIST_REQUEST', index=0, number=0,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='DEVICE_DATA_REQUEST', index=1, number=1,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='DEVICE_DATA_HISTORY_REQUEST', index=2, number=2,
+      serialized_options=None,
+      type=None),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=898,
+  serialized_end=1001,
+)
+_sym_db.RegisterEnumDescriptor(_MESSAGETYPEREQUEST)
+
+MessageTypeRequest = enum_type_wrapper.EnumTypeWrapper(_MESSAGETYPEREQUEST)
+_MESSAGETYPERESPONSE = _descriptor.EnumDescriptor(
+  name='MessageTypeResponse',
+  full_name='protos.MessageTypeResponse',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='DEVICE_LIST_RESPONSE', index=0, number=0,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='DEVICE_DATA_RESPONSE', index=1, number=1,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='DEVICE_DATA_HISTORY_RESPONSE', index=2, number=2,
+      serialized_options=None,
+      type=None),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=1003,
+  serialized_end=1110,
+)
+_sym_db.RegisterEnumDescriptor(_MESSAGETYPERESPONSE)
+
+MessageTypeResponse = enum_type_wrapper.EnumTypeWrapper(_MESSAGETYPERESPONSE)
+DEVICE_LIST_REQUEST = 0
+DEVICE_DATA_REQUEST = 1
+DEVICE_DATA_HISTORY_REQUEST = 2
+DEVICE_LIST_RESPONSE = 0
+DEVICE_DATA_RESPONSE = 1
+DEVICE_DATA_HISTORY_RESPONSE = 2
 
 
 
@@ -410,6 +471,8 @@ DESCRIPTOR.message_types_by_name['DeviceDataHistoryResponse'] = _DEVICEDATAHISTO
 DESCRIPTOR.message_types_by_name['ClientDevicesResponse'] = _CLIENTDEVICESRESPONSE
 DESCRIPTOR.message_types_by_name['Sensor'] = _SENSOR
 DESCRIPTOR.message_types_by_name['History'] = _HISTORY
+DESCRIPTOR.enum_types_by_name['MessageTypeRequest'] = _MESSAGETYPEREQUEST
+DESCRIPTOR.enum_types_by_name['MessageTypeResponse'] = _MESSAGETYPERESPONSE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 Response = _reflection.GeneratedProtocolMessageType('Response', (_message.Message,), dict(
@@ -483,8 +546,8 @@ _IOT = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
-  serialized_start=898,
-  serialized_end=954,
+  serialized_start=1112,
+  serialized_end=1168,
   methods=[
   _descriptor.MethodDescriptor(
     name='GetDevices',
