@@ -23,5 +23,20 @@ def getdevicedata(devlist):
         ) t where  t.val = t.id
     '''
     session = Session()
-    devicedata = session.execute(text(sql), {"lst":devlist}).fetchall()
+    # session.execute(text(sql), params={"lst": devlist}) - данная конструкция не заработала
+    #  запрос возвращает пустое множество, поэтому пошли в лоб !!!
+    devicedata = session.execute(text(sql.replace(':lst',devlist))).fetchall()
     return devicedata
+
+
+def gethistory(devlist, ts):
+    sql = """
+        select dev.deveuistr deveui, d.ppndt ts, encode(d.data, 'hex')
+        from iiot.data d
+        join iiot.device dev on d.devid = dev.id and dev.deveuistr in (:lst)
+        where d.effdt < to_timestamp(:ts) AT TIME ZONE 'UTC'
+    """
+    repl = sql.replace(":lst", devlist).replace(":ts", str(ts.seconds))
+    session = Session()
+    history = session.execute(text(repl)).fetchall()
+    return list(history)

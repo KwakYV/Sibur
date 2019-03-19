@@ -13,3 +13,16 @@
 2019-03-15 17:16:13,471 - IIot platform - ERROR - get_bind() got an unexpected keyword argument 'lst'
 2019-03-15 17:22:57,746 - IIot platform - ERROR - 'ResultProxy' object has no attribute 'fatchall'
 2019-03-15 17:23:29,701 - IIot platform - ERROR - 'list' object has no attribute 'SerializeToString'
+2019-03-18 11:30:40,129 - IIot platform - ERROR - get_bind() got an unexpected keyword argument 'lst'
+2019-03-18 11:31:52,140 - IIot platform - ERROR - get_bind() got an unexpected keyword argument 'lst'
+2019-03-18 14:34:33,175 - IIot platform - ERROR - getDeviceDataHistory() missing 2 required positional arguments: 'dev_lst' and 'ts'
+2019-03-18 14:35:18,617 - IIot platform - ERROR - replace() argument 2 must be str, not google.protobuf.pyext._message.RepeatedScalarConta
+2019-03-18 14:36:23,270 - IIot platform - ERROR - replace() argument 2 must be str, not Timestamp
+2019-03-18 14:36:58,385 - IIot platform - ERROR - replace() argument 2 must be str, not int
+2019-03-18 16:49:03,967 - IIot platform - ERROR - Assignment not allowed to field "ts" in protocol message object.
+2019-03-18 16:50:47,132 - IIot platform - ERROR - datetime.datetime(2019, 3, 15, 10, 10, 39, 848637) has type datetime.datetime, but expected one of: int, long
+2019-03-18 16:54:48,825 - IIot platform - ERROR - 1552633839.0 has type float, but expected one of: int, long
+2019-03-18 16:55:09,848 - IIot platform - ERROR - Assignment not allowed to field "ts" in protocol message object.
+2019-03-18 17:02:14,140 - IIot platform - ERROR - '26' has type str, but expected one of: int, long, float
+2019-03-18 17:02:52,114 - IIot platform - ERROR - No positional arguments allowed
+2019-03-18 17:17:47,737 - IIot platform - ERROR - 'google.protobuf.pyext._message.RepeatedCompositeCo' object has no attribute 'append'

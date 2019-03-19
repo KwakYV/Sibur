@@ -44,6 +44,13 @@ async def get_device_data(devdatareq):
     res = getDeviceData(tmpstr)
     return res
 
+async  def get_device_history(historyreq):
+    euiList = historyreq.devEuiList
+    tmpstr = ', '.join(["'" + val + "'" for val in euiList])
+    ts = historyreq.ts
+    res = getDeviceDataHistory(tmpstr, ts)
+    return res
+
 
 async def producer(message):
     try:
@@ -55,15 +62,15 @@ async def producer(message):
 
         elif req.type == 'get_device_data':
             return await get_device_data(req.devicedata)
-        '''
-        elif func_name == 'get_device_history':
-            return await get_device_history(json_object['devEui'], json_object['utc_timestamp'], ws)
+
+        elif req.type == 'get_device_history':
+            return await get_device_history(req.devicehistory)
         else:
-            return "Bad function name" '''
+            return "Bad function name"
     except Exception as ex:
         logger.error(ex)
         traceback.print_exc()
-        return 'Bad message format'
+        return 'For more details open error.log in working directory'
 
 
 async def echo(ws, path):

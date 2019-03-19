@@ -165,3 +165,156 @@
 2019-03-15 17:25:51,215 - IIot platform - INFO - Start back-end server
 2019-03-15 17:25:51,216 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
 2019-03-15 17:25:51,243 - IIot platform - INFO - Outgoing message =======>b'\n\x0fget_device_data\x1a\x00'
+2019-03-18 10:47:20,946 - IIot platform - INFO - Start back-end server
+2019-03-18 10:47:20,950 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
+2019-03-18 10:47:20,975 - IIot platform - INFO - Outgoing message =======>b'\n\x0fget_device_data\x1a\x00'
+2019-03-18 10:49:00,145 - IIot platform - INFO - Start back-end server
+2019-03-18 10:49:00,146 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
+2019-03-18 10:49:00,151 - IIot platform - INFO - Outgoing message =======>b'\n\x0fget_device_data\x1a\x00'
+2019-03-18 10:49:56,233 - IIot platform - INFO - Start back-end server
+2019-03-18 10:49:56,234 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
+2019-03-18 10:49:56,251 - IIot platform - INFO - Outgoing message =======>b'\n\x0fget_device_data\x1a\x00'
+2019-03-18 10:51:47,200 - IIot platform - INFO - Start back-end server
+2019-03-18 10:51:47,201 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
+2019-03-18 10:51:47,225 - IIot platform - INFO - Outgoing message =======>b'\n\x0fget_device_data\x1a\x00'
+2019-03-18 10:52:03,761 - IIot platform - INFO - Start back-end server
+2019-03-18 10:52:03,762 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
+2019-03-18 10:52:03,787 - IIot platform - INFO - Outgoing message =======>b'\n\x0fget_device_data\x1a\x00'
+2019-03-18 10:52:40,134 - IIot platform - INFO - Start back-end server
+2019-03-18 10:52:40,135 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
+2019-03-18 10:52:40,157 - IIot platform - INFO - Outgoing message =======>b'\n\x0fget_device_data\x1a\x00'
+2019-03-18 10:52:53,511 - IIot platform - INFO - Start back-end server
+2019-03-18 10:52:53,513 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
+2019-03-18 10:52:53,527 - IIot platform - INFO - Outgoing message =======>b'\n\x0fget_device_data\x1a\x00'
+2019-03-18 10:53:10,451 - IIot platform - INFO - Start back-end server
+2019-03-18 10:53:10,453 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
+2019-03-18 10:53:10,456 - IIot platform - INFO - Outgoing message =======>b'\n\x0fget_device_data\x1a\x00'
+2019-03-18 11:00:08,280 - IIot platform - INFO - Start back-end server
+2019-03-18 11:00:08,282 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
+2019-03-18 11:03:22,309 - IIot platform - INFO - Outgoing message =======>b'\n\x0fget_device_data\x1a\x00'
+2019-03-18 11:04:55,640 - IIot platform - INFO - Start back-end server
+2019-03-18 11:04:55,641 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
+2019-03-18 11:05:58,829 - IIot platform - INFO - Outgoing message =======>b'\n\x0fget_device_data\x1a\x00'
+2019-03-18 11:08:51,002 - IIot platform - INFO - Start back-end server
+2019-03-18 11:08:51,002 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
+2019-03-18 11:08:51,027 - IIot platform - INFO - Outgoing message =======>b'\n\x0fget_device_data\x1a\x00'
+2019-03-18 11:09:22,804 - IIot platform - INFO - Start back-end server
+2019-03-18 11:09:22,805 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
+2019-03-18 11:09:22,823 - IIot platform - INFO - Outgoing message =======>b'\n\x0fget_device_data\x1a\x00'
+2019-03-18 11:10:06,613 - IIot platform - INFO - Start back-end server
+2019-03-18 11:10:06,616 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
+2019-03-18 11:12:38,352 - IIot platform - INFO - Outgoing message =======>b'\n\x0fget_device_data\x1a\x00'
+2019-03-18 11:19:19,694 - IIot platform - INFO - Start back-end server
+2019-03-18 11:19:19,696 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
+2019-03-18 11:20:46,705 - IIot platform - INFO - Outgoing message =======>b'\n\x0fget_device_data\x1a\x00'
+2019-03-18 11:25:21,744 - IIot platform - INFO - Start back-end server
+2019-03-18 11:25:21,746 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
+2019-03-18 11:25:29,647 - IIot platform - INFO - Outgoing message =======>b'\n\x0fget_device_data\x1a\x00'
+2019-03-18 11:30:19,982 - IIot platform - INFO - Start back-end server
+2019-03-18 11:30:19,983 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
+2019-03-18 11:30:40,129 - IIot platform - ERROR - get_bind() got an unexpected keyword argument 'lst'
+2019-03-18 11:30:40,134 - IIot platform - INFO - Outgoing message =======>Bad message format
+2019-03-18 11:31:01,805 - IIot platform - INFO - Start back-end server
+2019-03-18 11:31:01,807 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
+2019-03-18 11:31:52,140 - IIot platform - ERROR - get_bind() got an unexpected keyword argument 'lst'
+2019-03-18 11:31:57,775 - IIot platform - INFO - Outgoing message =======>Bad message format
+2019-03-18 11:39:32,904 - IIot platform - INFO - Start back-end server
+2019-03-18 11:39:32,907 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
+2019-03-18 11:39:44,259 - IIot platform - INFO - Outgoing message =======>b'\n\x0fget_device_data\x1a\x00'
+2019-03-18 12:06:43,626 - IIot platform - INFO - Start back-end server
+2019-03-18 12:06:43,627 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
+2019-03-18 12:06:43,663 - IIot platform - INFO - Outgoing message =======>b'\n\x0fget_device_data\x1a\x00'
+2019-03-18 12:08:45,404 - IIot platform - INFO - Start back-end server
+2019-03-18 12:08:45,405 - IIot platform - INFO - Incoming message <======b'\n\x0fget_device_data\x12$\n\x10343438356F37750C\n\x10343438356B37620E'
+2019-03-18 12:08:45,437 - IIot platform - INFO - Outgoing message =======>b'\n\x0fget_device_data\x1a:\n\x1b\n\x10343438356F37750C\x19ffffff7@\n\x1b\n\x10343438356B37620E\x19ffffff7@'
+2019-03-18 14:17:36,867 - IIot platform - INFO - Start back-end server
+2019-03-18 14:31:53,346 - IIot platform - INFO - Start back-end server
+2019-03-18 14:33:42,022 - IIot platform - INFO - Start back-end server
+2019-03-18 14:33:42,023 - IIot platform - INFO - Incoming message <======b'\n\x17get_device_data_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 14:33:42,023 - IIot platform - INFO - Outgoing message =======>Bad function name
+2019-03-18 14:34:09,859 - IIot platform - INFO - Start back-end server
+2019-03-18 14:34:09,860 - IIot platform - INFO - Incoming message <======b'\n\x17get_device_data_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 14:34:09,860 - IIot platform - INFO - Outgoing message =======>Bad function name
+2019-03-18 14:34:33,174 - IIot platform - INFO - Start back-end server
+2019-03-18 14:34:33,175 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 14:34:33,175 - IIot platform - ERROR - getDeviceDataHistory() missing 2 required positional arguments: 'dev_lst' and 'ts'
+2019-03-18 14:34:33,176 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-03-18 14:35:18,617 - IIot platform - INFO - Start back-end server
+2019-03-18 14:35:18,617 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 14:35:18,617 - IIot platform - ERROR - replace() argument 2 must be str, not google.protobuf.pyext._message.RepeatedScalarConta
+2019-03-18 14:35:18,618 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-03-18 14:36:23,269 - IIot platform - INFO - Start back-end server
+2019-03-18 14:36:23,270 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 14:36:23,270 - IIot platform - ERROR - replace() argument 2 must be str, not Timestamp
+2019-03-18 14:36:23,270 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-03-18 14:36:58,384 - IIot platform - INFO - Start back-end server
+2019-03-18 14:36:58,385 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 14:36:58,385 - IIot platform - ERROR - replace() argument 2 must be str, not int
+2019-03-18 14:36:58,385 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-03-18 14:37:30,582 - IIot platform - INFO - Start back-end server
+2019-03-18 14:37:30,582 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 14:37:30,609 - IIot platform - INFO - Outgoing message =======>
+2019-03-18 14:37:44,654 - IIot platform - INFO - Start back-end server
+2019-03-18 14:37:44,655 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 14:37:44,684 - IIot platform - INFO - Outgoing message =======>
+2019-03-18 14:38:32,703 - IIot platform - INFO - Start back-end server
+2019-03-18 14:38:32,704 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 14:38:32,717 - IIot platform - INFO - Outgoing message =======>
+2019-03-18 14:39:16,375 - IIot platform - INFO - Start back-end server
+2019-03-18 14:39:16,375 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 14:39:16,404 - IIot platform - INFO - Outgoing message =======>
+2019-03-18 14:39:42,019 - IIot platform - INFO - Start back-end server
+2019-03-18 14:39:42,019 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 14:39:42,047 - IIot platform - INFO - Outgoing message =======>
+2019-03-18 14:45:36,665 - IIot platform - INFO - Start back-end server
+2019-03-18 14:45:36,666 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 14:45:36,694 - IIot platform - INFO - Outgoing message =======>
+2019-03-18 14:55:58,926 - IIot platform - INFO - Start back-end server
+2019-03-18 14:55:58,927 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 14:55:58,957 - IIot platform - INFO - Outgoing message =======>
+2019-03-18 14:57:29,935 - IIot platform - INFO - Start back-end server
+2019-03-18 14:57:29,935 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 14:57:29,967 - IIot platform - INFO - Outgoing message =======>
+2019-03-18 14:58:07,888 - IIot platform - INFO - Start back-end server
+2019-03-18 14:58:07,889 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 14:58:07,906 - IIot platform - INFO - Outgoing message =======>
+2019-03-18 16:39:13,457 - IIot platform - INFO - Start back-end server
+2019-03-18 16:39:13,458 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 16:39:13,482 - IIot platform - INFO - Outgoing message =======>
+2019-03-18 16:41:32,169 - IIot platform - INFO - Start back-end server
+2019-03-18 16:41:32,169 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 16:41:32,192 - IIot platform - INFO - Outgoing message =======>
+2019-03-18 16:49:03,936 - IIot platform - INFO - Start back-end server
+2019-03-18 16:49:03,936 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 16:49:03,967 - IIot platform - ERROR - Assignment not allowed to field "ts" in protocol message object.
+2019-03-18 16:49:03,968 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-03-18 16:50:47,101 - IIot platform - INFO - Start back-end server
+2019-03-18 16:50:47,102 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 16:50:47,132 - IIot platform - ERROR - datetime.datetime(2019, 3, 15, 10, 10, 39, 848637) has type datetime.datetime, but expected one of: int, long
+2019-03-18 16:50:47,133 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-03-18 16:54:48,794 - IIot platform - INFO - Start back-end server
+2019-03-18 16:54:48,794 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 16:54:48,825 - IIot platform - ERROR - 1552633839.0 has type float, but expected one of: int, long
+2019-03-18 16:54:48,825 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-03-18 16:55:09,818 - IIot platform - INFO - Start back-end server
+2019-03-18 16:55:09,818 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 16:55:09,848 - IIot platform - ERROR - Assignment not allowed to field "ts" in protocol message object.
+2019-03-18 16:55:09,849 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-03-18 17:02:14,114 - IIot platform - INFO - Start back-end server
+2019-03-18 17:02:14,115 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 17:02:14,140 - IIot platform - ERROR - '26' has type str, but expected one of: int, long, float
+2019-03-18 17:02:14,141 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-03-18 17:02:52,085 - IIot platform - INFO - Start back-end server
+2019-03-18 17:02:52,086 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 17:02:52,114 - IIot platform - ERROR - No positional arguments allowed
+2019-03-18 17:02:52,115 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-03-18 17:17:47,704 - IIot platform - INFO - Start back-end server
+2019-03-18 17:17:47,705 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 17:17:47,737 - IIot platform - ERROR - 'google.protobuf.pyext._message.RepeatedCompositeCo' object has no attribute 'append'
+2019-03-18 17:17:47,739 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-03-18 17:29:36,279 - IIot platform - INFO - Start back-end server
+2019-03-18 17:29:36,279 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 17:29:36,310 - IIot platform - INFO - Outgoing message =======>
+2019-03-18 17:30:51,501 - IIot platform - INFO - Start back-end server
+2019-03-18 17:30:51,501 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-18 17:30:51,521 - IIot platform - INFO - Outgoing message =======>b'\n\x12get_device_history"\x87\x01\n8\n\x10343438356F37750C2\x11\n\x06\x08\xef\x9f\xad\xe4\x05\x11\x00\x00\x00\x00\x00\x00:@2\x11\n\x06\x08\xb4\xa0\xad\xe4\x05\x11\x00\x00\x00\x00\x00\x00\x00@\nK\n\x10343438356B37620E2\x11\n\x06\x08\x93\xa1\xad\xe4\x05\x11\x00\x00\x00\x00\x00\x80F@2\x11\n\x06\x08\x93\xa1\xad\xe4\x05\x11\x00\x00\x00\x00\x00@P@2\x11\n\x06\x08\xdc\xa4\xad\xe4\x05\x11\x00\x00\x00\x00\x00\xc0R@'

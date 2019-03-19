@@ -12,6 +12,7 @@ message Response{
     string type = 1;
     ClientDevicesResponse devicelist = 2;
     DeviceDataResponse devicedata = 3;
+    DeviceDataHistoryResponse devicehistory = 4;
 }
 
 // Global request message
@@ -20,14 +21,27 @@ message Response{
 message Request{
     string type = 1;
     DeviceDataRequest devicedata = 2;
+    DeviceDataHistoryRequest devicehistory = 3;
 }
 
+// Request message for requesting devices' data
 message DeviceDataRequest{
     repeated string devEuiList =1;
 }
 
 message DeviceDataResponse{
     repeated Sensor sensors = 1;
+}
+
+
+// Messages for obtain history data
+message DeviceDataHistoryRequest{
+    repeated string devEuiList = 1;
+    google.protobuf.Timestamp ts = 2;
+}
+
+message DeviceDataHistoryResponse{
+    repeated Sensor sensors =1;
 }
 
 
@@ -42,7 +56,12 @@ message Sensor {
     double temperature = 3;
     double battery = 4;
     google.protobuf.Timestamp ts = 5;
+    repeated History history = 6;
 }
 
+message History {
+    google.protobuf.Timestamp ts = 1;
+    double value = 2;
+}
 
 
