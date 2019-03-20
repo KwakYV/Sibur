@@ -1,13 +1,18 @@
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+import configparser
 
 Base = declarative_base()
 
+__config = configparser.ConfigParser()
+__config.read('../configs/engine.properties')
+__eparams=__config['engine.settings']
+
 # Данную часть необходимо вывести в конфигурационный файл, чтобы можно было настраивать из вне.
 engine = create_engine(
-    "postgres://iiot:iiot@192.168.10.11/iiot",
-    isolation_level="READ UNCOMMITTED"
+    __eparams['conn_string'],
+    isolation_level=__eparams['isolation_level']
 )
 
 Session = sessionmaker(bind=engine)

@@ -58,13 +58,13 @@ async def producer(message):
         req = Request()
         req.ParseFromString(message)
 
-        if req.type == MessageTypeRequest.DEVICE_LIST_REQUEST:
+        if req.type == MessageTypeRequest.Name(0):
             return await get_devices()
 
-        elif req.type == MessageTypeRequest.DEVICE_DATA_REQUEST:
+        elif req.type == MessageTypeRequest.Name(1):
             return await get_device_data(req.devicedata)
 
-        elif req.type == MessageTypeRequest.DEVICE_DATA_HISTORY_REQUEST:
+        elif req.type == MessageTypeRequest.Name(2):
             return await get_device_history(req.devicehistory)
         else:
             return "Bad function name"

@@ -318,3 +318,18 @@
 2019-03-18 17:30:51,501 - IIot platform - INFO - Start back-end server
 2019-03-18 17:30:51,501 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
 2019-03-18 17:30:51,521 - IIot platform - INFO - Outgoing message =======>b'\n\x12get_device_history"\x87\x01\n8\n\x10343438356F37750C2\x11\n\x06\x08\xef\x9f\xad\xe4\x05\x11\x00\x00\x00\x00\x00\x00:@2\x11\n\x06\x08\xb4\xa0\xad\xe4\x05\x11\x00\x00\x00\x00\x00\x00\x00@\nK\n\x10343438356B37620E2\x11\n\x06\x08\x93\xa1\xad\xe4\x05\x11\x00\x00\x00\x00\x00\x80F@2\x11\n\x06\x08\x93\xa1\xad\xe4\x05\x11\x00\x00\x00\x00\x00@P@2\x11\n\x06\x08\xdc\xa4\xad\xe4\x05\x11\x00\x00\x00\x00\x00\xc0R@'
+2019-03-20 10:38:13,409 - IIot platform - INFO - Start back-end server
+2019-03-20 10:38:13,410 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-20 10:38:13,411 - IIot platform - ERROR - 'EnumTypeWrapper' object has no attribute 'DEVICE_LIST_REQUEST'
+2019-03-20 10:38:13,412 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-03-20 10:40:09,019 - IIot platform - INFO - Start back-end server
+2019-03-20 10:40:09,019 - IIot platform - INFO - Incoming message <======b'\n\x12get_device_history\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-20 10:40:09,019 - IIot platform - ERROR - 'EnumTypeWrapper' object has no attribute 'DEVICE_LIST_REQUEST'
+2019-03-20 10:40:09,020 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-03-20 10:52:01,838 - IIot platform - INFO - Start back-end server
+2019-03-20 10:52:01,838 - IIot platform - INFO - Incoming message <======b'\n\x1bDEVICE_DATA_HISTORY_REQUEST\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-20 10:52:01,963 - IIot platform - ERROR - 'EnumTypeWrapper' object has no attribute 'DEVICE_DATA_HISTORY_RESPONSE'
+2019-03-20 10:52:01,964 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-03-20 10:52:50,862 - IIot platform - INFO - Start back-end server
+2019-03-20 10:52:50,863 - IIot platform - INFO - Incoming message <======b'\n\x1bDEVICE_DATA_HISTORY_REQUEST\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
+2019-03-20 10:52:50,967 - IIot platform - INFO - Outgoing message =======>b'\n\x1cDEVICE_DATA_HISTORY_RESPONSE"\x87\x01\n8\n\x10343438356F37750C2\x11\n\x06\x08\xef\x9f\xad\xe4\x05\x11\x00\x00\x00\x00\x00\x00:@2\x11\n\x06\x08\xb4\xa0\xad\xe4\x05\x11\x00\x00\x00\x00\x00\x00\x00@\nK\n\x10343438356B37620E2\x11\n\x06\x08\x93\xa1\xad\xe4\x05\x11\x00\x00\x00\x00\x00\x80F@2\x11\n\x06\x08\x93\xa1\xad\xe4\x05\x11\x00\x00\x00\x00\x00@P@2\x11\n\x06\x08\xdc\xa4\xad\xe4\x05\x11\x00\x00\x00\x00\x00\xc0R@'

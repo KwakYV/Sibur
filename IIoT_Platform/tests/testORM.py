@@ -49,6 +49,9 @@ if __name__ == '__main__':
     run()
 
 '''
+
+
+
 import asyncio
 import websockets
 from protos.iiot_pb2 import *
@@ -64,7 +67,7 @@ async def main():
         tms.seconds = 1542716804000
         devDataReq = DeviceDataHistoryRequest(devEuiList=list, ts=tms)
 
-        req = Request(type='get_device_history', devicehistory=devDataReq )
+        req = Request(type=MessageTypeRequest.Name(2), devicehistory=devDataReq )
         await ws.send(req.SerializeToString())
         response = await ws.recv()
         #print(response)
@@ -77,3 +80,10 @@ async def main():
 
 
 asyncio.get_event_loop().run_until_complete(main())
+"""
+
+from protos.iiot_pb2 import *
+
+print()
+
+"""

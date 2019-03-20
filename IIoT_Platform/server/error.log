@@ -26,3 +26,6 @@
 2019-03-18 17:02:14,140 - IIot platform - ERROR - '26' has type str, but expected one of: int, long, float
 2019-03-18 17:02:52,114 - IIot platform - ERROR - No positional arguments allowed
 2019-03-18 17:17:47,737 - IIot platform - ERROR - 'google.protobuf.pyext._message.RepeatedCompositeCo' object has no attribute 'append'
+2019-03-20 10:38:13,411 - IIot platform - ERROR - 'EnumTypeWrapper' object has no attribute 'DEVICE_LIST_REQUEST'
+2019-03-20 10:40:09,019 - IIot platform - ERROR - 'EnumTypeWrapper' object has no attribute 'DEVICE_LIST_REQUEST'
+2019-03-20 10:52:01,963 - IIot platform - ERROR - 'EnumTypeWrapper' object has no attribute 'DEVICE_DATA_HISTORY_RESPONSE'
