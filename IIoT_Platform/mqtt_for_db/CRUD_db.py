@@ -1,8 +1,5 @@
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-import random
-Base = declarative_base()
 
 # Данную часть необходимо вывести в конфигурационный файл, чтобы можно было настраивать из вне.
 engine = create_engine(
@@ -13,9 +10,9 @@ engine = create_engine(
 Session = sessionmaker(bind=engine)
 s = Session()
 
-from IIoT_Platform.entities.Entities import *
+from IIoT_Platform.mqtt_for_db.Entities import *
 
-def comit_Data_Table(devid, gateid, bytedata, effdt,ppndt, fcntup, freq, rssi, sf, snr, value):
+def comit_Data_Table(devid, gateid, bytedata, effdt, ppndt, fcntup, freq, rssi, sf, snr, value):
     data = Data(
         devid = devid,
         gateid = gateid,
@@ -33,7 +30,6 @@ def comit_Data_Table(devid, gateid, bytedata, effdt,ppndt, fcntup, freq, rssi, s
     s.commit()
 
 def read_Device_table(dev):
-    spis = []
     device_id = 0
     data_Device = s.query(Device).filter(Device.deveui == dev)
     for device in data_Device:
@@ -43,8 +39,11 @@ def read_Device_table(dev):
     return device_id
 
 def read_Gateway_table():
-    data_Gateway = s.query(Gateway).order_by(Gateway.id.desc()).first()
-    gateway_id = data_Gateway.id
+    gateway_id = 0
+    data_gateway = s.query(Gateway).filter(Gateway.id == 1)
+    for gateway in data_gateway:
+        gateway_id = gateway.fmwid
+    print('gateway_id', gateway_id)
     return gateway_id
 
 def example(deveui):
@@ -53,13 +52,3 @@ def example(deveui):
     for device in data_Device:
         device_type = device.devicetypeid
     return device_type
-
-def read_bytes():
-    id = random.randint(75, 80)
-    spisok = []
-    data_Device = s.query(Data).filter(Data.id == id)
-    for device in data_Device:
-        spisok.append(id)
-        spisok.append(device.id)
-        spisok.append(device.data)
-    return spisok
