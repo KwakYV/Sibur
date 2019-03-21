@@ -1,8 +1,7 @@
 import paho.mqtt.client as mqtt
 import configparser
-from IIoT_Platform.entities.parser_mqtt import *
-from IIoT_Platform.entities import *
-from IIoT_Platform.entities.CRUD_db import *
+from IIoT_Platform.mqtt_for_db.parser_mqtt import *
+from IIoT_Platform.mqtt_for_db.CRUD_db import *
 
 config = configparser.ConfigParser()
 config.read('set.properties')
@@ -17,10 +16,11 @@ def on_connect(client, userdata, flags, rc):
 def on_message(client, userdata, msg):
     d = msg.topic + " " + str(msg.payload)
     if 'innolabs' in msg.topic: # if 'innolabs' in msg.topic: #
+        print(d)
         data = get_message(d)
         parsed_data = parser_message(data)
         comit_Data_Table(read_Device_table(deveui(parsed_data)), 1, data_hex(parsed_data), parsed_data['time'], parsed_data['time']
-                         , example(deveui(parsed_data)), example(deveui(parsed_data)), parsed_data['RSSI'], 4, 5, data_val(parsed_data))
+                         , parsed_data['fCnt'], parsed_data['frequency'], parsed_data['RSSI'], 4, 5, data_val(parsed_data))
 
 client = mqtt.Client(sub1_params['client_id_1'], clean_session=False).max_queued_messages_set(queue_size=100)
 client.on_connect = on_connect
