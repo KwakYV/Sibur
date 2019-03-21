@@ -11,8 +11,9 @@ engine = create_engine(
 
 Session = sessionmaker(bind=engine)
 s = Session()
+
 #s.close()
 
-from IIoT_Platform.entities.Entities import *
+#from IIoT_Platform.mqtt_for_db.Entities import *
 
 #Base.metadata.create_all(engine)
