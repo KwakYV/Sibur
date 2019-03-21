@@ -42,3 +42,4 @@ def data_val(js):
         t = js['InternalSensors'][1]['Value']
     print(t)
     return t
+
