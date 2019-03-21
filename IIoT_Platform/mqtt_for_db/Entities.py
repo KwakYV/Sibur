@@ -1,7 +1,7 @@
 from sqlalchemy import Column, String, Integer, ForeignKey, Sequence
 from sqlalchemy.dialects.postgresql import *
 from sqlalchemy.orm import relationship, backref
-from IIoT_Platform.entities import Base
+from IIoT_Platform.mqtt_for_db import Base
 
 __all__=['Data', 'Factory', 'Gateway', 'Deviceparams', 'Devicetype', 'Device', 'Lndevparam', 'Measurement']
 
