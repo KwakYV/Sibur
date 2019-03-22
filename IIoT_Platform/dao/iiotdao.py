@@ -14,7 +14,7 @@ def getdevices():
 
 def getdevicedata(devlist):
     sql='''
-        select t.deveui, t.data
+        select t.deveui, t.value
         from
         (
         select first_value(d.id) over (partition by devid order by ppndt desc) val, d.*, dev.deveuistr deveui
@@ -40,3 +40,4 @@ def gethistory(devlist, ts):
     session = Session()
     history = session.execute(text(repl)).fetchall()
     return list(history)
+

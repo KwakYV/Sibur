@@ -23,7 +23,7 @@ def getDeviceData(data):
         sensor = res_device_data.sensors.add()
         sensor.devEui = devdata[0]
         #TODO: Parse payLoad if there is no parsed data
-        sensor.temperature = 23.4
+        sensor.temperature = devdata[1]
     response = Response(type=MessageTypeResponse.Name(1), devicedata=res_device_data)
     return response.SerializeToString()
 
