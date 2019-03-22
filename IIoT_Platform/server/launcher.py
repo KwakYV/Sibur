@@ -1,7 +1,7 @@
 import paho.mqtt.client as mqtt
 import configparser
-from IIoT_Platform.mqtt_for_db.parser_mqtt import *
-from IIoT_Platform.mqtt_for_db.CRUD_db import *
+from IIoT_Platform.mqtt.parser_mqtt import *
+from IIoT_Platform.dao.crud_db import *
 
 config = configparser.ConfigParser()
 config.read('set.properties')

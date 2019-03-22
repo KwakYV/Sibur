@@ -10,7 +10,7 @@ engine = create_engine(
 Session = sessionmaker(bind=engine)
 s = Session()
 
-from IIoT_Platform.mqtt_for_db.Entities import *
+from IIoT_Platform.entities.Entities import *
 
 def comit_Data_Table(devid, gateid, bytedata, effdt, ppndt, fcntup, freq, rssi, sf, snr, value):
     data = Data(
@@ -34,8 +34,6 @@ def read_Device_table(dev):
     data_Device = s.query(Device).filter(Device.deveui == dev)
     for device in data_Device:
         device_id = device.id
-        device_typeid = device.devicetypeid
-    print('ahahha', device_id)
     return device_id
 
 def read_Gateway_table():

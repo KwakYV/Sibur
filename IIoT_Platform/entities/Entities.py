@@ -18,6 +18,7 @@ class Data(Base):
     rssi = Column('rssi', Integer)
     sf = Column('sf', Integer)
     snr = Column('snr', NUMERIC(precision=10,scale=4))
+    value = Column('value', CHAR)
 
 class Factory(Base):
     __tablename__='factory'
@@ -27,7 +28,6 @@ class Factory(Base):
     description = Column('description', String(300))
     gateways = relationship('Gateway', backref='factory')
     devices = relationship('Device', backref='factory')
-
 
 class Gateway(Base):
     __tablename__='gateway'

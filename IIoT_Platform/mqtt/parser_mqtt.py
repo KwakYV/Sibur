@@ -1,7 +1,6 @@
 import json
 from datetime import datetime
 import datetime
-import time
 
 def get_message(msg):
     spisok = []
@@ -18,10 +17,6 @@ def deveui(js):
     h = js['devEUI'] #001bc5035000043a 363833357b386b10
     ba = bytearray.fromhex(h)
     return ba
-
-def date():
-    d = datetime.date(year=2019, month=3, day=18)
-    return d
 
 def timestamp():
     t = datetime.now()
@@ -42,4 +37,3 @@ def data_val(js):
         t = js['InternalSensors'][1]['Value']
     print(t)
     return t
-
