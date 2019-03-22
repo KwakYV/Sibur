@@ -1,16 +1,10 @@
-from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-
-# Данную часть необходимо вывести в конфигурационный файл, чтобы можно было настраивать из вне.
-engine = create_engine(
-    "postgres+psycopg2://postgres:digitalize1830@localhost:5432/IoT",
-    isolation_level="READ UNCOMMITTED"
-)
+from entities import engine
 
 Session = sessionmaker(bind=engine)
 s = Session()
 
-from IIoT_Platform.entities.Entities import *
+from entities.Entities import *
 
 def comit_Data_Table(devid, gateid, bytedata, effdt, ppndt, fcntup, freq, rssi, sf, snr, value):
     data = Data(
@@ -30,19 +24,13 @@ def comit_Data_Table(devid, gateid, bytedata, effdt, ppndt, fcntup, freq, rssi, 
     s.commit()
 
 def read_Device_table(dev):
-    device_id = 0
-    data_Device = s.query(Device).filter(Device.deveui == dev)
-    for device in data_Device:
-        device_id = device.id
-    return device_id
+    data_Device = s.query(Device).filter(Device.deveui == dev)[0]
+    return data_Device.id
 
-def read_Gateway_table():
-    gateway_id = 0
-    data_gateway = s.query(Gateway).filter(Gateway.id == 1)
-    for gateway in data_gateway:
-        gateway_id = gateway.fmwid
-    print('gateway_id', gateway_id)
-    return gateway_id
+def read_Gateway_table(gateid):
+    h = bytearray.fromhex(gateid)
+    data_gateway = s.query(Gateway).filter(Gateway.fmwid == h)[0]
+    return data_gateway.id
 
 def example(deveui):
     device_type = deveui
