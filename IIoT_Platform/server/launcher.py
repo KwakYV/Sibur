@@ -1,10 +1,10 @@
 import paho.mqtt.client as mqtt
 import configparser
-from IIoT_Platform.mqtt.parser_mqtt import *
-from IIoT_Platform.dao.crud_db import *
+from mqtt.parser_mqtt import *
+from dao.crud_db import *
 
 config = configparser.ConfigParser()
-config.read('set.properties')
+config.read('../configs/mqtt_set.properties')
 sub1_params = config['config.server_1']
 sub2_params = config['config.server_2']
 topic_params = config['config.topic']
@@ -16,10 +16,9 @@ def on_connect(client, userdata, flags, rc):
 def on_message(client, userdata, msg):
     d = msg.topic + " " + str(msg.payload)
     if 'innolabs' in msg.topic: # if 'innolabs' in msg.topic: #
-        print(d)
         data = get_message(d)
         parsed_data = parser_message(data)
-        comit_Data_Table(read_Device_table(deveui(parsed_data)), 1, data_hex(parsed_data), parsed_data['time'], parsed_data['time']
+        comit_Data_Table(read_Device_table(deveui(parsed_data)), read_Gateway_table(parsed_data['gatewayID']), data_hex(parsed_data), parsed_data['time'], parsed_data['time']
                          , parsed_data['fCnt'], parsed_data['frequency'], parsed_data['RSSI'], 4, 5, data_val(parsed_data))
 
 client = mqtt.Client(sub1_params['client_id_1'], clean_session=False).max_queued_messages_set(queue_size=100)

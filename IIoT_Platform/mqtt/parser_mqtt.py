@@ -15,8 +15,13 @@ def parser_message(spisok):
 
 def deveui(js):
     h = js['devEUI'] #001bc5035000043a 363833357b386b10
-    ba = bytearray.fromhex(h)
-    return ba
+    dev_eui = bytearray.fromhex(h)
+    return dev_eui
+
+def gateway_id(js):
+    h = js['gatewayID']
+    gate_id = bytearray.fromhex(h)
+    return gate_id
 
 def timestamp():
     t = datetime.now()
@@ -35,5 +40,4 @@ def data_val(js):
         t = js['InternalSensors'][3]['Value']
     else:
         t = js['InternalSensors'][1]['Value']
-    print(t)
     return t
