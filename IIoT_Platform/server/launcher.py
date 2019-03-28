@@ -17,10 +17,13 @@ def on_message(client, userdata, msg):
     d = msg.topic + " " + str(msg.payload)
     if 'innolabs' in msg.topic: # if 'innolabs' in msg.topic: #
         data = get_message(d)
+        print(data)
         parsed_data = parser_message(data)
+        print(parsed_data['gatewayID'])
         comit_Data_Table(read_Device_table(deveui(parsed_data)), read_Gateway_table(parsed_data['gatewayID']), data_hex(parsed_data), parsed_data['time'], parsed_data['time']
                          , parsed_data['fCnt'], parsed_data['frequency'], parsed_data['RSSI'], 4, 5, data_val(parsed_data))
-
+        print(deveui(parsed_data))
+        print(data_val(parsed_data))
 client = mqtt.Client(sub1_params['client_id_1'], clean_session=False).max_queued_messages_set(queue_size=100)
 client.on_connect = on_connect
 client.on_message = on_message
