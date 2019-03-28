@@ -18,7 +18,7 @@ class Data(Base):
     rssi = Column('rssi', Integer)
     sf = Column('sf', Integer)
     snr = Column('snr', NUMERIC(precision=10,scale=4))
-    value = Column('value', CHAR)
+    value = Column('value', NUMERIC(precision=10,scale=4)) #изменение с str to numeric
 
 class Factory(Base):
     __tablename__='factory'
