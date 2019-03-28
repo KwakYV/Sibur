@@ -14,7 +14,7 @@ from protos.iiot_pb2 import *
 # Read configuration parameters for web  socket server #
 ########################################################
 config = configparser.ConfigParser()
-config.read('config.properties')
+config.read('../configs/server.properties')
 h_params = config['websocket.server']
 f_params = config['websocket.logs']
 
