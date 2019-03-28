@@ -40,4 +40,5 @@ def data_val(js):
         t = js['InternalSensors'][3]['Value']
     else:
         t = js['InternalSensors'][1]['Value']
-    return t
+    val = int(t) #type(t) is string
+    return val #изменение типа по str to int
