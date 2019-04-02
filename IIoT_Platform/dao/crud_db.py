@@ -1,12 +1,9 @@
 from sqlalchemy.orm import sessionmaker
 from entities import *
-<<<<<<< HEAD
-
-#Session = sessionmaker(bind=engine)
-s = Session()
-=======
 import logging as lg
 import logging.handlers as handlers
+#from entities.Entities import *
+
 
 logger = lg.getLogger('crud_db.py')
 logger.setLevel(lg.INFO)
@@ -21,7 +18,6 @@ errorhandler.setFormatter(formatter)
 
 logger.addHandler(loghandler)
 logger.addHandler(errorhandler)
-#Session = sessionmaker(bind=engine)
 
 try:
     logger.info('Starting session ... ')
@@ -29,24 +25,22 @@ try:
     logger.info('Started session ... ')
 except Exception as ex:
     logger.error(ex)
->>>>>>> 3c1bae7a9e24ba55f22035d16d32fd3d7805675b
 
-from entities.Entities import *
 
 def comit_Data_Table(devid, gateid, bytedata, effdt, ppndt, fcntup, freq, rssi, sf, snr, value):
     logger.info('Commiting info to Data_table')
     data = Data(
-        devid = devid,
-        gateid = gateid,
-        data = bytedata,
-        effdt = effdt,
-        ppndt = ppndt, #'2017-06-22 20:10:25-07',
-        fcntup = fcntup,
-        freq = freq,
-        rssi = rssi,
-        sf = sf,
-        snr = snr,
-        value = value,
+        devid=devid,
+        gateid=gateid,
+        data=bytedata,
+        effdt=effdt,
+        ppndt=ppndt, #'2017-06-22 20:10:25-07',
+        fcntup=fcntup,
+        freq=freq,
+        rssi=rssi,
+        sf=sf,
+        snr=snr,
+        value=value,
     )
     try:
         s.add(data)
@@ -54,6 +48,7 @@ def comit_Data_Table(devid, gateid, bytedata, effdt, ppndt, fcntup, freq, rssi, 
         logger.info('Commited info to Data_table')
     except Exception as ex:
         logger.error(ex)
+
 
 def read_Device_table(dev):
     logger.info('Reading Device_table')
@@ -74,6 +69,7 @@ def read_Gateway_table(gateid):
         return data_gateway.id
     except Exception as ex:
         logger.error(ex)
+
 
 def example(deveui):
     device_type = deveui
