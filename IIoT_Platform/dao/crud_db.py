@@ -1,7 +1,7 @@
 from sqlalchemy.orm import sessionmaker
-from entities import engine
+from entities import *
 
-Session = sessionmaker(bind=engine)
+#Session = sessionmaker(bind=engine)
 s = Session()
 
 from entities.Entities import *

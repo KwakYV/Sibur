@@ -61,8 +61,8 @@ from google.protobuf.timestamp_pb2 import *
 
 
 async def main():
-    async with websockets.connect('ws://192.168.10.15:8761/') as ws:
-        list = ['343438356F37750C', '343438356B37620E']
+    async with websockets.connect('ws://192.168.10.11:8761/') as ws:
+        list = ['343438356F37750C', '343438356B37620E', '001bc5035000043a']
         tms = Timestamp()
         tms.seconds = 1542716804000
         devDataReq = DeviceDataHistoryRequest(devEuiList=list, ts=tms)
