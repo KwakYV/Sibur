@@ -1,12 +1,40 @@
 from sqlalchemy.orm import sessionmaker
 from entities import *
+<<<<<<< HEAD
 
 #Session = sessionmaker(bind=engine)
 s = Session()
+=======
+import logging as lg
+import logging.handlers as handlers
+
+logger = lg.getLogger('crud_db.py')
+logger.setLevel(lg.INFO)
+formatter = lg.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s - %(funcName)s')
+
+loghandler = handlers.RotatingFileHandler('../server/info_launcher.log', maxBytes=20000000, backupCount=10)
+loghandler.setFormatter(formatter)
+
+errorhandler = handlers.RotatingFileHandler('../server/error_launcher.log', maxBytes=20000000, backupCount=10)
+errorhandler.setLevel(lg.ERROR)
+errorhandler.setFormatter(formatter)
+
+logger.addHandler(loghandler)
+logger.addHandler(errorhandler)
+#Session = sessionmaker(bind=engine)
+
+try:
+    logger.info('Starting session ... ')
+    s = Session()
+    logger.info('Started session ... ')
+except Exception as ex:
+    logger.error(ex)
+>>>>>>> 3c1bae7a9e24ba55f22035d16d32fd3d7805675b
 
 from entities.Entities import *
 
 def comit_Data_Table(devid, gateid, bytedata, effdt, ppndt, fcntup, freq, rssi, sf, snr, value):
+    logger.info('Commiting info to Data_table')
     data = Data(
         devid = devid,
         gateid = gateid,
@@ -20,17 +48,32 @@ def comit_Data_Table(devid, gateid, bytedata, effdt, ppndt, fcntup, freq, rssi, 
         snr = snr,
         value = value,
     )
-    s.add(data)
-    s.commit()
+    try:
+        s.add(data)
+        s.commit()
+        logger.info('Commited info to Data_table')
+    except Exception as ex:
+        logger.error(ex)
 
 def read_Device_table(dev):
-    data_Device = s.query(Device).filter(Device.deveui == dev)[0]
-    return data_Device.id
+    logger.info('Reading Device_table')
+    try:
+        data_Device = s.query(Device).filter(Device.deveui == dev)[0]
+        logger.info('Found the Device_deveui')
+        return data_Device.id
+    except Exception as ex:
+        logger.error(ex)
+
 
 def read_Gateway_table(gateid):
-    h = bytearray.fromhex(gateid)
-    data_gateway = s.query(Gateway).filter(Gateway.fmwid == h)[0]
-    return data_gateway.id
+    logger.info('Reading Gateway_table')
+    try:
+        h = bytearray.fromhex(gateid)
+        data_gateway = s.query(Gateway).filter(Gateway.fmwid == h)[0]
+        logger.info('Found gateway_id')
+        return data_gateway.id
+    except Exception as ex:
+        logger.error(ex)
 
 def example(deveui):
     device_type = deveui
@@ -38,3 +81,4 @@ def example(deveui):
     for device in data_Device:
         device_type = device.devicetypeid
     return device_type
+
