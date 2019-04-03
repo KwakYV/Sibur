@@ -9,7 +9,7 @@ import logging.handlers as handlers
 from controller.protocontroller import *
 from protos.iiot_pb2 import *
 
-
+#TODO - Move config reading and logger initialization from here to package controller __init__.py
 ########################################################
 # Read configuration parameters for web  socket server #
 ########################################################
@@ -39,15 +39,17 @@ async def get_devices():
     res = getDevices()
     return res
 
+
 async def get_device_data(devdatareq):
-    euiList = devdatareq.devEuiList
-    tmpstr =', '.join(["'"+val+"'" for val in euiList])
+    euilist = devdatareq.devEuiList
+    tmpstr = ', '.join(["'"+val+"'" for val in euilist])
     res = getDeviceData(tmpstr)
     return res
 
-async  def get_device_history(historyreq):
-    euiList = historyreq.devEuiList
-    tmpstr = ', '.join(["'" + val + "'" for val in euiList])
+
+async def get_device_history(historyreq):
+    euilist = historyreq.devEuiList
+    tmpstr = ', '.join(["'" + val + "'" for val in euilist])
     ts = historyreq.ts
     res = getDeviceDataHistory(tmpstr, ts)
     return res

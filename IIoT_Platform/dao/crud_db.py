@@ -2,6 +2,8 @@ from sqlalchemy.orm import sessionmaker
 from entities import *
 import logging as lg
 import logging.handlers as handlers
+#from entities.Entities import *
+
 
 logger = lg.getLogger('crud_db.py')
 logger.setLevel(lg.INFO)
@@ -17,7 +19,6 @@ errorhandler.setFormatter(formatter)
 logger.addHandler(loghandler)
 logger.addHandler(errorhandler)
 
-#Session = sessionmaker(bind=engine)
 
 try:
     logger.info('Starting session ... ')
@@ -26,22 +27,21 @@ try:
 except Exception as ex:
     logger.error(ex)
 
-from entities.Entities import *
 
 def comit_Data_Table(devid, gateid, bytedata, effdt, ppndt, fcntup, freq, rssi, sf, snr, value):
     logger.info('Commiting info to Data_table')
     data = Data(
-        devid = devid,
-        gateid = gateid,
-        data = bytedata,
-        effdt = effdt,
-        ppndt = ppndt, #'2017-06-22 20:10:25-07',
-        fcntup = fcntup,
-        freq = freq,
-        rssi = rssi,
-        sf = sf,
-        snr = snr,
-        value = value,
+        devid=devid,
+        gateid=gateid,
+        data=bytedata,
+        effdt=effdt,
+        ppndt=ppndt, #'2017-06-22 20:10:25-07',
+        fcntup=fcntup,
+        freq=freq,
+        rssi=rssi,
+        sf=sf,
+        snr=snr,
+        value=value,
     )
     try:
         s.add(data)

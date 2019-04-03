@@ -31,7 +31,7 @@ def getdevicedata(devlist):
 
 def gethistory(devlist, ts):
     sql = """
-        select dev.deveuistr deveui, d.ppndt ts, encode(d.data, 'hex')
+        select dev.deveuistr deveui, d.ppndt ts, COALESCE(d.value,0.0)
         from iiot.data d
         join iiot.device dev on d.devid = dev.id and dev.deveuistr in (:lst)
         where d.effdt < to_timestamp(:ts) AT TIME ZONE 'UTC'
