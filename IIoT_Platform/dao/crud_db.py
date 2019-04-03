@@ -16,6 +16,7 @@ errorhandler.setFormatter(formatter)
 
 logger.addHandler(loghandler)
 logger.addHandler(errorhandler)
+
 #Session = sessionmaker(bind=engine)
 
 try:
