@@ -291,7 +291,7 @@ message Device {
     bool skip_f_cnt_check = 5;
 
     // Reference altitude.
-    // When using geolocation, this altitude will be used as a reference
+    // When using geolocation, this altitude will be used aps a reference
     // (when supported by the geolocation-server) to increase geolocation
     // accuracy.
     double reference_altitude = 6;
@@ -405,7 +405,7 @@ message SendProprietaryPayloadRequest {
     // Gateway MAC address(es) to use for transmitting the LoRaWAN frame.
     repeated bytes gateway_macs = 3;
 
-    // Set to true for sending as a gateway, or false for sending as a node.
+    // Set to true for sending aps a gateway, or false for sending aps a node.
     // In the latter case the frame will be received by other gateways.
     bool polarization_inversion = 4;
 
