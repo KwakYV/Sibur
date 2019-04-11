@@ -1,0 +1,1930 @@
+2019-03-29 15:55:29,830 - launcher.py - ERROR - [Errno 60] Operation timed out - <module>
+2019-03-29 15:59:45,858 - launcher.py - ERROR - [Errno 60] Operation timed out - <module>
+2019-03-29 16:12:40,802 - launcher.py - ERROR - [Errno 60] Operation timed out - <module>
+2019-03-29 16:15:21,852 - launcher.py - ERROR - [Errno 60] Operation timed out - <module>
+2019-03-29 16:18:05,884 - launcher.py - ERROR - [Errno 60] Operation timed out - <module>
+2019-03-29 17:47:54,444 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:47:54,445 - launcher.py - INFO - Success subscribed ti the topic: # - on_connect
+2019-03-29 17:50:50,616 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:50:50,616 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:50:52,711 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:50:52,712 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:50:54,719 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:50:54,720 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:50:56,808 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:50:56,808 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:50:58,853 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:50:58,853 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:01,002 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:01,003 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:03,050 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:03,050 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:05,098 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:05,099 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:07,146 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:07,147 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:09,217 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:09,218 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:11,368 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:11,368 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:13,409 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:13,409 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:15,438 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:15,439 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:17,491 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:17,492 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:19,536 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:19,537 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:20,267 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:51:20,267 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 17:51:21,585 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:21,586 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:23,598 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:23,599 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:25,609 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:25,609 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:27,677 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:27,678 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:29,750 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:29,751 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:31,870 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:31,870 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:33,896 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:33,897 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:35,916 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:35,916 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:37,935 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:37,938 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:39,952 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:39,952 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:41,973 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:41,974 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:44,011 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:44,011 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:46,160 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:46,160 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:48,343 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:48,343 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:48,678 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:51:48,679 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/ack - on_message
+2019-03-29 17:51:50,459 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:50,459 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:52,532 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:52,534 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:54,551 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:54,552 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:56,570 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:56,571 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:51:58,585 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:51:58,585 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:52:00,601 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:52:00,601 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:52:02,612 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:52:02,612 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:52:04,622 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:52:04,622 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:52:06,743 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:52:06,743 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:52:08,871 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:52:08,872 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:52:10,993 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:52:10,994 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:52:13,008 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:52:13,009 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:52:15,022 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:52:15,022 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:52:17,034 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:52:17,034 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:52:19,046 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:52:19,046 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:52:21,055 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:52:21,055 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:52:23,075 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:52:23,075 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:52:25,089 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:52:25,089 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:52:27,104 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:52:27,105 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:52:29,227 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:52:29,228 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:52:31,345 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:52:31,345 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:56:25,782 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:56:25,783 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:56:25,784 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:56:25,784 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 17:56:25,784 - launcher.py - INFO - Commiting message to data_base =========> data_base - on_message
+2019-03-29 17:56:25,785 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 17:56:25,790 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:56:25,790 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 17:56:25,790 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:56:25,790 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 17:56:25,791 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:56:25,791 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 17:56:25,791 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:56:25,791 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 17:56:25,793 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:56:25,793 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 17:56:25,793 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:56:25,793 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 17:56:25,793 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:56:25,793 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 17:56:50,279 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:56:50,279 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 17:57:20,330 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:57:20,330 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 17:57:29,219 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:57:29,219 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 17:57:29,401 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:57:29,401 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 17:57:29,401 - launcher.py - INFO - Commiting message to data_base =========> data_base - on_message
+2019-03-29 17:57:29,401 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 17:57:29,403 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:57:29,403 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 17:57:55,564 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:57:55,564 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:57:55,571 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:57:55,571 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 17:57:55,572 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:57:55,572 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 17:57:55,573 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:57:55,573 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 17:58:20,263 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:58:20,263 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 17:58:41,731 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:58:41,731 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 17:58:41,734 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:58:41,734 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 17:58:41,894 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:58:41,894 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 17:58:41,895 - launcher.py - INFO - Commiting message to data_base =========> data_base - on_message
+2019-03-29 17:58:41,895 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 17:58:41,895 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:58:41,895 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 17:59:45,158 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 17:59:45,159 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 17:59:45,164 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:59:45,164 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 17:59:45,165 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:59:45,165 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 17:59:45,165 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:59:45,165 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 17:59:45,167 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:59:45,167 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 17:59:50,282 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:59:50,282 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 17:59:57,225 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:59:57,226 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 17:59:57,443 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:59:57,444 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 17:59:57,444 - launcher.py - INFO - Commiting message to data_base =========> data_base - on_message
+2019-03-29 17:59:57,445 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 17:59:57,445 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 17:59:57,445 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:00:00,272 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:00:00,273 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:00:00,275 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:00:00,276 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:00:03,249 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:00:03,249 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:00:03,268 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:00:03,268 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:03:06,919 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 18:03:06,919 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 18:03:06,920 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:06,920 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:03:06,920 - launcher.py - INFO - Commiting message to data_base =========> data_base - on_message
+2019-03-29 18:03:06,920 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:03:06,925 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:06,926 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:03:06,926 - launcher.py - INFO - Commiting message to data_base =========> data_base - on_message
+2019-03-29 18:03:06,926 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:03:06,931 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:06,931 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:03:06,932 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:06,932 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:03:06,932 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:06,933 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:03:06,933 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:06,933 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:03:06,933 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:06,933 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:03:06,933 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:06,933 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:03:06,934 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:06,934 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:03:06,934 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:06,934 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:03:06,934 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:06,934 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:03:06,934 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:06,934 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:03:06,935 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:06,935 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:03:06,935 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:06,935 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:03:06,935 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:06,936 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:03:06,938 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:06,938 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:03:06,938 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:06,938 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:03:06,939 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:06,939 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:03:06,939 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:06,939 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:03:20,324 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:20,324 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:03:45,855 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:45,856 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:03:46,056 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:46,056 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:03:46,057 - launcher.py - INFO - Commiting message to data_base =========> data_base - on_message
+2019-03-29 18:03:46,057 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:03:46,058 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:46,058 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:03:48,862 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:48,863 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:03:50,310 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:50,311 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:03:51,876 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:03:51,876 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:05:33,320 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 18:05:33,321 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 18:05:33,321 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:05:33,322 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:05:33,322 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:05:33,324 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:05:33,324 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:05:33,324 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:05:33,324 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:05:33,325 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:05:33,325 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:05:33,325 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:05:33,325 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:05:33,325 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:05:33,325 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:05:33,327 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:05:33,327 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:05:33,327 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:05:33,327 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:05:33,327 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:05:33,327 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:05:33,328 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:05:33,328 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:14:06,396 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 18:14:06,397 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 18:14:06,398 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,398 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:14:06,398 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:14:06,399 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,399 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:14:06,399 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:14:06,402 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,402 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:14:06,403 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,403 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,403 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,403 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,403 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,403 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:14:06,406 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,406 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,407 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,407 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:14:06,408 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,408 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,409 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,409 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,409 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,409 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:14:06,409 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,409 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:14:06,409 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,409 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,410 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,410 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,410 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,410 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:14:06,410 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,410 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,410 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,411 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,411 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,411 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,411 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,411 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,411 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,411 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:14:06,412 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,413 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:14:06,413 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:14:06,413 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,413 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:14:06,414 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,414 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:14:06,415 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:14:06,415 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,415 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,416 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,416 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,417 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,417 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:14:06,419 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,419 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:14:06,419 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:14:06,420 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,420 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,420 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,420 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,420 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,420 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,421 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,421 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:14:06,421 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,421 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:14:06,421 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,421 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:14:06,422 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,422 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,422 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,422 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:14:06,422 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,422 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,423 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,423 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,423 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,423 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:14:06,423 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,423 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:14:06,424 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,424 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,424 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,424 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:14:06,425 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,425 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,426 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,426 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:14:06,427 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:14:06,427 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,427 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:14:06,427 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,428 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,429 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,430 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:14:06,430 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:14:06,430 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,430 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:14:06,430 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,430 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:14:06,431 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,431 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,431 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,431 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,431 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,431 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:14:06,431 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,431 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,432 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,432 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,438 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,438 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,438 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,438 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,439 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,439 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:14:06,439 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,439 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,443 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,444 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:14:06,444 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,444 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,444 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,445 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:14:06,445 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,445 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/tx - on_message
+2019-03-29 18:14:06,446 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,446 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/ack - on_message
+2019-03-29 18:14:06,446 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,446 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,447 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,447 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:14:06,448 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:14:06,448 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:19:43,033 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 18:19:43,036 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 18:19:43,036 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,036 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:19:43,037 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:19:43,038 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,039 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:19:43,039 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:19:43,040 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,040 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:19:43,040 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,041 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:19:43,041 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,041 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:19:43,041 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,041 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:19:43,041 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,041 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:19:43,042 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:19:43,043 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,044 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/tx - on_message
+2019-03-29 18:19:43,044 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,044 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/ack - on_message
+2019-03-29 18:19:43,044 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,044 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:19:43,044 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,044 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:19:43,045 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,045 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:19:43,045 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,045 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:19:43,045 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,045 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:19:43,045 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,045 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:19:43,046 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,046 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:19:43,046 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,046 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:19:43,046 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,046 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:19:43,046 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,047 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:19:43,047 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,047 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:19:43,047 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,047 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:19:43,048 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,048 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:19:43,049 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:19:43,050 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,051 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:19:43,051 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:19:43,053 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,053 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:19:43,053 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,053 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:19:43,053 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,053 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:19:43,054 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,054 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:19:43,054 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,054 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:19:43,055 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,055 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:19:43,055 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,055 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:19:43,055 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,055 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:19:43,055 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,055 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:19:43,057 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:19:43,057 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:20:57,410 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 18:20:57,412 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 18:20:57,413 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:20:57,413 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:20:57,418 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:20:57,418 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:20:57,419 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:20:57,419 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:20:57,419 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:20:57,419 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:20:57,419 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:20:57,420 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:20:57,420 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:20:57,420 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:23:30,840 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 18:23:30,842 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 18:23:30,843 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:23:30,843 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:23:30,843 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:23:30,845 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:23:30,845 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:23:30,845 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:23:30,847 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:23:30,847 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:23:30,848 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:23:30,849 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:23:30,849 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:23:30,849 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:23:30,851 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:23:30,851 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:23:30,852 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:23:30,852 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:23:30,852 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:23:30,852 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:23:30,852 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:23:30,852 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:23:30,852 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:23:30,853 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:23:30,853 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:23:30,853 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:30:31,091 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 18:30:31,094 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 18:30:31,095 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,095 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:30:31,095 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:30:31,096 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,096 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:30:31,097 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:30:31,097 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,097 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:30:31,097 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:30:31,098 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,098 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:30:31,100 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,100 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:30:31,100 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,101 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:30:31,101 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,101 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:30:31,101 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,101 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:30:31,101 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,101 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:30:31,102 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,102 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:30:31,102 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,102 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:30:31,102 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,102 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:30:31,102 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,102 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:30:31,103 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,103 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:30:31,103 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,103 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:30:31,103 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,103 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:30:31,103 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,103 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:30:31,104 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,104 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:30:31,104 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:30:31,104 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,105 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:30:31,105 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,105 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:30:31,105 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,105 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:30:31,107 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,107 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:30:31,108 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,108 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:30:31,108 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:30:31,108 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,108 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:30:31,109 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,109 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:30:31,109 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:30:31,112 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,112 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:30:31,112 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,112 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:30:31,112 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,112 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:30:31,113 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,113 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:30:31,114 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,114 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:30:31,114 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,114 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:30:31,114 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,114 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:30:31,114 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,114 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:30:31,116 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,116 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:30:31,116 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:30:31,116 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:32:19,374 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 18:32:19,375 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 18:32:19,376 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:32:19,376 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:32:19,377 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:32:19,378 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:32:19,379 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:32:19,379 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:32:19,379 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:32:19,380 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:32:19,381 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:32:19,381 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:32:19,381 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:32:19,381 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:32:19,381 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:32:19,381 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:32:19,381 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:32:19,381 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:32:19,382 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:32:19,382 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:32:19,382 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:32:19,382 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:32:19,383 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:32:19,383 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:32:20,678 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:32:20,678 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:35:31,576 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 18:35:31,577 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 18:35:31,578 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:35:31,578 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:35:31,579 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:35:31,579 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:35:31,583 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:35:31,583 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:35:31,583 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:35:31,583 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:35:31,584 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:35:31,584 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:35:31,584 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:35:31,584 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:35:31,584 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:35:31,584 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:35:31,585 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:35:31,585 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:35:31,585 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:35:31,585 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:35:31,585 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:35:31,585 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:35:31,586 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:35:31,586 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:35:31,586 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:35:31,586 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:35:31,586 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:35:31,586 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:37:35,716 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 18:37:35,718 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 18:37:35,719 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:37:35,719 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:37:35,720 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:37:35,720 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:37:35,722 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:37:35,722 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:37:35,722 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:37:35,722 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:37:35,723 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:37:35,723 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:37:35,723 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:37:35,723 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:37:35,723 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:37:35,723 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:37:35,723 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:37:35,724 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:37:35,724 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:37:35,724 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:37:35,724 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:37:35,725 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:38:08,690 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 18:38:08,691 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 18:38:08,692 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:38:08,693 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:38:08,696 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:38:08,696 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:38:08,696 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:38:08,696 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:38:08,696 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:38:08,696 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:38:08,698 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:38:08,698 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:38:20,614 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:38:20,615 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:38:56,858 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 18:38:56,859 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 18:38:56,867 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:38:56,867 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:39:14,283 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:39:14,283 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:39:14,421 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:39:14,421 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:39:14,422 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:39:14,422 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:41:19,448 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 18:41:19,449 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 18:41:19,459 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:41:19,459 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:41:19,464 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:41:19,465 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:41:19,467 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:41:19,467 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:41:19,467 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:41:19,467 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:41:19,468 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:41:19,468 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:41:19,468 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:41:19,468 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:41:19,468 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:41:19,468 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:41:19,469 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:41:19,469 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:41:20,750 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:41:20,750 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:41:36,585 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 18:41:36,586 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 18:41:36,587 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:41:36,588 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:41:36,591 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:41:36,591 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:41:36,591 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:41:36,591 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:42:37,714 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 18:42:37,715 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 18:42:37,721 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:42:37,721 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:42:37,723 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:42:37,723 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:42:45,741 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:42:45,741 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:42:45,760 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:42:45,761 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:42:45,959 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:42:45,960 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:42:45,960 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:42:45,962 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:42:45,962 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:42:50,759 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:42:50,759 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:43:20,762 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:43:20,763 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:43:50,766 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:43:50,767 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:43:56,222 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:43:56,223 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:43:56,225 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:43:56,225 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:43:56,325 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:43:56,325 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:43:56,325 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:43:56,326 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:43:56,326 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:44:20,769 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:44:20,770 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:44:50,682 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:44:50,682 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:45:00,705 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:45:00,706 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:45:00,707 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:45:00,707 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:45:00,815 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:45:00,815 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:45:00,815 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:45:00,816 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:45:00,816 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:45:20,786 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:45:20,786 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:45:50,678 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:45:50,679 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:46:29,724 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 18:46:29,724 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 18:46:29,726 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:46:29,726 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:46:29,730 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:46:29,730 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:46:29,730 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:46:29,731 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:46:29,732 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:46:29,732 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:47:20,396 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 18:47:20,396 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 18:47:20,403 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:47:20,403 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:47:20,791 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:47:20,791 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:47:25,601 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:47:25,601 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:47:25,781 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:47:25,781 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:47:25,855 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:47:25,855 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:47:50,689 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:47:50,689 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:48:20,793 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:48:20,794 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:48:36,054 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:48:36,054 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:48:36,056 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:48:36,057 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:48:36,250 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:48:36,251 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:48:36,264 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:48:36,264 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:48:50,898 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:48:50,898 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:49:20,718 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:49:20,718 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:49:42,504 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:49:42,504 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:49:42,726 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:49:42,726 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:49:42,732 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:49:42,732 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:50:31,442 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 18:50:31,443 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 18:50:31,451 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:50:31,451 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:50:31,454 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:50:31,455 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:50:50,809 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:50:50,809 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:50:55,112 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:50:55,112 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:50:55,114 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:50:55,115 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:50:55,263 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:50:55,264 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:50:55,264 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-03-29 18:50:55,293 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:50:55,293 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:51:20,732 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:51:20,732 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:51:50,816 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:51:50,817 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:52:04,539 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:52:04,539 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:52:04,717 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:52:04,717 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:52:04,717 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-03-29 18:52:04,724 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:52:04,724 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:52:20,751 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:52:20,751 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:52:50,738 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:52:50,738 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:53:14,991 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:53:14,991 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:53:14,994 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:53:14,994 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:53:15,192 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:53:15,192 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:53:15,192 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-03-29 18:53:15,198 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:53:15,198 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:53:20,825 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:53:20,826 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:57:10,748 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 18:57:10,748 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 18:57:10,749 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:57:10,749 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:57:10,749 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-03-29 18:57:10,749 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:57:10,750 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:57:10,751 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:57:10,751 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-03-29 18:57:10,751 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:57:10,751 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:57:10,752 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:57:10,752 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-03-29 18:57:10,752 - launcher.py - ERROR - name 'comit_Data_Table' is not defined - on_message
+2019-03-29 18:57:10,752 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:57:10,752 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:57:10,753 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:57:10,753 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:57:10,753 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:57:10,753 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:57:10,754 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:57:10,754 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:57:10,754 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:57:10,754 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:57:10,754 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:57:10,754 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:57:10,755 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:57:10,756 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:57:10,756 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:57:10,756 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:57:10,756 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:57:10,756 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:57:10,756 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:57:10,756 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:57:10,756 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:57:10,756 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:57:10,757 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:57:10,757 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:57:10,757 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:57:10,757 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:57:10,757 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:57:10,758 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:57:10,758 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:57:10,758 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:59:04,125 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-03-29 18:59:04,125 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-03-29 18:59:04,127 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:59:04,127 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:59:04,127 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-03-29 18:59:04,156 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:59:04,156 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-03-29 18:59:04,156 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-03-29 18:59:04,160 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:59:04,160 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:59:04,160 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:59:04,160 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:59:04,160 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:59:04,160 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:59:04,160 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:59:04,161 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:59:04,161 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:59:04,161 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-03-29 18:59:04,162 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:59:04,162 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:59:04,162 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:59:04,162 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-03-29 18:59:04,162 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:59:04,163 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-03-29 18:59:04,165 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-03-29 18:59:04,165 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,311 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-04-01 11:34:32,313 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-04-01 11:34:32,314 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,314 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 11:34:32,315 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 11:34:32,315 - crud_db.py - INFO - Reading Device_tavle - read_Device_table
+2019-04-01 11:34:32,348 - crud_db.py - INFO - Found th Device_deveui - read_Device_table
+2019-04-01 11:34:32,350 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,367 - crud_db.py - INFO - Commited info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,367 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,367 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 11:34:32,367 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 11:34:32,367 - crud_db.py - INFO - Reading Device_tavle - read_Device_table
+2019-04-01 11:34:32,368 - crud_db.py - INFO - Found th Device_deveui - read_Device_table
+2019-04-01 11:34:32,369 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,370 - crud_db.py - INFO - Commited info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,371 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,371 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 11:34:32,371 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 11:34:32,371 - crud_db.py - INFO - Reading Device_tavle - read_Device_table
+2019-04-01 11:34:32,372 - crud_db.py - INFO - Found th Device_deveui - read_Device_table
+2019-04-01 11:34:32,373 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,374 - crud_db.py - INFO - Commited info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,374 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,374 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,375 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,375 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,375 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,375 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,375 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,375 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,375 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,375 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 11:34:32,375 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,375 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,376 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,376 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,376 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,376 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,376 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,376 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 11:34:32,376 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,376 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,378 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,378 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,378 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,378 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,378 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,378 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,378 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,378 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 11:34:32,378 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,378 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 11:34:32,379 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 11:34:32,379 - crud_db.py - INFO - Reading Device_tavle - read_Device_table
+2019-04-01 11:34:32,380 - crud_db.py - INFO - Found th Device_deveui - read_Device_table
+2019-04-01 11:34:32,380 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,382 - crud_db.py - INFO - Commited info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,382 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,382 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,382 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,382 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,382 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,382 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,383 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,383 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,383 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,383 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 11:34:32,383 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 11:34:32,383 - crud_db.py - INFO - Reading Device_tavle - read_Device_table
+2019-04-01 11:34:32,384 - crud_db.py - INFO - Found th Device_deveui - read_Device_table
+2019-04-01 11:34:32,385 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,386 - crud_db.py - INFO - Commited info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,386 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,386 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 11:34:32,386 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,386 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 11:34:32,386 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 11:34:32,387 - crud_db.py - INFO - Reading Device_tavle - read_Device_table
+2019-04-01 11:34:32,387 - crud_db.py - INFO - Found th Device_deveui - read_Device_table
+2019-04-01 11:34:32,388 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,389 - crud_db.py - INFO - Commited info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,390 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,390 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 11:34:32,390 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 11:34:32,390 - crud_db.py - INFO - Reading Device_tavle - read_Device_table
+2019-04-01 11:34:32,391 - crud_db.py - INFO - Found th Device_deveui - read_Device_table
+2019-04-01 11:34:32,392 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,392 - crud_db.py - INFO - Commited info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,393 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,393 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,393 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,393 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,393 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,393 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,393 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,393 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,393 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,393 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,394 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,394 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 11:34:32,394 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,394 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,394 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,394 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,394 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,394 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,394 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,394 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 11:34:32,395 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,395 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,397 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,397 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,397 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,397 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,397 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,397 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,397 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,397 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 11:34:32,398 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,398 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 11:34:32,398 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 11:34:32,398 - crud_db.py - INFO - Reading Device_tavle - read_Device_table
+2019-04-01 11:34:32,399 - crud_db.py - INFO - Found th Device_deveui - read_Device_table
+2019-04-01 11:34:32,399 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,400 - crud_db.py - INFO - Commited info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,401 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,401 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,401 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,401 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,401 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,401 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 11:34:32,401 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 11:34:32,401 - crud_db.py - INFO - Reading Device_tavle - read_Device_table
+2019-04-01 11:34:32,402 - crud_db.py - INFO - Found th Device_deveui - read_Device_table
+2019-04-01 11:34:32,403 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,404 - crud_db.py - INFO - Commited info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,404 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,404 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,405 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,405 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,405 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,405 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 11:34:32,405 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 11:34:32,405 - crud_db.py - INFO - Reading Device_tavle - read_Device_table
+2019-04-01 11:34:32,406 - crud_db.py - INFO - Found th Device_deveui - read_Device_table
+2019-04-01 11:34:32,407 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,408 - crud_db.py - INFO - Commited info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,408 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,408 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,408 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,408 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 11:34:32,409 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,409 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,409 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,409 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,409 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,409 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,409 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,409 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 11:34:32,409 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,410 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 11:34:32,410 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 11:34:32,410 - crud_db.py - INFO - Reading Device_tavle - read_Device_table
+2019-04-01 11:34:32,411 - crud_db.py - INFO - Found th Device_deveui - read_Device_table
+2019-04-01 11:34:32,411 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,417 - crud_db.py - INFO - Commited info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,417 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,417 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,417 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,417 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,418 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,418 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,418 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,418 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 11:34:32,418 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,418 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,418 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,418 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,419 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,419 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,419 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,419 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 11:34:32,419 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 11:34:32,419 - crud_db.py - INFO - Reading Device_tavle - read_Device_table
+2019-04-01 11:34:32,420 - crud_db.py - INFO - Found th Device_deveui - read_Device_table
+2019-04-01 11:34:32,421 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,422 - crud_db.py - INFO - Commited info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,422 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,422 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,422 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,423 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,423 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,423 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 11:34:32,423 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,423 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 11:34:32,423 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 11:34:32,423 - crud_db.py - INFO - Reading Device_tavle - read_Device_table
+2019-04-01 11:34:32,424 - crud_db.py - INFO - Found th Device_deveui - read_Device_table
+2019-04-01 11:34:32,425 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,426 - crud_db.py - INFO - Commited info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,426 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,426 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,426 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,426 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,427 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,427 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,427 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,427 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 11:34:32,427 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,427 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 11:34:32,427 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 11:34:32,427 - crud_db.py - INFO - Reading Device_tavle - read_Device_table
+2019-04-01 11:34:32,428 - crud_db.py - INFO - Found th Device_deveui - read_Device_table
+2019-04-01 11:34:32,429 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,430 - crud_db.py - INFO - Commited info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,430 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,430 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,430 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,431 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,431 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,431 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,431 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,431 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,431 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,431 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 11:34:32,432 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,432 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,432 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,432 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,432 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,432 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 11:34:32,432 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 11:34:32,432 - crud_db.py - INFO - Reading Device_tavle - read_Device_table
+2019-04-01 11:34:32,433 - crud_db.py - INFO - Found th Device_deveui - read_Device_table
+2019-04-01 11:34:32,434 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,435 - crud_db.py - INFO - Commited info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,435 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,435 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,435 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,436 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,436 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,436 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,436 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,436 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 11:34:32,436 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,436 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,438 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,438 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 11:34:32,438 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 11:34:32,438 - crud_db.py - INFO - Reading Device_tavle - read_Device_table
+2019-04-01 11:34:32,439 - crud_db.py - INFO - Found th Device_deveui - read_Device_table
+2019-04-01 11:34:32,439 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,440 - crud_db.py - INFO - Commited info to Data_table - comit_Data_Table
+2019-04-01 11:34:32,441 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,441 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,441 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,441 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,441 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,441 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,441 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,441 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 11:34:32,442 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,442 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,442 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,442 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,442 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,442 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,442 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,442 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,443 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,443 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 11:34:32,444 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,444 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,446 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,447 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,447 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,447 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:34:32,447 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,447 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:34:32,447 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:34:32,447 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 11:44:34,984 - crud_db.py - INFO - Starting session ...  - <module>
+2019-04-01 11:44:34,985 - crud_db.py - INFO - Started session ...  - <module>
+2019-04-01 11:44:35,002 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-04-01 11:44:35,003 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-04-01 11:51:40,448 - crud_db.py - INFO - Starting session ...  - <module>
+2019-04-01 11:51:40,449 - crud_db.py - INFO - Started session ...  - <module>
+2019-04-01 11:51:40,464 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-04-01 11:51:40,465 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-04-01 11:51:40,466 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:51:40,466 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 11:51:40,467 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 11:51:40,467 - crud_db.py - INFO - Reading Device_table - read_Device_table
+2019-04-01 11:51:40,497 - crud_db.py - INFO - Found th Device_deveui - read_Device_table
+2019-04-01 11:51:40,497 - crud_db.py - INFO - Reading Gateway_table - read_Gateway_table
+2019-04-01 11:51:40,499 - crud_db.py - INFO - Found gateway_id - read_Gateway_table
+2019-04-01 11:51:40,499 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 11:51:40,505 - crud_db.py - INFO - Commited info to Data_table - comit_Data_Table
+2019-04-01 11:51:40,506 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:51:40,506 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 11:51:40,506 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 11:51:40,506 - crud_db.py - INFO - Reading Device_table - read_Device_table
+2019-04-01 11:51:40,507 - crud_db.py - INFO - Found th Device_deveui - read_Device_table
+2019-04-01 11:51:40,507 - crud_db.py - INFO - Reading Gateway_table - read_Gateway_table
+2019-04-01 11:51:40,508 - crud_db.py - INFO - Found gateway_id - read_Gateway_table
+2019-04-01 11:51:40,508 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 11:51:40,510 - crud_db.py - INFO - Commited info to Data_table - comit_Data_Table
+2019-04-01 11:51:40,510 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:51:40,511 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:51:40,511 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:51:40,511 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:51:40,511 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:51:40,511 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:51:40,511 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:51:40,511 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 11:51:40,511 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:51:40,512 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/tx - on_message
+2019-04-01 11:51:40,512 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:51:40,512 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/ack - on_message
+2019-04-01 11:51:40,512 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:51:40,512 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:51:40,512 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:51:40,512 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:51:40,512 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:51:40,512 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:51:40,513 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:51:40,513 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:51:40,513 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:51:40,513 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 11:51:40,513 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:51:40,513 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/tx - on_message
+2019-04-01 11:51:40,514 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:51:40,514 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/ack - on_message
+2019-04-01 11:51:40,517 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:51:40,517 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:51:40,517 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:51:40,517 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 11:51:40,517 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:51:40,517 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 11:51:40,517 - launcher.py - INFO - Getting messags from host 192.168.10.28:1883 - on_message
+2019-04-01 11:51:40,517 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:47,830 - crud_db.py - INFO - Starting session ...  - <module>
+2019-04-01 10:40:47,833 - crud_db.py - INFO - Started session ...  - <module>
+2019-04-01 10:40:47,867 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-04-01 10:40:47,869 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-04-01 10:40:47,870 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,872 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 10:40:47,872 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 10:40:47,873 - crud_db.py - INFO - Reading Device_table - read_Device_table
+2019-04-01 10:40:47,889 - crud_db.py - ERROR - (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Device_table
+2019-04-01 10:40:47,891 - crud_db.py - INFO - Reading Gateway_table - read_Gateway_table
+2019-04-01 10:40:47,894 - crud_db.py - ERROR - (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Gateway_table
+2019-04-01 10:40:47,896 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 10:40:47,897 - crud_db.py - ERROR - (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - comit_Data_Table
+2019-04-01 10:40:47,900 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,901 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 10:40:47,901 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 10:40:47,902 - crud_db.py - INFO - Reading Device_table - read_Device_table
+2019-04-01 10:40:47,903 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Device_table
+2019-04-01 10:40:47,904 - crud_db.py - INFO - Reading Gateway_table - read_Gateway_table
+2019-04-01 10:40:47,905 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Gateway_table
+2019-04-01 10:40:47,906 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 10:40:47,907 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - comit_Data_Table
+2019-04-01 10:40:47,909 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,910 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:47,910 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,911 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:47,912 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,912 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 10:40:47,913 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,914 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/tx - on_message
+2019-04-01 10:40:47,914 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,915 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/ack - on_message
+2019-04-01 10:40:47,916 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,916 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:47,917 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,918 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:47,919 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,919 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:47,920 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,921 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:47,921 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,922 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:47,923 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,926 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 10:40:47,927 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,927 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 10:40:47,928 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 10:40:47,928 - crud_db.py - INFO - Reading Device_table - read_Device_table
+2019-04-01 10:40:47,929 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Device_table
+2019-04-01 10:40:47,930 - crud_db.py - INFO - Reading Gateway_table - read_Gateway_table
+2019-04-01 10:40:47,931 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Gateway_table
+2019-04-01 10:40:47,932 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 10:40:47,933 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - comit_Data_Table
+2019-04-01 10:40:47,934 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,934 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/tx - on_message
+2019-04-01 10:40:47,935 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,936 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/ack - on_message
+2019-04-01 10:40:47,936 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,937 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:47,938 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,938 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:47,939 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,939 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:47,940 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,940 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:47,941 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,942 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:47,943 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,943 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 10:40:47,944 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,945 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 10:40:47,945 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 10:40:47,946 - crud_db.py - INFO - Reading Device_table - read_Device_table
+2019-04-01 10:40:47,947 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Device_table
+2019-04-01 10:40:47,948 - crud_db.py - INFO - Reading Gateway_table - read_Gateway_table
+2019-04-01 10:40:47,948 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Gateway_table
+2019-04-01 10:40:47,949 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 10:40:47,950 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - comit_Data_Table
+2019-04-01 10:40:47,952 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,952 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 10:40:47,953 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 10:40:47,953 - crud_db.py - INFO - Reading Device_table - read_Device_table
+2019-04-01 10:40:47,954 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Device_table
+2019-04-01 10:40:47,955 - crud_db.py - INFO - Reading Gateway_table - read_Gateway_table
+2019-04-01 10:40:47,956 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Gateway_table
+2019-04-01 10:40:47,957 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 10:40:47,958 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - comit_Data_Table
+2019-04-01 10:40:47,959 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,961 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:47,961 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,962 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:47,963 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,963 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:47,964 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,965 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:47,965 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,966 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:47,967 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,967 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:47,968 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,968 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:47,969 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,970 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:47,970 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,971 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 10:40:47,972 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,972 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:47,973 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,973 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:47,974 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,975 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:47,975 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,976 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:47,977 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,977 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:47,979 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,979 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:47,980 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,980 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:47,981 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,981 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 10:40:47,982 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,983 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:47,984 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,985 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 10:40:47,985 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 10:40:47,986 - crud_db.py - INFO - Reading Device_table - read_Device_table
+2019-04-01 10:40:47,987 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Device_table
+2019-04-01 10:40:47,988 - crud_db.py - INFO - Reading Gateway_table - read_Gateway_table
+2019-04-01 10:40:47,989 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Gateway_table
+2019-04-01 10:40:47,990 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 10:40:47,990 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - comit_Data_Table
+2019-04-01 10:40:47,991 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,992 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:47,993 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:47,994 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 10:40:47,994 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 10:40:47,995 - crud_db.py - INFO - Reading Device_table - read_Device_table
+2019-04-01 10:40:47,996 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Device_table
+2019-04-01 10:40:47,997 - crud_db.py - INFO - Reading Gateway_table - read_Gateway_table
+2019-04-01 10:40:47,998 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Gateway_table
+2019-04-01 10:40:47,999 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 10:40:47,999 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - comit_Data_Table
+2019-04-01 10:40:48,001 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,001 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,002 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,003 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,003 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,004 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:48,005 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,005 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:48,006 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,007 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,007 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,008 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 10:40:48,008 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,009 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,010 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,010 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,011 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,011 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,012 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,013 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:48,013 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,014 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:48,015 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,015 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,016 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,016 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,017 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,018 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 10:40:48,018 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,019 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,020 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,020 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,021 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,022 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,023 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,023 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 10:40:48,024 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 10:40:48,025 - crud_db.py - INFO - Reading Device_table - read_Device_table
+2019-04-01 10:40:48,026 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Device_table
+2019-04-01 10:40:48,027 - crud_db.py - INFO - Reading Gateway_table - read_Gateway_table
+2019-04-01 10:40:48,028 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Gateway_table
+2019-04-01 10:40:48,029 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 10:40:48,030 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - comit_Data_Table
+2019-04-01 10:40:48,033 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,034 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,035 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,036 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:48,036 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,037 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 10:40:48,038 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 10:40:48,038 - crud_db.py - INFO - Reading Device_table - read_Device_table
+2019-04-01 10:40:48,039 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Device_table
+2019-04-01 10:40:48,040 - crud_db.py - INFO - Reading Gateway_table - read_Gateway_table
+2019-04-01 10:40:48,041 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Gateway_table
+2019-04-01 10:40:48,042 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 10:40:48,043 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - comit_Data_Table
+2019-04-01 10:40:48,044 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,044 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:48,045 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,046 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:48,046 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,047 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,048 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,048 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,049 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,050 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 10:40:48,050 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,051 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,052 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,053 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,053 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,054 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,055 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,055 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:48,056 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,056 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:48,057 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,058 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,058 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,059 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,060 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,060 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 10:40:48,061 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,062 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 10:40:48,062 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 10:40:48,063 - crud_db.py - INFO - Reading Device_table - read_Device_table
+2019-04-01 10:40:48,064 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Device_table
+2019-04-01 10:40:48,065 - crud_db.py - INFO - Reading Gateway_table - read_Gateway_table
+2019-04-01 10:40:48,066 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Gateway_table
+2019-04-01 10:40:48,067 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 10:40:48,067 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - comit_Data_Table
+2019-04-01 10:40:48,069 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,069 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,070 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,071 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,071 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,072 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,073 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,073 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:48,074 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,075 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:48,075 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,076 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 10:40:48,076 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 10:40:48,077 - crud_db.py - INFO - Reading Device_table - read_Device_table
+2019-04-01 10:40:48,078 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Device_table
+2019-04-01 10:40:48,079 - crud_db.py - INFO - Reading Gateway_table - read_Gateway_table
+2019-04-01 10:40:48,080 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Gateway_table
+2019-04-01 10:40:48,081 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 10:40:48,081 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - comit_Data_Table
+2019-04-01 10:40:48,083 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,083 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,084 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,085 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 10:40:48,085 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,086 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,087 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,088 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:48,088 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,089 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,090 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,090 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:48,091 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,092 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:48,092 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,093 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,094 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,094 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 10:40:48,095 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,095 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,096 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,097 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:48,097 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,098 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:48,099 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,099 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:40:48,100 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:48,100 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:57,104 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:57,106 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:57,108 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:57,109 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:40:57,316 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:57,318 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 10:40:57,320 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 10:40:57,321 - crud_db.py - INFO - Reading Device_table - read_Device_table
+2019-04-01 10:40:57,322 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Device_table
+2019-04-01 10:40:57,324 - crud_db.py - INFO - Reading Gateway_table - read_Gateway_table
+2019-04-01 10:40:57,325 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Gateway_table
+2019-04-01 10:40:57,327 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 10:40:57,328 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - comit_Data_Table
+2019-04-01 10:40:57,329 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:57,330 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-01 10:40:57,331 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:40:57,332 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:41:27,393 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:41:27,396 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:41:57,311 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:41:57,313 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-01 10:42:06,588 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:42:06,589 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-01 10:42:06,708 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:42:06,710 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-01 10:42:06,711 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-01 10:42:06,712 - crud_db.py - INFO - Reading Device_table - read_Device_table
+2019-04-01 10:42:06,713 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Device_table
+2019-04-01 10:42:06,714 - crud_db.py - INFO - Reading Gateway_table - read_Gateway_table
+2019-04-01 10:42:06,715 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - read_Gateway_table
+2019-04-01 10:42:06,716 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-01 10:42:06,717 - crud_db.py - ERROR - This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.OperationalError) could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Cannot assign requested address
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+
+(Background on this error at: http://sqlalche.me/e/e3q8) - comit_Data_Table
+2019-04-01 10:42:06,718 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-01 10:42:06,718 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-04 10:13:40,685 - crud_db.py - INFO - Starting session ...  - <module>
+2019-04-04 10:13:40,687 - crud_db.py - INFO - Started session ...  - <module>
+2019-04-04 10:13:40,709 - launcher.py - INFO - Trying to subscribe the topic: # - on_connect
+2019-04-04 10:13:40,710 - launcher.py - INFO - Success subscribed to the topic: # - on_connect
+2019-04-04 10:13:40,711 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,711 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-04 10:13:40,712 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-04 10:13:40,712 - crud_db.py - INFO - Reading Device_table - read_Device_table
+2019-04-04 10:13:40,752 - crud_db.py - INFO - Found the Device_deveui - read_Device_table
+2019-04-04 10:13:40,752 - crud_db.py - INFO - Reading Gateway_table - read_Gateway_table
+2019-04-04 10:13:40,757 - crud_db.py - INFO - Found gateway_id - read_Gateway_table
+2019-04-04 10:13:40,757 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-04 10:13:40,777 - crud_db.py - INFO - Commited info to Data_table - comit_Data_Table
+2019-04-04 10:13:40,778 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,778 - launcher.py - INFO - Got message from topic innolabs/001bc5035000043a - on_message
+2019-04-04 10:13:40,779 - launcher.py - INFO - Commiting message to data_base =========>  - on_message
+2019-04-04 10:13:40,779 - crud_db.py - INFO - Reading Device_table - read_Device_table
+2019-04-04 10:13:40,780 - crud_db.py - INFO - Found the Device_deveui - read_Device_table
+2019-04-04 10:13:40,780 - crud_db.py - INFO - Reading Gateway_table - read_Gateway_table
+2019-04-04 10:13:40,781 - crud_db.py - INFO - Found gateway_id - read_Gateway_table
+2019-04-04 10:13:40,782 - crud_db.py - INFO - Commiting info to Data_table - comit_Data_Table
+2019-04-04 10:13:40,787 - crud_db.py - INFO - Commited info to Data_table - comit_Data_Table
+2019-04-04 10:13:40,788 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,788 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/tx - on_message
+2019-04-04 10:13:40,788 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,788 - launcher.py - INFO - Got message from topic gateway/b827ebffff12b0a5/tx - on_message
+2019-04-04 10:13:40,789 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,789 - launcher.py - INFO - Got message from topic gateway/b827ebffffd7e685/tx - on_message
+2019-04-04 10:13:40,789 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,789 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-04 10:13:40,789 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,789 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-04 10:13:40,789 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,789 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-04 10:13:40,790 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,790 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-04 10:13:40,790 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,790 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/tx - on_message
+2019-04-04 10:13:40,790 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,790 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/ack - on_message
+2019-04-04 10:13:40,791 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,791 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-04 10:13:40,791 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,791 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-04 10:13:40,791 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,791 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-04 10:13:40,791 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,791 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-04 10:13:40,792 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,792 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-04 10:13:40,792 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,792 - launcher.py - INFO - Got message from topic app/8/node/001bc5035000043a/rx - on_message
+2019-04-04 10:13:40,792 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,792 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/tx - on_message
+2019-04-04 10:13:40,792 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,792 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/ack - on_message
+2019-04-04 10:13:40,794 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,794 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-04 10:13:40,796 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,796 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/rx - on_message
+2019-04-04 10:13:40,799 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:13:40,800 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message
+2019-04-04 10:14:07,988 - launcher.py - INFO - Getting messages from host 192.168.10.28:1883 - on_message
+2019-04-04 10:14:07,988 - launcher.py - INFO - Got message from topic gateway/7276ff000b031819/stats - on_message

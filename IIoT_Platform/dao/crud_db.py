@@ -19,6 +19,7 @@ errorhandler.setFormatter(formatter)
 logger.addHandler(loghandler)
 logger.addHandler(errorhandler)
 
+
 try:
     logger.info('Starting session ... ')
     s = Session()
@@ -49,7 +50,6 @@ def comit_Data_Table(devid, gateid, bytedata, effdt, ppndt, fcntup, freq, rssi, 
     except Exception as ex:
         logger.error(ex)
 
-
 def read_Device_table(dev):
     logger.info('Reading Device_table')
     try:
@@ -69,7 +69,6 @@ def read_Gateway_table(gateid):
         return data_gateway.id
     except Exception as ex:
         logger.error(ex)
-
 
 def example(deveui):
     device_type = deveui

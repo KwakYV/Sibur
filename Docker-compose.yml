@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  iiotback:
+    image: git_rep_2_iiotback:latest
+    environment:
+      - PYTHONPATH=/iiotbackend/
+    volumes: 
+      - "./IIoT_Platform:/iiotbackend"
+    command: bash -c "cd server && python launcher.py"
