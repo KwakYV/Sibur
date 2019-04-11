@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+package protos.sibur;
+
+import "google/protobuf/timestamp.proto";
+
+
+message DeviceMessageRequest{
+    bytes dev_eui = 1;
+    repeated ToDeviceMessage messages = 2;
+}
+
+// Сообщение, которое отправляется на устройство
+message FromDeviceMessage{
+    bytes deveui = 1; //DevEui устройства
+    google.protobuf.Timestamp ts = 2; // Дата и время снятия показания
+    int32 fcntup = 3; // Количество отправленных сообщений (счетчик сообщений)
+    float battery = 4;//Уровень заряда батареи в вольтах
+    int32 period = 5; // Текущий период отправки
+    Mode mode = 6; //Тип отправки сообщения: BOUNDARY - при выходе значения за границы и толькол раз в сутки по расписанию, PERIOD - по расписанию, BOUNDARY + PERIOD -
+    Event event = 7; // Тип события - BOUNDARY или PERIOD
+    repeated PortData data = 8; // Массив PortData объектов
+}
+
+// Сообщение с данными для отдельного порта
+message PortData{
+    DevicePort port = 1;
+    int32 value = 2;
+    int32 min = 3;
+    int32 max = 4;
+}
+
+// Формат сообщения с настройками для отдельного устройства
+message ToDeviceMessage{
+    int32 period = 2; //Период отправки сообщений
+    int32 min = 3; //Минимальная граница значения, полученная из редактора мнемосхем и отправляемая на устройство
+    int32 max = 4; // Максимальная граница значения, полученная из редактора мнемосхем и отправляемая на устройство
+    Mode mode = 5; // Установка режима работы - BOUNDARY, PERIOD, BOUNDARY+PERIOD
+    DevicePort port = 6; // Порт устройства, на котором нужно применить текущие настройки
+}
+
+
+enum Mode{
+    BOUNDARY = 0;
+    PERIOD = 1;
+    BOUNDARY_PERIOD = 2;
+}
+
+enum Event{
+    BOUNDARY = 0;
+    PERIOD = 1;
+}
+
+enum DevicePort{
+    VIBR1  = 0;   // Узел СКВ, вибродатчик №1
+    VIBR2  = 1;   // Узел СКВ, вибродатчик №2
+    TEMPL1 = 2;   // Узел СКВ, датчик температуры №1, -55С..+125С
+    TEMPL2 = 3;   // Узел СКВ, датчик температуры №2, -55С..+125С
+    TEMPH1 = 4;   // Узел СКТ, датчик температуры №1, -55С..+200С
+    TEMPH2 = 5;   // Узел СКТ, датчик температуры №2, -55С..+200С
+}
