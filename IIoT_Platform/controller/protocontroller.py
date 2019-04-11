@@ -4,7 +4,6 @@ from google.protobuf.timestamp_pb2 import *
 import time
 
 
-
 def getDevices():
     devices = getdevices()
     client_response = ClientDevicesResponse()
