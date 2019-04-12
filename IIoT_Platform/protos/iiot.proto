@@ -69,6 +69,7 @@ enum MessageTypeRequest{
     DEVICE_LIST_REQUEST = 0;
     DEVICE_DATA_REQUEST = 1;
     DEVICE_DATA_HISTORY_REQUEST = 2;
+    DEVICE_PROFILE_ID = 3;
 
 }
 

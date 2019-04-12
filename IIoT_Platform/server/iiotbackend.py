@@ -1,13 +1,13 @@
 import asyncio
 import websockets
-import json as jsn
-import time as tm
 import configparser
 import traceback
 import logging as lg
 import logging.handlers as handlers
 from controller.protocontroller import *
 from protos.iiot_pb2 import *
+from integration.brocaar.lora_app_server.connection import *
+from tests.api_grpc import *
 
 #TODO - Move config reading and logger initialization from here to package controller __init__.py
 ########################################################
@@ -54,6 +54,16 @@ async def get_device_history(historyreq):
     res = getDeviceDataHistory(tmpstr, ts)
     return res
 
+async def get_dev_prof_id(conn = connection()):
+    stub = application_pb2_grpc.ApplicationServiceStub(conn)
+    response = stub.List(application_pb2.ListApplicationRequest(limit=10, offset=0))
+    jsonObj = MessageToJson(response)
+    a = json.loads(jsonObj)['result'] #['result']
+    d = dict()
+    count = len(a)
+    for i in range(count):
+        d[a[i]['name']] = a[i]['id']  #d['applicationID'] = a[i]['id']
+    return d
 
 async def producer(message):
     try:
@@ -68,6 +78,10 @@ async def producer(message):
 
         elif req.type == MessageTypeRequest.Name(2):
             return await get_device_history(req.devicehistory)
+
+        elif req.type == MessageTypeRequest.Name(3):
+            return await get_device_history(req.devicehistory)
+
         else:
             return "Bad function name"
     except Exception as ex:
