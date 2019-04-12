@@ -1,5 +1,10 @@
-from tests.api_grpc import *
-from integration.brocaar.lora_app_server.connection import *
+from protos.aps import application_pb2
+from protos.aps import application_pb2_grpc
+from protos.aps import deviceProfile_pb2
+from protos.aps import deviceProfile_pb2_grpc
+from protos.aps import device_pb2_grpc
+from google.protobuf.json_format import MessageToJson
+import json
 
 def apps_id(conn):
     stub = application_pb2_grpc.ApplicationServiceStub(conn)
@@ -22,6 +27,17 @@ def device_prof_id(conn):
     for i in range(count):
         c[a[i]['name']] = a[i]['id']
     return c
-#print(device_prof_id(run_device_profile(connection())))
-print(apps_id(connection()))
 
+
+def create_device(conn, request):
+    try:
+        device_pb2_grpc.DeviceServiceStub(conn).Create(request)
+    except Exception as ex:
+        raise ex
+
+
+def create_keys(conn, request):
+    try:
+        device_pb2_grpc.DeviceServiceStub(conn).CreateKeys(request)
+    except Exception as ex:
+        raise ex
