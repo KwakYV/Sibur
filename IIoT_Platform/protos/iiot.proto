@@ -1,6 +1,10 @@
 syntax = "proto3";
+
 import "google/protobuf/timestamp.proto";
+import "protos/sibur/device.proto";
+
 package protos;
+
 
 service Iot{
     rpc GetDevices(Request) returns (Response) {}
@@ -24,6 +28,7 @@ message Request{
     string type = 1;
     DeviceDataRequest devicedata = 2;
     DeviceDataHistoryRequest devicehistory = 3;
+    CreateDeviceRequest create_device = 4;
 }
 
 // Request message for requesting devices' data
@@ -89,6 +94,7 @@ enum MessageTypeRequest{
     DEVICE_DATA_HISTORY_REQUEST = 2;
     DEVICE_PROFILE_ID_REQUEST = 3;
     APPS_REQUEST = 4;
+    CREATE_DEVICE_REQUEST = 5;
 
 }
 
@@ -98,4 +104,18 @@ enum MessageTypeResponse{
     DEVICE_DATA_HISTORY_RESPONSE = 2;
     DEVICE_PROFILE_ID_RESPONSE = 3;
     APPS_RESPONSE = 4;
+    CREATE_DEVICE_RESPONSE = 5;
 }
+
+message CreateDeviceRequest{
+    string dev_eui = 1;
+    string name = 2;
+    string type = 3;
+    string measurement = 4;
+    DevicePort port = 5;
+    string plant = 6;
+    string appkey = 7;
+    string application = 8;
+    string profile = 9;
+}
+

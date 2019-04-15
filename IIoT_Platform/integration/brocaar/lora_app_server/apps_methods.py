@@ -42,4 +42,11 @@ def create_keys(conn, request):
     except Exception as ex:
         raise ex
 
-#print(apps_id(connection()))
+def get_application_id(conn, name):
+    dict = apps_id(conn)
+    return dict[name]
+
+
+def get_profile_id(conn, name):
+    dict = device_prof_id(conn)
+    return dict[name]

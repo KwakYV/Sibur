@@ -8,7 +8,11 @@ from protos.aps import device_pb2
 from protos.aps import device_pb2_grpc
 from protos.aps import deviceProfile_pb2
 from protos.aps import deviceProfile_pb2_grpc
+from controller import protocontroller
+from protos import iiot_pb2
 
+"""
+>>>>>>> 7e462621db01fd15050ee7080c6a4ffd538c262d
 
 def run():
     list_application_request = application_pb2.ListApplicationRequest(limit=10, search="SiburLab")
@@ -53,6 +57,12 @@ def run():
         #device_pb2_grpc.DeviceServiceStub(channel).Create(device_request)
         #device_pb2_grpc.DeviceServiceStub(channel).CreateKeys(create_keys_request)
         device_pb2_grpc.DeviceServiceStub(channel).Activate(activate_request)
+
+"""
+
+def run():
+    create_device_request = iiot_pb2.Request()
+    create_device_request.type = iiot_pb2.MessageTypeRequest.Name(4)
 
 
 if __name__ == '__main__':

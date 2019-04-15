@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package protos.sibur;
+package protos;
 
 import "google/protobuf/timestamp.proto";
 
@@ -47,8 +47,8 @@ enum Mode{
 }
 
 enum Event{
-    BOUNDARY = 0;
-    PERIOD = 1;
+    BOUNDARY_EVENT = 0;
+    PERIOD_EVENT = 1;
 }
 
 enum DevicePort{
