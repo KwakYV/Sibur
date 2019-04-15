@@ -14,6 +14,7 @@ message Response{
     DeviceDataResponse devicedata = 3;
     DeviceDataHistoryResponse devicehistory = 4;
     DeviceProfileResponse devprofid = 5;
+    AppsResponse apps = 6;
 }
 
 // Global request message
@@ -36,6 +37,10 @@ message DeviceDataResponse{
 
 message DeviceProfileResponse{
     repeated Profile profile = 1;
+}
+
+message AppsResponse{
+    repeated Apps app = 1;
 }
 
 // Messages for obtain history data
@@ -68,6 +73,11 @@ message Profile {
     string id = 2;
 }
 
+message Apps {
+    string name = 1;
+    string appsid = 2;
+}
+
 message History {
     google.protobuf.Timestamp ts = 1;
     double value = 2;
@@ -78,6 +88,7 @@ enum MessageTypeRequest{
     DEVICE_DATA_REQUEST = 1;
     DEVICE_DATA_HISTORY_REQUEST = 2;
     DEVICE_PROFILE_ID_REQUEST = 3;
+    APPS_REQUEST = 4;
 
 }
 
@@ -86,4 +97,5 @@ enum MessageTypeResponse{
     DEVICE_DATA_RESPONSE = 1;
     DEVICE_DATA_HISTORY_RESPONSE = 2;
     DEVICE_PROFILE_ID_RESPONSE = 3;
+    APPS_RESPONSE = 4;
 }
