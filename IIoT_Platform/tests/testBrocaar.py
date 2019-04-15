@@ -10,10 +10,6 @@ from protos.aps import deviceProfile_pb2
 from protos.aps import deviceProfile_pb2_grpc
 
 
-
-
-
-
 def run():
     list_application_request = application_pb2.ListApplicationRequest(limit=10, search="SiburLab")
     org_list_request = organization_pb2.ListOrganizationRequest()
