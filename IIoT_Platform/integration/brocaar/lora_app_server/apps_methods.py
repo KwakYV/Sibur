@@ -40,3 +40,12 @@ def create_keys(conn, request):
         device_pb2_grpc.DeviceServiceStub(conn).CreateKeys(request)
     except Exception as ex:
         raise ex
+
+def get_application_id(conn, name):
+    dict = apps_id(conn)
+    return dict[name]
+
+
+def get_profile_id(conn, name):
+    dict = device_prof_id(conn)
+    return dict[name]
