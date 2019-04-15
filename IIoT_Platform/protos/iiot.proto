@@ -1,6 +1,10 @@
 syntax = "proto3";
+
 import "google/protobuf/timestamp.proto";
+import "sibur/device.proto";
+
 package protos;
+
 
 service Iot{
     rpc GetDevices(Request) returns (Response) {}
@@ -77,4 +81,12 @@ enum MessageTypeResponse{
     DEVICE_LIST_RESPONSE = 0;
     DEVICE_DATA_RESPONSE = 1;
     DEVICE_DATA_HISTORY_RESPONSE = 2;
+}
+
+message CreateDeviceRequest{
+    string dev_eui = 1;
+    string name = 2;
+    string type = 3;
+    string measurement = 4;
+    DevicePort port = 5;
 }
