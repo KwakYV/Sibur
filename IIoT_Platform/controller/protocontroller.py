@@ -57,3 +57,13 @@ def getDeviceProfileID():
         prof.id = str(value)
     response = Response(type=MessageTypeResponse.Name(3), devprofid=client_response)
     return response.SerializeToString()
+
+def getApps():
+    dict_apps = apps_id(connection())
+    client_response = AppsResponse()
+    for key, value in dict_apps.items():
+        prof = client_response.app.add()
+        prof.name = str(key)
+        prof.appsid = str(value)
+    response = Response(type=MessageTypeResponse.Name(4), apps=client_response)
+    return response.SerializeToString()
