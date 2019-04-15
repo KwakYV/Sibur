@@ -54,16 +54,9 @@ async def get_device_history(historyreq):
     res = getDeviceDataHistory(tmpstr, ts)
     return res
 
-async def get_dev_prof_id(conn = connection()):
-    stub = application_pb2_grpc.ApplicationServiceStub(conn)
-    response = stub.List(application_pb2.ListApplicationRequest(limit=10, offset=0))
-    jsonObj = MessageToJson(response)
-    a = json.loads(jsonObj)['result'] #['result']
-    d = dict()
-    count = len(a)
-    for i in range(count):
-        d[a[i]['name']] = a[i]['id']  #d['applicationID'] = a[i]['id']
-    return d
+async def get_dev_prof_id():
+    res = getDeviceProfileID()
+    return res
 
 async def producer(message):
     try:
@@ -80,7 +73,7 @@ async def producer(message):
             return await get_device_history(req.devicehistory)
 
         elif req.type == MessageTypeRequest.Name(3):
-            return await get_device_history(req.devicehistory)
+            return await get_dev_prof_id()
 
         else:
             return "Bad function name"
