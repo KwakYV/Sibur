@@ -58,6 +58,10 @@ async def get_dev_prof_id():
     res = getDeviceProfileID()
     return res
 
+async def get_apps():
+    res = getApps()
+    return res
+
 async def producer(message):
     try:
         req = Request()
@@ -74,6 +78,9 @@ async def producer(message):
 
         elif req.type == MessageTypeRequest.Name(3):
             return await get_dev_prof_id()
+
+        elif req.type == MessageTypeRequest.Name(4):
+            return await get_apps()
 
         else:
             return "Bad function name"
