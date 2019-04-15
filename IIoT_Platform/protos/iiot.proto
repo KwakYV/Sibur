@@ -17,6 +17,7 @@ message Response{
     ClientDevicesResponse devicelist = 2;
     DeviceDataResponse devicedata = 3;
     DeviceDataHistoryResponse devicehistory = 4;
+    DeviceProfileResponse devprofid = 5;
 }
 
 // Global request message
@@ -28,7 +29,6 @@ message Request{
     DeviceDataHistoryRequest devicehistory = 3;
 }
 
-
 // Request message for requesting devices' data
 message DeviceDataRequest{
     repeated string devEuiList =1;
@@ -38,6 +38,9 @@ message DeviceDataResponse{
     repeated Sensor sensors = 1;
 }
 
+message DeviceProfileResponse{
+    repeated Profile profile = 1;
+}
 
 // Messages for obtain history data
 message DeviceDataHistoryRequest{
@@ -46,7 +49,7 @@ message DeviceDataHistoryRequest{
 }
 
 message DeviceDataHistoryResponse{
-    repeated Sensor sensors =1;
+    repeated Sensor sensors = 1;
 }
 
 
@@ -64,6 +67,11 @@ message Sensor {
     repeated History history = 6;
 }
 
+message Profile {
+    string name = 1;
+    string id = 2;
+}
+
 message History {
     google.protobuf.Timestamp ts = 1;
     double value = 2;
@@ -73,7 +81,7 @@ enum MessageTypeRequest{
     DEVICE_LIST_REQUEST = 0;
     DEVICE_DATA_REQUEST = 1;
     DEVICE_DATA_HISTORY_REQUEST = 2;
-    DEVICE_PROFILE_ID = 3;
+    DEVICE_PROFILE_ID_REQUEST = 3;
 
 }
 
@@ -81,6 +89,8 @@ enum MessageTypeResponse{
     DEVICE_LIST_RESPONSE = 0;
     DEVICE_DATA_RESPONSE = 1;
     DEVICE_DATA_HISTORY_RESPONSE = 2;
+    DEVICE_PROFILE_ID_RESPONSE = 3;
+
 }
 
 message CreateDeviceRequest{
@@ -88,5 +98,4 @@ message CreateDeviceRequest{
     string name = 2;
     string type = 3;
     string measurement = 4;
-    DevicePort port = 5;
 }

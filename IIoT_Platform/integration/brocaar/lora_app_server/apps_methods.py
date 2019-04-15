@@ -28,7 +28,6 @@ def device_prof_id(conn):
         c[a[i]['name']] = a[i]['id']
     return c
 
-
 def create_device(conn, request):
     try:
         device_pb2_grpc.DeviceServiceStub(conn).Create(request)

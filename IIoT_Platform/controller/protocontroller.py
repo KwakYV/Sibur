@@ -1,6 +1,7 @@
 from protos.iiot_pb2 import *
 from dao.iiotdao import getdevices, getdevicedata, gethistory
-from google.protobuf.timestamp_pb2 import *
+from integration.brocaar.lora_app_server.apps_methods import *
+from integration.brocaar.lora_app_server.connection import *
 import time
 
 
@@ -44,4 +45,15 @@ def getDeviceDataHistory(dev_lst, ts):
             hist.ts.seconds = int(time.mktime(val[0].timetuple()))
             hist.value = float(val[1])
     response = Response(type=MessageTypeResponse.Name(2), devicehistory=hist_response)
+    return response.SerializeToString()
+
+
+def getDeviceProfileID():
+    dict_device_profile = device_prof_id(connection())
+    client_response = DeviceProfileResponse()
+    for key, value in dict_device_profile.items():
+        prof = client_response.profile.add()
+        prof.name = str(key)
+        prof.id = str(value)
+    response = Response(type=MessageTypeResponse.Name(3), devprofid=client_response)
     return response.SerializeToString()
