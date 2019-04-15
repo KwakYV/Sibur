@@ -4,6 +4,7 @@ from protos.aps import deviceProfile_pb2
 from protos.aps import deviceProfile_pb2_grpc
 from protos.aps import device_pb2_grpc
 from google.protobuf.json_format import MessageToJson
+from integration.brocaar.lora_app_server.connection import *
 import json
 
 def apps_id(conn):
@@ -40,3 +41,5 @@ def create_keys(conn, request):
         device_pb2_grpc.DeviceServiceStub(conn).CreateKeys(request)
     except Exception as ex:
         raise ex
+
+#print(apps_id(connection()))
