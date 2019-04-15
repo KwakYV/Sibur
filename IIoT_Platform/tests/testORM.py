@@ -55,13 +55,14 @@ if __name__ == '__main__':
 import asyncio
 import websockets
 from protos.iiot_pb2 import *
-import json as jsn
+import json
 import time as tm
 from google.protobuf.timestamp_pb2 import *
+from google.protobuf.json_format import MessageToJson
 
 
 async def main():
-    async with websockets.connect('ws://192.168.10.11:8761/') as ws:
+    async with websockets.connect('ws://127.0.0.1:8766/') as ws: #ws://192.168.10.11:8761/
         list = ['343438356F37750C', '343438356B37620E', '001bc5035000043a']
         tms = Timestamp()
         tms.seconds = 1542716804000
@@ -77,9 +78,36 @@ async def main():
         devices = res.devicehistory
         print(devices.sensors)
 
+async def notmain():
+    async with websockets.connect('ws://127.0.0.1:8766/') as ws: #ws://192.168.10.11:8761/
+        req = Request(type=MessageTypeRequest.Name(3))
+        await ws.send(req.SerializeToString())
+        response = await ws.recv()
+        #print(response)
+        res = Response()
+        print(res)
+        res.ParseFromString(response)
+        print(res.type)
+        devices = res.devprofid
+        print(devices.profile)
 
+async def notmain_1():
+    async with websockets.connect('ws://127.0.0.1:8766/') as ws: #ws://192.168.10.11:8761/
+        req = Request(type=MessageTypeRequest.Name(4))
+        await ws.send(req.SerializeToString())
+        response = await ws.recv()
+        #print(response)
+        res = Response()
+        #print(res)
+        res.ParseFromString(response)
+        print(res.type)
+        devices = res.apps
+        dapp = MessageToJson(devices)
+        print(type(dapp))
+        js = json.loads(dapp)
+        print(js['app'])
 
-asyncio.get_event_loop().run_until_complete(main())
+asyncio.get_event_loop().run_until_complete(notmain_1())
 """
 
 from protos.iiot_pb2 import *
