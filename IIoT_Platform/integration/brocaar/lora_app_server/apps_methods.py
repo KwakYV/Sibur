@@ -22,6 +22,6 @@ def device_prof_id(conn):
     for i in range(count):
         c[a[i]['name']] = a[i]['id']
     return c
-#print(device_prof_id(run_device_profile(connection())))
-print(apps_id(connection()))
+#print(device_prof_id(connection()))
+#print(apps_id(connection()))
 
