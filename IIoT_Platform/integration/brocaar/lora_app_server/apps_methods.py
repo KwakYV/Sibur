@@ -6,6 +6,7 @@ from protos.aps import device_pb2_grpc
 from google.protobuf.json_format import MessageToJson
 import json
 
+
 def apps_id(conn):
     stub = application_pb2_grpc.ApplicationServiceStub(conn)
     response = stub.List(application_pb2.ListApplicationRequest(limit=10, offset=0))
@@ -17,6 +18,7 @@ def apps_id(conn):
         d[a[i]['name']] = a[i]['id']  #d['applicationID'] = a[i]['id']
     return d
 
+
 def device_prof_id(conn):
     stub = deviceProfile_pb2_grpc.DeviceProfileServiceStub(conn)
     response = stub.List(deviceProfile_pb2.ListDeviceProfileRequest(limit=10, offset=0))
@@ -27,6 +29,7 @@ def device_prof_id(conn):
     for i in range(count):
         c[a[i]['name']] = a[i]['id']
     return c
+
 
 def create_device(conn, request):
     try:
@@ -40,6 +43,7 @@ def create_keys(conn, request):
         device_pb2_grpc.DeviceServiceStub(conn).CreateKeys(request)
     except Exception as ex:
         raise ex
+
 
 def get_application_id(conn, name):
     dict = apps_id(conn)

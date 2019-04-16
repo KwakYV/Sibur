@@ -78,7 +78,7 @@ def create_device_func(create_device_request):
         conn = connection()
         app_id = get_application_id(conn, create_device_request.application)
         profile_id = get_profile_id(conn, create_device_request.profile)
-        device_request.device.application_id = app_id
+        device_request.device.application_id = int(app_id)
         device_request.device.device_profile_id = profile_id
         create_device(conn, device_request)
         create_keys(conn, create_keys_request)
