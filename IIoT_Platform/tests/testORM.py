@@ -55,8 +55,6 @@ if __name__ == '__main__':
 import asyncio
 import websockets
 from protos.iiot_pb2 import *
-import json as jsn
-import time as tm
 from google.protobuf.timestamp_pb2 import *
 
 
