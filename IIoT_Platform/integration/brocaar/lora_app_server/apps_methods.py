@@ -4,6 +4,7 @@ from protos.aps import deviceProfile_pb2
 from protos.aps import deviceProfile_pb2_grpc
 from protos.aps import device_pb2_grpc
 from google.protobuf.json_format import MessageToJson
+from integration.brocaar.lora_app_server.connection import *
 import json
 
 

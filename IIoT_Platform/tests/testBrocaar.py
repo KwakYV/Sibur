@@ -16,6 +16,7 @@ import asyncio
 import websockets
 
 """
+>>>>>>> 7e462621db01fd15050ee7080c6a4ffd538c262d
 
 def run():
     list_application_request = application_pb2.ListApplicationRequest(limit=10, search="SiburLab")
@@ -83,8 +84,6 @@ async def run():
 
 
 asyncio.get_event_loop().run_until_complete(run())
-
-
 
 
 
