@@ -59,11 +59,9 @@ def run():
         device_pb2_grpc.DeviceServiceStub(channel).Activate(activate_request)
 
 """
-
 def run():
     create_device_request = iiot_pb2.Request()
-    create_device_request.type = iiot_pb2.MessageTypeRequest.Name(4)
-
+    create_device_request.type = iiot_pb2.MessageTypeRequest.Name(5)
 
 if __name__ == '__main__':
     run()
