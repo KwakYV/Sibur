@@ -2,7 +2,6 @@ syntax = "proto3";
 
 package protos;
 
-import "google/protobuf/timestamp.proto";
 
 
 message DeviceMessageRequest{
@@ -13,7 +12,7 @@ message DeviceMessageRequest{
 // Сообщение, которое отправляется на устройство
 message FromDeviceMessage{
     bytes deveui = 1; //DevEui устройства
-    google.protobuf.Timestamp ts = 2; // Дата и время снятия показания
+    uint32 ts = 2; // Дата и время снятия показания
     int32 fcntup = 3; // Количество отправленных сообщений (счетчик сообщений)
     float battery = 4;//Уровень заряда батареи в вольтах
     int32 period = 5; // Текущий период отправки
@@ -26,8 +25,8 @@ message FromDeviceMessage{
 message PortData{
     DevicePort port = 1;
     int32 value = 2;
-    int32 min = 3;
-    int32 max = 4;
+    //int32 min = 3;
+    //int32 max = 4;
 }
 
 // Формат сообщения с настройками для отдельного устройства

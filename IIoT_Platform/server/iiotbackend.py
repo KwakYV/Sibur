@@ -35,23 +35,23 @@ logger.addHandler(loghandler)
 logger.addHandler(errorhandler)
 
 
-async def get_devices():
-    res = getDevices()
+async def get_devices_func():
+    res = get_devices()
     return res
 
 
-async def get_device_data(devdatareq):
+async def get_device_data_func(devdatareq):
     euilist = devdatareq.devEuiList
     tmpstr = ', '.join(["'"+val+"'" for val in euilist])
-    res = getDeviceData(tmpstr)
+    res = get_device_data(tmpstr)
     return res
 
 
-async def get_device_history(historyreq):
+async def get_device_history_func(historyreq):
     euilist = historyreq.devEuiList
     tmpstr = ', '.join(["'" + val + "'" for val in euilist])
     ts = historyreq.ts
-    res = getDeviceDataHistory(tmpstr, ts)
+    res = get_device_data_history(tmpstr, ts)
     return res
 
 async def get_dev_prof_id():
@@ -76,13 +76,13 @@ async def producer(message):
         req.ParseFromString(message)
 
         if req.type == MessageTypeRequest.Name(0):
-            return await get_devices()
+            return await get_devices_func()
 
         elif req.type == MessageTypeRequest.Name(1):
-            return await get_device_data(req.devicedata)
+            return await get_device_data_func(req.devicedata)
 
         elif req.type == MessageTypeRequest.Name(2):
-            return await get_device_history(req.devicehistory)
+            return await get_device_history_func(req.devicehistory)
 
         elif req.type == MessageTypeRequest.Name(3):
             return await get_dev_prof_id()

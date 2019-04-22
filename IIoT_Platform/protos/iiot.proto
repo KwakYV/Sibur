@@ -111,7 +111,7 @@ message CreateDeviceRequest{
     string name = 2;
     string type = 3;
     string measurement = 4;
-    DevicePort port = 5;
+    //DevicePort port = 5; // May be not useful if the multidevice registration will be standart
     string plant = 6;
     string appkey = 7;
     string application = 8;
