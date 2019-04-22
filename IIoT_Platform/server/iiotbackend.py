@@ -54,13 +54,16 @@ async def get_device_history_func(historyreq):
     res = get_device_data_history(tmpstr, ts)
     return res
 
+
 async def get_dev_prof_id():
     res = getDeviceProfileID()
     return res
 
+
 async def get_apps():
     res = getApps()
     return res
+
 
 async def create_device_request(create_request):
     try:
