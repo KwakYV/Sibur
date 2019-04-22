@@ -6,7 +6,7 @@ import time
 from protos.aps import device_pb2
 
 
-def getDevices():
+def get_devices():
     devices = getdevices()
     client_response = ClientDevicesResponse()
     for device in devices:
@@ -17,7 +17,7 @@ def getDevices():
     return response.SerializeToString()
 
 
-def getDeviceData(data):
+def get_device_data(data):
     devicedata = getdevicedata(data)
     res_device_data = DeviceDataResponse()
     for devdata in devicedata:
@@ -29,7 +29,7 @@ def getDeviceData(data):
     return response.SerializeToString()
 
 
-def getDeviceDataHistory(dev_lst, ts):
+def get_device_data_history(dev_lst, ts):
     history = gethistory(dev_lst, ts)
     hist_response = DeviceDataHistoryResponse()
     dict = {}
@@ -68,6 +68,8 @@ def getApps():
         prof.appsid = str(value)
     response = Response(type=MessageTypeResponse.Name(4), apps=client_response)
     return response.SerializeToString()
+
+
 # Create device function
 # create_device_request - CreateDeviceRequest message from iiot.proto
 #
