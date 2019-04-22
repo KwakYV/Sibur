@@ -2,6 +2,7 @@ from protos.iiot_pb2 import *
 from dao.iiotdao import getdevices, getdevicedata, gethistory
 from integration.brocaar.lora_app_server.apps_methods import *
 from integration.brocaar.lora_app_server.connection import *
+from dao.crud_db import *
 import time
 from protos.aps import device_pb2
 
@@ -72,9 +73,10 @@ def getApps():
 # create_device_request - CreateDeviceRequest message from iiot.proto
 #
 def create_device_func(create_device_request):
-
+    #print('hey')
     device_request = device_pb2.CreateDeviceRequest()
     device_request.device.dev_eui = create_device_request.dev_eui
+    #print(create_device_request.dev_eui)
     device_request.device.name = create_device_request.name
     device_request.device.description = create_device_request.name
 
@@ -92,3 +94,7 @@ def create_device_func(create_device_request):
         create_keys(conn, create_keys_request)
     except Exception as ex:
         raise ex
+'''
+    try:
+        comit_Device_Table(device_request.device.deveui, )
+'''
