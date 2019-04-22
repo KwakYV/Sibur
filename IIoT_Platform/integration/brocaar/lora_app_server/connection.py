@@ -1,7 +1,6 @@
 import grpc
 import configparser
 
-
 ########################################################
 # Read configuration parameters for web  socket server #
 ########################################################
@@ -9,7 +8,6 @@ config = configparser.ConfigParser()
 config.read('../configs/integration.properties')
 cert_path = config['certificate.settings']
 host_settings = config['host.settings']
-
 
 def connection():
     with open(cert_path['root_cert'], 'rb') as f:
