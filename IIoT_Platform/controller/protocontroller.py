@@ -75,11 +75,11 @@ def getApps():
 # create_device_request - CreateDeviceRequest message from iiot.proto
 #
 def create_device_func(create_device_request):
-    #print('hey')
     device_request = device_pb2.CreateDeviceRequest()
     device_request.device.dev_eui = create_device_request.dev_eui
     #print(create_device_request.dev_eui)
     device_request.device.name = create_device_request.name
+    #print(device_request.device.name)
     device_request.device.description = create_device_request.name
 
     create_keys_request = device_pb2.CreateDeviceKeysRequest()
@@ -96,7 +96,15 @@ def create_device_func(create_device_request):
         create_keys(conn, create_keys_request)
     except Exception as ex:
         raise ex
-'''
+
     try:
-        comit_Device_Table(device_request.device.deveui, )
-'''
+        bytes_deveui = bytes.fromhex(create_device_request.dev_eui)
+        str_deveui = create_device_request.dev_eui
+        name = create_device_request.name
+        measurementid = read_Measures()
+        devicetypeid = read_DeviceType()
+        factoryid = read_Factoryid()
+
+        comit_Device_Table(bytes_deveui, str_deveui, name, devicetypeid, measurementid, factoryid)
+    except Exception as ex:
+        raise ex
