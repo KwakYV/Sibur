@@ -11,8 +11,7 @@ CREATE TABLE iiot.devicetype
         code varchar(50) NOT NULL,
         name varchar(100) NULL,
         description varchar(150) NULL,
-        vendor varchar(100) NULL,
-        payloadlen integer NULL
+        vendor varchar(100) NULL
 )
 TABLESPACE      tbs_iiot
 ;

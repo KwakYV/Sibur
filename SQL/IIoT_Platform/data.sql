@@ -8,7 +8,7 @@ DROP TABLE IF EXISTS iiot.data CASCADE
 CREATE TABLE iiot.data
 (
 	id integer NOT NULL   DEFAULT NEXTVAL(('iiot.iiotseq'::text)::regclass),
-	devid integer NOT NULL,
+	sensor_id integer NOT NULL,
 	gateid integer NOT NULL,
 	data bytea NULL,
 	effdt date NOT NULL,

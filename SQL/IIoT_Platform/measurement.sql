@@ -25,7 +25,3 @@ ALTER TABLE iiot.measurement ADD CONSTRAINT pk_measurement
         PRIMARY KEY (id)
 ;
 
-/* Create Table Comments, Sequences for Autonumber Columns */
-
-CREATE SEQUENCE iiot.iiotseq INCREMENT 1 START 1
-;

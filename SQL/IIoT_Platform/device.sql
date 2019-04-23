@@ -12,9 +12,7 @@ CREATE TABLE iiot.device
         deveuistr varchar(50) NOT NULL,
         name varchar(250) NULL,
         devicetypeid integer NULL,
-        measurementid integer NOT NULL,
-        factoryid integer NOT NULL,
-	portnumber integer not null default 0
+        factoryid integer NOT NULL
 )
 TABLESPACE      tbs_iiot
 ;
@@ -26,5 +24,5 @@ ALTER TABLE iiot.device ADD CONSTRAINT "pk_device"
 ;
 
 ALTER TABLE iiot.device  
-  ADD CONSTRAINT idx_dev_uniq UNIQUE (deveui, portnumber)
+  ADD CONSTRAINT idx_dev_uniq UNIQUE (deveui)
 ;
