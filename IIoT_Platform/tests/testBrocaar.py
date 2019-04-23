@@ -85,7 +85,7 @@ async def run():
     create_device_request.create_device.appkey = '7B386310000000007B3863101D481155'
     create_device_request.create_device.profile = 'Sibur profile'
     create_device_request.create_device.application = 'Sibur'
-    create_device_request.create_device.plant = 'ZabSib'
+    create_device_request.create_device.plant = 'ZapSib'
     async with websockets.connect('ws://127.0.0.1:8766/') as ws:
         await ws.send(create_device_request.SerializeToString())
         response = await ws.recv()

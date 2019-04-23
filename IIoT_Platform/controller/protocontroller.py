@@ -92,23 +92,12 @@ def create_device_func(create_device_request):
         device_request.device.device_profile_id = profile_id
         create_device(conn, device_request)
         create_keys(conn, create_keys_request)
-        # TODO: Here should be call of function for storing device meta data into iiot_db.
+        commit_device_table(create_device_request)
     except Exception as ex:
         raise ex
     finally:
         delete_keys(conn, device_pb2.DeleteDeviceKeysRequest(dev_eui=create_device_request.dev_eui))
         delete_device(conn, device_pb2.DeleteDeviceRequest(dev_eui=create_device_request.dev_eui))
         conn.close()
-'''
-   try:
-        bytes_dev_eui = bytes.fromhex(create_device_request.dev_eui)
-        str_dev_eui = create_device_request.dev_eui
-        name = create_device_request.name
-        measurement_id = get_measurement_id(create_device_request.measurement)
-        device_type_id = get_device_type(create_device_request.type)
-        factory_id = get_factory_id(create_device_request.plant)
-        portnumber = 0 # TODO: Prepare algorithm for getting device's port number
-        commit_device_table(bytes_dev_eui, str_dev_eui, name, device_type_id, measurement_id, factory_id, portnumber)
-    except Exception as ex:
-        raise ex
-'''
+
+

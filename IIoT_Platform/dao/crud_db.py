@@ -50,15 +50,15 @@ def commit_data_table(devid, gateid, bytedata, effdt, ppndt, fcntup, freq, rssi,
         logger.error(ex)
 
 
-def commit_device_table(deveui, deveuistr, name, devicetypeid, measurementid, factoryid, portnumber):
+def commit_device_table(create_device_request):
     data = Device(
-        deveui=deveui,
-        deveuistr=deveuistr,
-        name=name,
-        devicetypeid=devicetypeid,
-        measurementid=measurementid,  # '2017-06-22 20:10:25-07',
-        factoryid=factoryid,
-        portnumber=portnumber
+        deveui=bytes.fromhex(create_device_request.dev_eui),
+        deveuistr=create_device_request.dev_eui,
+        name=create_device_request.name,
+        devicetypeid=get_device_type(create_device_request.type),
+        measurementid=get_measurement_id(create_device_request.measurement),
+        factoryid=get_factory_id(create_device_request.plant),
+        portnumber=0 #TODO: Prepare algorithm for getting device's port number
     )
     s.add(data)
     s.commit()
@@ -75,17 +75,17 @@ def get_device_id(dev):
 
 
 def get_measurement_id(measurement):
-    data_m_id = s.query(Measurement).filter(Measurement.description == measurement)[0]
+    data_m_id = s.query(Measurement).filter(Measurement.code == measurement)[0]
     return data_m_id.id
 
 
-def get_device_type(type):
-    data_type_id = s.query(Devicetype).filter(Devicetype.vendor == type)[0]
+def get_device_type(type_code):
+    data_type_id = s.query(Devicetype).filter(Devicetype.code == type_code)[0]
     return data_type_id.id
 
 
 def get_factory_id(plant):
-    data_factory_id = s.query(Factory).filter(Factory.name == plant)[0]
+    data_factory_id = s.query(Factory).filter(Factory.code == plant)[0]
     return data_factory_id.id
 
 
@@ -107,3 +107,10 @@ def example(deveui):
         device_type = device.devicetypeid
     return device_type
 
+
+def delete_device_db(dev_eui):
+    try:
+        data_device = s.query(Device).filter(Device.deveui == dev_eui)[0]
+        data_device.delete(synchronize_session=False)
+    except Exception as exception:
+        raise exception

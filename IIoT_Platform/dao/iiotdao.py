@@ -25,8 +25,8 @@ def getdevicedata(devlist):
     session = Session()
     # session.execute(text(sql), params={"lst": devlist}) - данная конструкция не заработала
     #  запрос возвращает пустое множество, поэтому пошли в лоб !!!
-    devicedata = session.execute(text(sql.replace(':lst',devlist))).fetchall()
-    return devicedata
+    device_data = session.execute(text(sql.replace(':lst',devlist))).fetchall()
+    return device_data
 
 
 def gethistory(devlist, ts):
