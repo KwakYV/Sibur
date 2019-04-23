@@ -5,7 +5,6 @@ import "protos/sibur/device.proto";
 
 package protos;
 
-
 service Iot{
     rpc GetDevices(Request) returns (Response) {}
 }
@@ -118,4 +117,3 @@ message CreateDeviceRequest{
     string application = 8;
     string profile = 9;
 }
-

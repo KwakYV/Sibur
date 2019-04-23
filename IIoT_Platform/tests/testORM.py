@@ -91,6 +91,19 @@ async def notmain():
         devices = res.devprofid
         print(devices.profile)
 
+async def notmain_2():
+    async with websockets.connect('ws://127.0.0.1:8766/') as ws: #ws://192.168.10.11:8761/
+        req = Request(type=MessageTypeRequest.Name(5))
+        await ws.send(req.SerializeToString())
+        response = await ws.recv()
+        #print(response)
+        res = Response()
+        print(res)
+        res.ParseFromString(response)
+        print(res.type)
+        devices = res.devprofid
+        print(devices.profile)
+
 async def notmain_1():
     async with websockets.connect('ws://127.0.0.1:8766/') as ws: #ws://192.168.10.11:8761/
         req = Request(type=MessageTypeRequest.Name(4))

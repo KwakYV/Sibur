@@ -62,7 +62,17 @@ if __name__ == '__main__':
 
 
 """
-
+"""
+    create_device_request.create_device.name = 'TD___11'
+    create_device_request.create_device.dev_eui = '363833355C38770F'
+    create_device_request.create_device.type = 'TD---11'
+    create_device_request.create_device.measurement = "Celsius"
+    create_device_request.create_device.port = 0
+    create_device_request.create_device.appkey = '1C38770F000000001C38770F3A480D4B'
+    create_device_request.create_device.profile = '868_ABP'
+    create_device_request.create_device.application = 'SiburLab'
+    create_device_request.create_device.plant = 'ZapSib'
+"""
 
 async def run():
     create_device_request = iiot_pb2.Request()
@@ -81,8 +91,4 @@ async def run():
         response = await ws.recv()
         print(response)
 
-
 asyncio.get_event_loop().run_until_complete(run())
-
-
-

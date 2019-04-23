@@ -29,6 +29,48 @@
 2019-03-20 10:38:13,411 - IIot platform - ERROR - 'EnumTypeWrapper' object has no attribute 'DEVICE_LIST_REQUEST'
 2019-03-20 10:40:09,019 - IIot platform - ERROR - 'EnumTypeWrapper' object has no attribute 'DEVICE_LIST_REQUEST'
 2019-03-20 10:52:01,963 - IIot platform - ERROR - 'EnumTypeWrapper' object has no attribute 'DEVICE_DATA_HISTORY_RESPONSE'
+<<<<<<< HEAD
+2019-04-12 17:51:09,245 - IIot platform - ERROR - invalid literal for int() with base 10: 'edb36d76-cd64-483c-a486-2306b47d6a74'
+2019-04-12 17:56:42,402 - IIot platform - ERROR - invalid literal for int() with base 10: 'edb36d76-cd64-483c-a486-2306b47d6a74'
+2019-04-12 17:58:04,705 - IIot platform - ERROR - invalid literal for int() with base 10: 'edb36d76-cd64-483c-a486-2306b47d6a74'
+2019-04-12 17:58:42,826 - IIot platform - ERROR - invalid literal for int() with base 10: 'edb36d76-cd64-483c-a486-2306b47d6a74'
+2019-04-12 18:05:57,836 - IIot platform - ERROR - 'edb36d76-cd64-483c-a486-2306b47d6a74' has type str, but expected one of: int, long
+2019-04-12 18:06:29,215 - IIot platform - ERROR - 'edb36d76-cd64-483c-a486-2306b47d6a74' has type str, but expected one of: int, long
+2019-04-12 18:08:39,607 - IIot platform - ERROR - 'edb36d76-cd64-483c-a486-2306b47d6a74' has type str, but expected one of: int, long
+2019-04-12 18:09:13,706 - IIot platform - ERROR - 'edb36d76-cd64-483c-a486-2306b47d6a74' has type str, but expected one of: int, long
+2019-04-15 10:35:06,043 - IIot platform - ERROR - profiles
+2019-04-15 10:41:24,431 - IIot platform - ERROR - non-hexadecimal number found in fromhex() arg at position 8
+2019-04-15 10:43:24,030 - IIot platform - ERROR - non-hexadecimal number found in fromhex() arg at position 8
+2019-04-15 10:43:59,934 - IIot platform - ERROR - non-hexadecimal number found in fromhex() arg at position 8
+2019-04-15 17:43:01,893 - IIot platform - ERROR - [Errno 2] No such file or directory: '/Users/kwak_yv/fullchain.pem'
+2019-04-22 13:31:46,040 - IIot platform - ERROR - <_Rendezvous of RPC that terminated with:
+	status = StatusCode.UNAUTHENTICATED
+	details = "authentication failed: jwt parse error: signature is invalid"
+	debug_error_string = "{"created":"@1555929106.040262000","description":"Error received from peer","file":"src/core/lib/surface/call.cc","file_line":1036,"grpc_message":"authentication failed: jwt parse error: signature is invalid","grpc_status":16}"
+>
+2019-04-22 13:32:51,662 - IIot platform - ERROR - <_Rendezvous of RPC that terminated with:
+	status = StatusCode.UNAUTHENTICATED
+	details = "authentication failed: jwt parse error: signature is invalid"
+	debug_error_string = "{"created":"@1555929171.662318000","description":"Error received from peer","file":"src/core/lib/surface/call.cc","file_line":1036,"grpc_message":"authentication failed: jwt parse error: signature is invalid","grpc_status":16}"
+>
+2019-04-22 13:39:48,639 - IIot platform - ERROR - <_Rendezvous of RPC that terminated with:
+	status = StatusCode.UNAUTHENTICATED
+	details = "authentication failed: jwt parse error: signature is invalid"
+	debug_error_string = "{"created":"@1555929588.639358000","description":"Error received from peer","file":"src/core/lib/surface/call.cc","file_line":1036,"grpc_message":"authentication failed: jwt parse error: signature is invalid","grpc_status":16}"
+>
+2019-04-22 13:54:17,687 - IIot platform - ERROR - <_Rendezvous of RPC that terminated with:
+	status = StatusCode.ALREADY_EXISTS
+	details = "object already exists"
+	debug_error_string = "{"created":"@1555930457.687595000","description":"Error received from peer","file":"src/core/lib/surface/call.cc","file_line":1036,"grpc_message":"object already exists","grpc_status":6}"
+>
+2019-04-22 15:57:47,588 - IIot platform - ERROR - <_Rendezvous of RPC that terminated with:
+	status = StatusCode.ALREADY_EXISTS
+	details = "object already exists"
+	debug_error_string = "{"created":"@1555937867.588092000","description":"Error received from peer","file":"src/core/lib/surface/call.cc","file_line":1036,"grpc_message":"object already exists","grpc_status":6}"
+>
+2019-04-22 18:34:53,726 - IIot platform - ERROR - type object 'Devicetype' has no attribute 'description'
+2019-04-22 18:38:18,763 - IIot platform - ERROR - type object 'Devicetype' has no attribute 'description'
+=======
 2019-04-15 16:50:34,267 - IIot platform - ERROR - <_Rendezvous of RPC that terminated with:
 	status = StatusCode.UNAVAILABLE
 	details = "Connect Failed"
@@ -48,3 +90,4 @@
 	details = "authentication failed: jwt parse error: illegal base64 data at input byte 1"
 	debug_error_string = "{"created":"@1555944294.271518000","description":"Error received from peer","file":"src/core/lib/surface/call.cc","file_line":1036,"grpc_message":"authentication failed: jwt parse error: illegal base64 data at input byte 1","grpc_status":16}"
 >
+>>>>>>> ec10e3623600a56d012ec06370f50f000e8e3a6f
