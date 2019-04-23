@@ -9,6 +9,12 @@ message DeviceMessageRequest{
     repeated ToDeviceMessage messages = 2;
 }
 
+message DeviceInfo{
+    int32 model = 1; // тип устройства
+    int32 version = 2;// версия прошивки
+    FromDeviceMessage body = 3;
+}
+
 // Сообщение, которое отправляется на устройство
 message FromDeviceMessage{
     bytes deveui = 1; //DevEui устройства

@@ -29,6 +29,7 @@
 2019-03-20 10:38:13,411 - IIot platform - ERROR - 'EnumTypeWrapper' object has no attribute 'DEVICE_LIST_REQUEST'
 2019-03-20 10:40:09,019 - IIot platform - ERROR - 'EnumTypeWrapper' object has no attribute 'DEVICE_LIST_REQUEST'
 2019-03-20 10:52:01,963 - IIot platform - ERROR - 'EnumTypeWrapper' object has no attribute 'DEVICE_DATA_HISTORY_RESPONSE'
+<<<<<<< HEAD
 2019-04-12 17:51:09,245 - IIot platform - ERROR - invalid literal for int() with base 10: 'edb36d76-cd64-483c-a486-2306b47d6a74'
 2019-04-12 17:56:42,402 - IIot platform - ERROR - invalid literal for int() with base 10: 'edb36d76-cd64-483c-a486-2306b47d6a74'
 2019-04-12 17:58:04,705 - IIot platform - ERROR - invalid literal for int() with base 10: 'edb36d76-cd64-483c-a486-2306b47d6a74'
@@ -69,3 +70,24 @@
 >
 2019-04-22 18:34:53,726 - IIot platform - ERROR - type object 'Devicetype' has no attribute 'description'
 2019-04-22 18:38:18,763 - IIot platform - ERROR - type object 'Devicetype' has no attribute 'description'
+=======
+2019-04-15 16:50:34,267 - IIot platform - ERROR - <_Rendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "Connect Failed"
+	debug_error_string = "{"created":"@1555336234.265345000","description":"Failed to create subchannel","file":"src/core/ext/filters/client_channel/client_channel.cc","file_line":2706,"referenced_errors":[{"created":"@1555336234.265332000","description":"Pick Cancelled","file":"src/core/ext/filters/client_channel/lb_policy/pick_first/pick_first.cc","file_line":242,"referenced_errors":[{"created":"@1555336234.265139000","description":"Connect Failed","file":"src/core/ext/filters/client_channel/subchannel.cc","file_line":867,"grpc_status":14,"referenced_errors":[{"created":"@1555336234.265097000","description":"Failed to connect to remote host: FD shutdown","file":"src/core/lib/iomgr/ev_poll_posix.cc","file_line":532,"grpc_status":14,"os_error":"Timeout occurred","referenced_errors":[{"created":"@1555336234.265053000","description":"connect() timed out","file":"src/core/lib/iomgr/tcp_client_posix.cc","file_line":119}],"target_address":"ipv4:192.168.10.28:8080"}]}]}]}"
+>
+2019-04-15 16:53:22,178 - IIot platform - ERROR - '8' has type str, but expected one of: int, long
+2019-04-19 17:22:28,610 - IIot platform - ERROR - 'SiburLab'
+2019-04-19 17:28:23,894 - IIot platform - ERROR - 'SiburLab'
+2019-04-19 17:29:22,713 - IIot platform - ERROR - 'SiburLab'
+2019-04-22 17:43:12,822 - IIot platform - ERROR - <_Rendezvous of RPC that terminated with:
+	status = StatusCode.UNAUTHENTICATED
+	details = "authentication failed: jwt parse error: illegal base64 data at input byte 1"
+	debug_error_string = "{"created":"@1555944192.822591000","description":"Error received from peer","file":"src/core/lib/surface/call.cc","file_line":1036,"grpc_message":"authentication failed: jwt parse error: illegal base64 data at input byte 1","grpc_status":16}"
+>
+2019-04-22 17:44:54,271 - IIot platform - ERROR - <_Rendezvous of RPC that terminated with:
+	status = StatusCode.UNAUTHENTICATED
+	details = "authentication failed: jwt parse error: illegal base64 data at input byte 1"
+	debug_error_string = "{"created":"@1555944294.271518000","description":"Error received from peer","file":"src/core/lib/surface/call.cc","file_line":1036,"grpc_message":"authentication failed: jwt parse error: illegal base64 data at input byte 1","grpc_status":16}"
+>
+>>>>>>> ec10e3623600a56d012ec06370f50f000e8e3a6f

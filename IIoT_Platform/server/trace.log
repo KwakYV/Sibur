@@ -339,6 +339,7 @@
 2019-03-27 16:23:54,491 - IIot platform - INFO - Start back-end server
 2019-03-27 16:23:54,492 - IIot platform - INFO - Incoming message <======b'\n\x1bDEVICE_DATA_HISTORY_REQUEST\x1a-\n\x10343438356F37750C\n\x10343438356B37620E\x12\x07\x08\xa0\x97\xd9\x88\xf3,'
 2019-03-27 16:23:54,507 - IIot platform - INFO - Outgoing message =======>b'\n\x1cDEVICE_DATA_HISTORY_RESPONSE"\x87\x01\n8\n\x10343438356F37750C2\x11\n\x06\x08\xef\x9f\xad\xe4\x05\x11\x00\x00\x00\x00\x00\x00:@2\x11\n\x06\x08\xb4\xa0\xad\xe4\x05\x11\x00\x00\x00\x00\x00\x00\x00@\nK\n\x10343438356B37620E2\x11\n\x06\x08\x93\xa1\xad\xe4\x05\x11\x00\x00\x00\x00\x00\x80F@2\x11\n\x06\x08\x93\xa1\xad\xe4\x05\x11\x00\x00\x00\x00\x00@P@2\x11\n\x06\x08\xdc\xa4\xad\xe4\x05\x11\x00\x00\x00\x00\x00\xc0R@'
+<<<<<<< HEAD
 2019-04-12 17:51:04,091 - IIot platform - INFO - Start back-end server
 2019-04-12 17:51:04,096 - IIot platform - INFO - Incoming message <======b'\n\x19DEVICE_PROFILE_ID_REQUEST'
 2019-04-12 17:51:09,245 - IIot platform - ERROR - invalid literal for int() with base 10: 'edb36d76-cd64-483c-a486-2306b47d6a74'
@@ -707,3 +708,63 @@ devprofid {
 2019-04-22 18:41:01,729 - IIot platform - INFO - Start back-end server
 2019-04-22 18:41:01,730 - IIot platform - INFO - Incoming message <======b'\n\x15CREATE_DEVICE_REQUEST"j\n\x10363833355C38770F\x12\x07TD___11\x1a\x07TD---11"\x07Celsius2\x06ZapSib: 1C38770F000000001C38770F3A480D4BB\x08SiburLabJ\x07868_ABP'
 2019-04-22 18:41:06,845 - IIot platform - INFO - Outgoing message =======>Device created
+=======
+2019-04-15 16:50:13,905 - IIot platform - INFO - Start back-end server
+2019-04-15 16:50:13,906 - IIot platform - INFO - Incoming message <======b'\n\x15CREATE_DEVICE_REQUEST"f\n\x10363833355C38770F\x12\x05TD_11\x1a\x05TD-11"\x07Celsius2\x06ZabSib: 1C38770F000000001C38770F3A480D4BB\x08SiburLabJ\x07868_ABP'
+2019-04-15 16:50:34,267 - IIot platform - ERROR - <_Rendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "Connect Failed"
+	debug_error_string = "{"created":"@1555336234.265345000","description":"Failed to create subchannel","file":"src/core/ext/filters/client_channel/client_channel.cc","file_line":2706,"referenced_errors":[{"created":"@1555336234.265332000","description":"Pick Cancelled","file":"src/core/ext/filters/client_channel/lb_policy/pick_first/pick_first.cc","file_line":242,"referenced_errors":[{"created":"@1555336234.265139000","description":"Connect Failed","file":"src/core/ext/filters/client_channel/subchannel.cc","file_line":867,"grpc_status":14,"referenced_errors":[{"created":"@1555336234.265097000","description":"Failed to connect to remote host: FD shutdown","file":"src/core/lib/iomgr/ev_poll_posix.cc","file_line":532,"grpc_status":14,"os_error":"Timeout occurred","referenced_errors":[{"created":"@1555336234.265053000","description":"connect() timed out","file":"src/core/lib/iomgr/tcp_client_posix.cc","file_line":119}],"target_address":"ipv4:192.168.10.28:8080"}]}]}]}"
+>
+2019-04-15 16:50:34,272 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-04-15 16:53:22,148 - IIot platform - INFO - Start back-end server
+2019-04-15 16:53:22,148 - IIot platform - INFO - Incoming message <======b'\n\x15CREATE_DEVICE_REQUEST"f\n\x10363833355C38770F\x12\x05TD_11\x1a\x05TD-11"\x07Celsius2\x06ZabSib: 1C38770F000000001C38770F3A480D4BB\x08SiburLabJ\x07868_ABP'
+2019-04-15 16:53:22,178 - IIot platform - ERROR - '8' has type str, but expected one of: int, long
+2019-04-15 16:53:22,179 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-04-15 16:54:07,319 - IIot platform - INFO - Start back-end server
+2019-04-15 16:54:07,320 - IIot platform - INFO - Incoming message <======b'\n\x15CREATE_DEVICE_REQUEST"f\n\x10363833355C38770F\x12\x05TD_11\x1a\x05TD-11"\x07Celsius2\x06ZabSib: 1C38770F000000001C38770F3A480D4BB\x08SiburLabJ\x07868_ABP'
+2019-04-15 16:54:07,368 - IIot platform - INFO - Outgoing message =======>Device created
+2019-04-19 17:20:33,491 - IIot platform - INFO - Start back-end server
+2019-04-19 17:20:33,493 - IIot platform - INFO - Incoming message <======b'\n\x0cAPPS_REQUEST"f\n\x10363833355C38770F\x12\x05TD_11\x1a\x05TD-11"\x07Celsius2\x06ZabSib: 1C38770F000000001C38770F3A480D4BB\x08SiburLabJ\x07868_ABP'
+2019-04-19 17:20:33,574 - IIot platform - INFO - Outgoing message =======>b'\n\rAPPS_RESPONSE2\x0c\n\n\n\x05Sibur\x12\x011'
+2019-04-19 17:22:28,562 - IIot platform - INFO - Start back-end server
+2019-04-19 17:22:28,562 - IIot platform - INFO - Incoming message <======b'\n\x15CREATE_DEVICE_REQUEST"f\n\x10363833355C38770F\x12\x05TD_11\x1a\x05TD-11"\x07Celsius2\x06ZabSib: 1C38770F000000001C38770F3A480D4BB\x08SiburLabJ\x07868_ABP'
+2019-04-19 17:22:28,610 - IIot platform - ERROR - 'SiburLab'
+2019-04-19 17:22:28,615 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-04-19 17:28:23,837 - IIot platform - INFO - Start back-end server
+2019-04-19 17:28:23,837 - IIot platform - INFO - Incoming message <======b'\n\x15CREATE_DEVICE_REQUEST"f\n\x10363833355C38770F\x12\x05TD_11\x1a\x05TD-11"\x07Celsius2\x06ZabSib: 1C38770F000000001C38770F3A480D4BB\x08SiburLabJ\x07868_ABP'
+2019-04-19 17:28:23,894 - IIot platform - ERROR - 'SiburLab'
+2019-04-19 17:28:23,895 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-04-19 17:29:22,660 - IIot platform - INFO - Start back-end server
+2019-04-19 17:29:22,661 - IIot platform - INFO - Incoming message <======b'\n\x15CREATE_DEVICE_REQUEST"f\n\x10363833355C38770F\x12\x05TD_11\x1a\x05TD-11"\x07Celsius2\x06ZabSib: 1C38770F000000001C38770F3A480D4BB\x08SiburLabJ\x07868_ABP'
+2019-04-19 17:29:22,713 - IIot platform - ERROR - 'SiburLab'
+2019-04-19 17:29:22,714 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-04-19 17:31:24,999 - IIot platform - INFO - Start back-end server
+2019-04-19 17:31:25,000 - IIot platform - INFO - Incoming message <======b'\n\x15CREATE_DEVICE_REQUEST"i\n\x10363833355C38770F\x12\x05TD_11\x1a\x05TD-11"\x07Celsius2\x06ZabSib: 1C38770F000000001C38770F3A480D4BB\x05SiburJ\rSibur profile'
+2019-04-19 17:31:25,103 - IIot platform - INFO - Outgoing message =======>Device created
+2019-04-22 11:10:38,604 - IIot platform - INFO - Start back-end server
+2019-04-22 11:10:38,605 - IIot platform - INFO - Incoming message <======b'\n\x15CREATE_DEVICE_REQUEST"i\n\x10363833357B386B10\x12\x05TD_11\x1a\x05TD-11"\x07Celsius2\x06ZabSib: 7B386310000000007B3863101D481155B\x05SiburJ\rSibur profile'
+2019-04-22 11:10:38,723 - IIot platform - INFO - Outgoing message =======>Device created
+2019-04-22 17:43:12,750 - IIot platform - INFO - Start back-end server
+2019-04-22 17:43:12,751 - IIot platform - INFO - Incoming message <======b'\n\x15CREATE_DEVICE_REQUEST"i\n\x10363833357B386B10\x12\x05TD_11\x1a\x05TD-11"\x07Celsius2\x06ZabSib: 7B386310000000007B3863101D481155B\x05SiburJ\rSibur profile'
+2019-04-22 17:43:12,822 - IIot platform - ERROR - <_Rendezvous of RPC that terminated with:
+	status = StatusCode.UNAUTHENTICATED
+	details = "authentication failed: jwt parse error: illegal base64 data at input byte 1"
+	debug_error_string = "{"created":"@1555944192.822591000","description":"Error received from peer","file":"src/core/lib/surface/call.cc","file_line":1036,"grpc_message":"authentication failed: jwt parse error: illegal base64 data at input byte 1","grpc_status":16}"
+>
+2019-04-22 17:43:12,826 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-04-22 17:44:54,226 - IIot platform - INFO - Start back-end server
+2019-04-22 17:44:54,227 - IIot platform - INFO - Incoming message <======b'\n\x15CREATE_DEVICE_REQUEST"i\n\x10363833357B386B10\x12\x05TD_11\x1a\x05TD-11"\x07Celsius2\x06ZabSib: 7B386310000000007B3863101D481155B\x05SiburJ\rSibur profile'
+2019-04-22 17:44:54,271 - IIot platform - ERROR - <_Rendezvous of RPC that terminated with:
+	status = StatusCode.UNAUTHENTICATED
+	details = "authentication failed: jwt parse error: illegal base64 data at input byte 1"
+	debug_error_string = "{"created":"@1555944294.271518000","description":"Error received from peer","file":"src/core/lib/surface/call.cc","file_line":1036,"grpc_message":"authentication failed: jwt parse error: illegal base64 data at input byte 1","grpc_status":16}"
+>
+2019-04-22 17:44:54,273 - IIot platform - INFO - Outgoing message =======>For more details open error.log in working directory
+2019-04-22 17:45:18,171 - IIot platform - INFO - Start back-end server
+2019-04-22 17:45:18,172 - IIot platform - INFO - Incoming message <======b'\n\x15CREATE_DEVICE_REQUEST"i\n\x10363833357B386B10\x12\x05TD_11\x1a\x05TD-11"\x07Celsius2\x06ZabSib: 7B386310000000007B3863101D481155B\x05SiburJ\rSibur profile'
+2019-04-22 17:45:18,285 - IIot platform - INFO - Outgoing message =======>Device created
+2019-04-22 20:59:00,779 - IIot platform - INFO - Start back-end server
+2019-04-22 20:59:00,780 - IIot platform - INFO - Incoming message <======b'\n\x15CREATE_DEVICE_REQUEST"i\n\x10363833357B386B10\x12\x05TD_11\x1a\x05TD-11"\x07Celsius2\x06ZabSib: 7B386310000000007B3863101D481155B\x05SiburJ\rSibur profile'
+2019-04-22 20:59:00,958 - IIot platform - INFO - Outgoing message =======>Device created
+>>>>>>> ec10e3623600a56d012ec06370f50f000e8e3a6f
