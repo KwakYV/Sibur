@@ -19,7 +19,7 @@ CREATE TABLE iiot.data
 	sf integer NULL,
 	snr numeric(10,4) NULL
 )
-TABLESPACE	tbs_iiot
+TABLESPACE tbs_iiot
 ;
 
 /* Create Primary Keys, Indexes, Uniques, Checks */

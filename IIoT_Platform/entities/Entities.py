@@ -63,6 +63,7 @@ class Device(Base):
     devicetypeid = Column('devicetypeid', Integer, ForeignKey('devicetype.id'))
     measurementid = Column('measurementid', Integer, ForeignKey('measurement.id'), nullable=False)
     factoryid = Column('factoryid', Integer, ForeignKey('factory.id'), nullable=False)
+    portnumber = Column('portnumber', Integer, nullable=False)
 
 class Lndevparam(Base):
     __tablename__='ln_devparam_dev'

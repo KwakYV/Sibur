@@ -77,9 +77,7 @@ def getApps():
 def create_device_func(create_device_request):
     device_request = device_pb2.CreateDeviceRequest()
     device_request.device.dev_eui = create_device_request.dev_eui
-    #print(create_device_request.dev_eui)
     device_request.device.name = create_device_request.name
-    #print(device_request.device.name)
     device_request.device.description = create_device_request.name
 
     create_keys_request = device_pb2.CreateDeviceKeysRequest()
@@ -94,17 +92,23 @@ def create_device_func(create_device_request):
         device_request.device.device_profile_id = profile_id
         create_device(conn, device_request)
         create_keys(conn, create_keys_request)
+        # TODO: Here should be call of function for storing device meta data into iiot_db.
     except Exception as ex:
         raise ex
-
-    try:
-        bytes_deveui = bytes.fromhex(create_device_request.dev_eui)
-        str_deveui = create_device_request.dev_eui
+    finally:
+        delete_keys(conn, device_pb2.DeleteDeviceKeysRequest(dev_eui=create_device_request.dev_eui))
+        delete_device(conn, device_pb2.DeleteDeviceRequest(dev_eui=create_device_request.dev_eui))
+        conn.close()
+'''
+   try:
+        bytes_dev_eui = bytes.fromhex(create_device_request.dev_eui)
+        str_dev_eui = create_device_request.dev_eui
         name = create_device_request.name
-        measurementid = read_Measures()
-        devicetypeid = read_DeviceType()
-        factoryid = read_Factoryid()
-
-        comit_Device_Table(bytes_deveui, str_deveui, name, devicetypeid, measurementid, factoryid)
+        measurement_id = get_measurement_id(create_device_request.measurement)
+        device_type_id = get_device_type(create_device_request.type)
+        factory_id = get_factory_id(create_device_request.plant)
+        portnumber = 0 # TODO: Prepare algorithm for getting device's port number
+        commit_device_table(bytes_dev_eui, str_dev_eui, name, device_type_id, measurement_id, factory_id, portnumber)
     except Exception as ex:
         raise ex
+'''

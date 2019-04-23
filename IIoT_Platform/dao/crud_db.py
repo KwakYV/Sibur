@@ -27,14 +27,14 @@ except Exception as ex:
     logger.error(ex)
 
 
-def comit_Data_Table(devid, gateid, bytedata, effdt, ppndt, fcntup, freq, rssi, sf, snr, value):
-    logger.info('Commiting info to Data_table')
+def commit_data_table(devid, gateid, bytedata, effdt, ppndt, fcntup, freq, rssi, sf, snr, value):
+    logger.info('Committing info to Data_table')
     data = Data(
         devid=devid,
         gateid=gateid,
         data=bytedata,
         effdt=effdt,
-        ppndt=ppndt, #'2017-06-22 20:10:25-07',
+        ppndt=ppndt,
         fcntup=fcntup,
         freq=freq,
         rssi=rssi,
@@ -49,7 +49,8 @@ def comit_Data_Table(devid, gateid, bytedata, effdt, ppndt, fcntup, freq, rssi, 
     except Exception as ex:
         logger.error(ex)
 
-def comit_Device_Table(deveui, deveuistr, name, devicetypeid, measurementid, factoryid):
+
+def commit_device_table(deveui, deveuistr, name, devicetypeid, measurementid, factoryid, portnumber):
     data = Device(
         deveui=deveui,
         deveuistr=deveuistr,
@@ -57,32 +58,38 @@ def comit_Device_Table(deveui, deveuistr, name, devicetypeid, measurementid, fac
         devicetypeid=devicetypeid,
         measurementid=measurementid,  # '2017-06-22 20:10:25-07',
         factoryid=factoryid,
+        portnumber=portnumber
     )
     s.add(data)
     s.commit()
 
-def read_Device_table(dev):
+
+def get_device_id(dev):
     logger.info('Reading Device_table')
     try:
-        data_Device = s.query(Device).filter(Device.deveui == dev)[0]
-        logger.info('Found the Device_deveui')
-        return data_Device.id
+        data_device = s.query(Device).filter(Device.deveui == dev)[0]
+        logger.info('Found the device with dev_eui - {}'.format(dev))
+        return data_device.id
     except Exception as ex:
         logger.error(ex)
 
-def read_Measures():
-    data_m_id = s.query(Measurement).filter(Measurement.description == 'Temperature')[0]
+
+def get_measurement_id(measurement):
+    data_m_id = s.query(Measurement).filter(Measurement.description == measurement)[0]
     return data_m_id.id
 
-def read_DeviceType():
-    data_type_id = s.query(Devicetype).filter(Devicetype.vendor == 'Vega')[0]
+
+def get_device_type(type):
+    data_type_id = s.query(Devicetype).filter(Devicetype.vendor == type)[0]
     return data_type_id.id
 
-def read_Factoryid():
-    data_factoryid = s.query(Factory).filter(Factory.name == 'ZapSib')[0]
-    return data_factoryid.id
 
-def read_Gateway_table(gateid):
+def get_factory_id(plant):
+    data_factory_id = s.query(Factory).filter(Factory.name == plant)[0]
+    return data_factory_id.id
+
+
+def read_gateway_table(gateid):
     logger.info('Reading Gateway_table')
     try:
         h = bytearray.fromhex(gateid)
@@ -91,6 +98,7 @@ def read_Gateway_table(gateid):
         return data_gateway.id
     except Exception as ex:
         logger.error(ex)
+
 
 def example(deveui):
     device_type = deveui

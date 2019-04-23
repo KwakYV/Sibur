@@ -25,6 +25,7 @@ sub1_params = config['config.server_1']
 sub2_params = config['config.server_2']
 topic_params = config['config.topic']
 
+
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code "+str(rc))
     try:
@@ -34,6 +35,7 @@ def on_connect(client, userdata, flags, rc):
     except Exception as ex:
         logger.error(ex)
 
+
 def on_message(client, userdata, msg):
     logger.info("Getting messages from host %s:%s" %(sub1_params['ip_1'], int(sub1_params['port_1'])))
     d = msg.topic + " " + str(msg.payload)
@@ -42,14 +44,15 @@ def on_message(client, userdata, msg):
         data = get_message(d)
         parsed_data = parser_message(data)
         print(parsed_data['gatewayID'])
-        logger.info("Commiting message to data_base =========> ")
+        logger.info("Committing message to data_base =========> ")
         try:
-            comit_Data_Table(read_Device_table(deveui(parsed_data)), read_Gateway_table(parsed_data['gatewayID']), data_hex(parsed_data), parsed_data['time'], parsed_data['time']
-                                , parsed_data['fCnt'], parsed_data['frequency'], parsed_data['RSSI'], 4, 5, data_val(parsed_data))
+            commit_data_table(get_device_id(deveui(parsed_data)), read_gateway_table(parsed_data['gatewayID']), data_hex(parsed_data),
+                              parsed_data['time'], parsed_data['time'], parsed_data['fCnt'], parsed_data['frequency'],
+                              parsed_data['RSSI'], 4, 5, data_val(parsed_data))
         except Exception as ex:
             logger.error(ex)
-        print(deveui(parsed_data))
-        print(data_val(parsed_data))
+
+
 try:
     client = mqtt.Client(sub1_params['client_id_1'], clean_session=False).max_queued_messages_set(queue_size=100)
     client.on_connect = on_connect

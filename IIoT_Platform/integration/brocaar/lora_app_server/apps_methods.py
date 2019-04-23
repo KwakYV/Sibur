@@ -54,3 +54,17 @@ def get_application_id(conn, name):
 def get_profile_id(conn, name):
     dict = device_prof_id(conn)
     return dict[name]
+
+
+def delete_keys(conn, request):
+    try:
+        device_pb2_grpc.DeviceServiceStub(conn).DeleteKeys(request)
+    except Exception as exception:
+        raise exception
+
+
+def delete_device(conn, request):
+    try:
+        device_pb2_grpc.DeviceServiceStub(conn).Delete(request)
+    except Exception as exception:
+        raise exception
