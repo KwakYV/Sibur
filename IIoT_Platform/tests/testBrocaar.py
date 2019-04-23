@@ -63,22 +63,22 @@ def run():
         device_pb2_grpc.DeviceServiceStub(channel).Activate(activate_request)
 
 """
+
 async def run():
     create_device_request = iiot_pb2.Request()
-    create_device_request.type = iiot_pb2.MessageTypeRequest.Name(4)
-    create_device_request.create_device.name = 'TD_11'
+    create_device_request.type = iiot_pb2.MessageTypeRequest.Name(5)
+    create_device_request.create_device.name = 'TD___11'
     create_device_request.create_device.dev_eui = '363833355C38770F'
-    create_device_request.create_device.type = 'TD-11'
+    create_device_request.create_device.type = 'TD---11'
     create_device_request.create_device.measurement = "Celsius"
     create_device_request.create_device.port = 0
     create_device_request.create_device.appkey = '1C38770F000000001C38770F3A480D4B'
     create_device_request.create_device.profile = '868_ABP'
     create_device_request.create_device.application = 'SiburLab'
-    create_device_request.create_device.plant = 'ZabSib'
+    create_device_request.create_device.plant = 'ZapSib'
     async with websockets.connect('ws://127.0.0.1:8766/') as ws:
         await ws.send(create_device_request.SerializeToString())
         response = await ws.recv()
         print(response)
-
 
 asyncio.get_event_loop().run_until_complete(run())

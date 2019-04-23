@@ -38,7 +38,6 @@ class Gateway(Base):
     fmwid = Column('fmwid', BYTEA, nullable=False)
     factoryid = Column('factoryid', Integer, ForeignKey('factory.id'), nullable=False)
 
-
 class Deviceparams(Base):
     __tablename__='deviceparams'
     id = Column('id', Integer, Sequence('iiotseq'), primary_key=True, nullable=False)
