@@ -4,7 +4,6 @@ import logging as lg
 import logging.handlers as handlers
 #from entities.Entities import *
 
-
 logger = lg.getLogger('crud_db.py')
 logger.setLevel(lg.INFO)
 formatter = lg.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s - %(funcName)s')
@@ -50,6 +49,18 @@ def comit_Data_Table(devid, gateid, bytedata, effdt, ppndt, fcntup, freq, rssi, 
     except Exception as ex:
         logger.error(ex)
 
+def comit_Device_Table(deveui, deveuistr, name, devicetypeid, measurementid, factoryid):
+    data = Device(
+        deveui=deveui,
+        deveuistr=deveuistr,
+        name=name,
+        devicetypeid=devicetypeid,
+        measurementid=measurementid,  # '2017-06-22 20:10:25-07',
+        factoryid=factoryid,
+    )
+    s.add(data)
+    s.commit()
+
 def read_Device_table(dev):
     logger.info('Reading Device_table')
     try:
@@ -59,6 +70,17 @@ def read_Device_table(dev):
     except Exception as ex:
         logger.error(ex)
 
+def read_Measures():
+    data_m_id = s.query(Measurement).filter(Measurement.description == 'Temperature')[0]
+    return data_m_id.id
+
+def read_DeviceType():
+    data_type_id = s.query(Devicetype).filter(Devicetype.vendor == 'Vega')[0]
+    return data_type_id.id
+
+def read_Factoryid():
+    data_factoryid = s.query(Factory).filter(Factory.name == 'ZapSib')[0]
+    return data_factoryid.id
 
 def read_Gateway_table(gateid):
     logger.info('Reading Gateway_table')
