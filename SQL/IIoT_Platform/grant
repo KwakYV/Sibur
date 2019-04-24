@@ -1,3 +1,5 @@
+GRANT ALL ON TABLE iiot.sensor TO iiot;
+GRANT ALL ON TABLE iiot.port TO iiot;
 GRANT ALL ON TABLE iiot.data TO iiot;
 GRANT ALL ON TABLE iiot.deviceparams TO iiot;
 GRANT ALL ON TABLE iiot.devicetype TO iiot;
