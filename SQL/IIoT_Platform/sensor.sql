@@ -1,7 +1,7 @@
 create table iiot.sensor(
    id integer NOT NULL   DEFAULT NEXTVAL(('iiot.iiotseq'::text)::regclass),
    device_id integer NOT NULL,
-   port_id integer NOT_NULL
+   port_id integer NOT NULL
 )
 TABLESPACE      tbs_iiot
 ;

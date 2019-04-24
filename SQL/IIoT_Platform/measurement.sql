@@ -1,11 +1,8 @@
 /* Drop Sequences for Autonumber Columns */
 
-DROP SEQUENCE IF EXISTS iiot.iiotseq
-;
-
 /* Drop Tables */
 
-DROP TABLE IF EXISTS iiot.iiotseq CASCADE
+DROP TABLE IF EXISTS iiot.measurement CASCADE
 ;
 
 /* Create Tables */
