@@ -79,7 +79,7 @@ async def run():
     create_device_request.type = iiot_pb2.MessageTypeRequest.Name(5)
     create_device_request.create_device.name = 'TD_11'
     create_device_request.create_device.dev_eui = '363833357B386B10'
-    create_device_request.create_device.type = 'TD-11'
+    create_device_request.create_device.type = 'TD11'
     create_device_request.create_device.measurement = "Celsius"
     create_device_request.create_device.port = 0
     create_device_request.create_device.appkey = '7B386310000000007B3863101D481155'

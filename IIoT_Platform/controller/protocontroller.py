@@ -93,11 +93,14 @@ def create_device_func(create_device_request):
         create_device(conn, device_request)
         create_keys(conn, create_keys_request)
         commit_device_table(create_device_request)
+        create_sensor(create_device_request)
     except Exception as ex:
-        raise ex
-    finally:
+        logger.error(ex)
         delete_keys(conn, device_pb2.DeleteDeviceKeysRequest(dev_eui=create_device_request.dev_eui))
         delete_device(conn, device_pb2.DeleteDeviceRequest(dev_eui=create_device_request.dev_eui))
+        delete_device_db(create_device_request.dev_eui)
+        raise
+    finally:
         conn.close()
 
 
