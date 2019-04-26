@@ -25,7 +25,7 @@ except Exception as ex:
     logger.error(ex)
     raise
 
-
+"""
 def commit_data_table(devid, gateid, bytedata, effdt, ppndt, fcntup, freq, rssi, sf, snr, value):
     logger.info('Committing info to Data_table')
     data = Data(
@@ -43,6 +43,19 @@ def commit_data_table(devid, gateid, bytedata, effdt, ppndt, fcntup, freq, rssi,
     )
     try:
         s.add(data)
+        s.commit()
+        logger.info('Committed info to Data_table')
+    except Exception as ex:
+        logger.error(ex)
+        raise
+
+"""
+
+
+def insert_device_data(data_list):
+    logger.info('Committing info to Data table')
+    try:
+        s.add_all(data_list)
         s.commit()
         logger.info('Committed info to Data_table')
     except Exception as ex:
