@@ -14,7 +14,6 @@ _sym_db = _symbol_database.Default()
 
 
 from google.protobuf import timestamp_pb2 as google_dot_protobuf_dot_timestamp__pb2
-from protos.sibur import device_pb2 as protos_dot_sibur_dot_device__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -22,9 +21,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='protos',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\x11protos/iiot.proto\x12\x06protos\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x19protos/sibur/device.proto\"\x8b\x02\n\x08Response\x12\x0c\n\x04type\x18\x01 \x01(\t\x12\x31\n\ndevicelist\x18\x02 \x01(\x0b\x32\x1d.protos.ClientDevicesResponse\x12.\n\ndevicedata\x18\x03 \x01(\x0b\x32\x1a.protos.DeviceDataResponse\x12\x38\n\rdevicehistory\x18\x04 \x01(\x0b\x32!.protos.DeviceDataHistoryResponse\x12\x30\n\tdevprofid\x18\x05 \x01(\x0b\x32\x1d.protos.DeviceProfileResponse\x12\"\n\x04\x61pps\x18\x06 \x01(\x0b\x32\x14.protos.AppsResponse\"\xb3\x01\n\x07Request\x12\x0c\n\x04type\x18\x01 \x01(\t\x12-\n\ndevicedata\x18\x02 \x01(\x0b\x32\x19.protos.DeviceDataRequest\x12\x37\n\rdevicehistory\x18\x03 \x01(\x0b\x32 .protos.DeviceDataHistoryRequest\x12\x32\n\rcreate_device\x18\x04 \x01(\x0b\x32\x1b.protos.CreateDeviceRequest\"\'\n\x11\x44\x65viceDataRequest\x12\x12\n\ndevEuiList\x18\x01 \x03(\t\"5\n\x12\x44\x65viceDataResponse\x12\x1f\n\x07sensors\x18\x01 \x03(\x0b\x32\x0e.protos.Sensor\"9\n\x15\x44\x65viceProfileResponse\x12 \n\x07profile\x18\x01 \x03(\x0b\x32\x0f.protos.Profile\")\n\x0c\x41ppsResponse\x12\x19\n\x03\x61pp\x18\x01 \x03(\x0b\x32\x0c.protos.Apps\"V\n\x18\x44\x65viceDataHistoryRequest\x12\x12\n\ndevEuiList\x18\x01 \x03(\t\x12&\n\x02ts\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\"<\n\x19\x44\x65viceDataHistoryResponse\x12\x1f\n\x07sensors\x18\x01 \x03(\x0b\x32\x0e.protos.Sensor\"8\n\x15\x43lientDevicesResponse\x12\x1f\n\x07sensors\x18\x01 \x03(\x0b\x32\x0e.protos.Sensor\"\x9d\x01\n\x06Sensor\x12\x0e\n\x06\x64\x65vEui\x18\x01 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x02 \x01(\t\x12\x13\n\x0btemperature\x18\x03 \x01(\x01\x12\x0f\n\x07\x62\x61ttery\x18\x04 \x01(\x01\x12&\n\x02ts\x18\x05 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12 \n\x07history\x18\x06 \x03(\x0b\x32\x0f.protos.History\"#\n\x07Profile\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\n\n\x02id\x18\x02 \x01(\t\"$\n\x04\x41pps\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0e\n\x06\x61ppsid\x18\x02 \x01(\t\"@\n\x07History\x12&\n\x02ts\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\r\n\x05value\x18\x02 \x01(\x01\"\xbe\x01\n\x13\x43reateDeviceRequest\x12\x0f\n\x07\x64\x65v_eui\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0c\n\x04type\x18\x03 \x01(\t\x12\x13\n\x0bmeasurement\x18\x04 \x01(\t\x12 \n\x04port\x18\x05 \x01(\x0e\x32\x12.protos.DevicePort\x12\r\n\x05plant\x18\x06 \x01(\t\x12\x0e\n\x06\x61ppkey\x18\x07 \x01(\t\x12\x13\n\x0b\x61pplication\x18\x08 \x01(\t\x12\x0f\n\x07profile\x18\t \x01(\t*\xb3\x01\n\x12MessageTypeRequest\x12\x17\n\x13\x44\x45VICE_LIST_REQUEST\x10\x00\x12\x17\n\x13\x44\x45VICE_DATA_REQUEST\x10\x01\x12\x1f\n\x1b\x44\x45VICE_DATA_HISTORY_REQUEST\x10\x02\x12\x1d\n\x19\x44\x45VICE_PROFILE_ID_REQUEST\x10\x03\x12\x10\n\x0c\x41PPS_REQUEST\x10\x04\x12\x19\n\x15\x43REATE_DEVICE_REQUEST\x10\x05*\xba\x01\n\x13MessageTypeResponse\x12\x18\n\x14\x44\x45VICE_LIST_RESPONSE\x10\x00\x12\x18\n\x14\x44\x45VICE_DATA_RESPONSE\x10\x01\x12 \n\x1c\x44\x45VICE_DATA_HISTORY_RESPONSE\x10\x02\x12\x1e\n\x1a\x44\x45VICE_PROFILE_ID_RESPONSE\x10\x03\x12\x11\n\rAPPS_RESPONSE\x10\x04\x12\x1a\n\x16\x43REATE_DEVICE_RESPONSE\x10\x05\x32\x38\n\x03Iot\x12\x31\n\nGetDevices\x12\x0f.protos.Request\x1a\x10.protos.Response\"\x00\x62\x06proto3')
+  serialized_pb=_b('\n\x11protos/iiot.proto\x12\x06protos\x1a\x1fgoogle/protobuf/timestamp.proto\"\x8b\x02\n\x08Response\x12\x0c\n\x04type\x18\x01 \x01(\t\x12\x31\n\ndevicelist\x18\x02 \x01(\x0b\x32\x1d.protos.ClientDevicesResponse\x12.\n\ndevicedata\x18\x03 \x01(\x0b\x32\x1a.protos.DeviceDataResponse\x12\x38\n\rdevicehistory\x18\x04 \x01(\x0b\x32!.protos.DeviceDataHistoryResponse\x12\x30\n\tdevprofid\x18\x05 \x01(\x0b\x32\x1d.protos.DeviceProfileResponse\x12\"\n\x04\x61pps\x18\x06 \x01(\x0b\x32\x14.protos.AppsResponse\"\xb3\x01\n\x07Request\x12\x0c\n\x04type\x18\x01 \x01(\t\x12-\n\ndevicedata\x18\x02 \x01(\x0b\x32\x19.protos.DeviceDataRequest\x12\x37\n\rdevicehistory\x18\x03 \x01(\x0b\x32 .protos.DeviceDataHistoryRequest\x12\x32\n\rcreate_device\x18\x04 \x01(\x0b\x32\x1b.protos.CreateDeviceRequest\"\'\n\x11\x44\x65viceDataRequest\x12\x12\n\ndevEuiList\x18\x01 \x03(\t\"5\n\x12\x44\x65viceDataResponse\x12\x1f\n\x07sensors\x18\x01 \x03(\x0b\x32\x0e.protos.Sensor\"9\n\x15\x44\x65viceProfileResponse\x12 \n\x07profile\x18\x01 \x03(\x0b\x32\x0f.protos.Profile\")\n\x0c\x41ppsResponse\x12\x19\n\x03\x61pp\x18\x01 \x03(\x0b\x32\x0c.protos.Apps\"V\n\x18\x44\x65viceDataHistoryRequest\x12\x12\n\ndevEuiList\x18\x01 \x03(\t\x12&\n\x02ts\x18\x02 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\"<\n\x19\x44\x65viceDataHistoryResponse\x12\x1f\n\x07sensors\x18\x01 \x03(\x0b\x32\x0e.protos.Sensor\"8\n\x15\x43lientDevicesResponse\x12\x1f\n\x07sensors\x18\x01 \x03(\x0b\x32\x0e.protos.Sensor\"\x9d\x01\n\x06Sensor\x12\x0e\n\x06\x64\x65vEui\x18\x01 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x02 \x01(\t\x12\x13\n\x0btemperature\x18\x03 \x01(\x01\x12\x0f\n\x07\x62\x61ttery\x18\x04 \x01(\x01\x12&\n\x02ts\x18\x05 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12 \n\x07history\x18\x06 \x03(\x0b\x32\x0f.protos.History\"#\n\x07Profile\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\n\n\x02id\x18\x02 \x01(\t\"$\n\x04\x41pps\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0e\n\x06\x61ppsid\x18\x02 \x01(\t\"@\n\x07History\x12&\n\x02ts\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\r\n\x05value\x18\x02 \x01(\x01\"\x87\x01\n\x13\x43reateDeviceRequest\x12\x0f\n\x07\x64\x65v_eui\x18\x01 \x01(\t\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\x0c\n\x04type\x18\x03 \x01(\t\x12\r\n\x05plant\x18\x04 \x01(\t\x12\x0e\n\x06\x61ppkey\x18\x05 \x01(\t\x12\x13\n\x0b\x61pplication\x18\x06 \x01(\t\x12\x0f\n\x07profile\x18\x07 \x01(\t*\xb3\x01\n\x12MessageTypeRequest\x12\x17\n\x13\x44\x45VICE_LIST_REQUEST\x10\x00\x12\x17\n\x13\x44\x45VICE_DATA_REQUEST\x10\x01\x12\x1f\n\x1b\x44\x45VICE_DATA_HISTORY_REQUEST\x10\x02\x12\x1d\n\x19\x44\x45VICE_PROFILE_ID_REQUEST\x10\x03\x12\x10\n\x0c\x41PPS_REQUEST\x10\x04\x12\x19\n\x15\x43REATE_DEVICE_REQUEST\x10\x05*\xba\x01\n\x13MessageTypeResponse\x12\x18\n\x14\x44\x45VICE_LIST_RESPONSE\x10\x00\x12\x18\n\x14\x44\x45VICE_DATA_RESPONSE\x10\x01\x12 \n\x1c\x44\x45VICE_DATA_HISTORY_RESPONSE\x10\x02\x12\x1e\n\x1a\x44\x45VICE_PROFILE_ID_RESPONSE\x10\x03\x12\x11\n\rAPPS_RESPONSE\x10\x04\x12\x1a\n\x16\x43REATE_DEVICE_RESPONSE\x10\x05\x32\x38\n\x03Iot\x12\x31\n\nGetDevices\x12\x0f.protos.Request\x1a\x10.protos.Response\"\x00\x62\x06proto3')
   ,
-  dependencies=[google_dot_protobuf_dot_timestamp__pb2.DESCRIPTOR,protos_dot_sibur_dot_device__pb2.DESCRIPTOR,])
+  dependencies=[google_dot_protobuf_dot_timestamp__pb2.DESCRIPTOR,])
 
 _MESSAGETYPEREQUEST = _descriptor.EnumDescriptor(
   name='MessageTypeRequest',
@@ -59,8 +58,8 @@ _MESSAGETYPEREQUEST = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=1442,
-  serialized_end=1621,
+  serialized_start=1360,
+  serialized_end=1539,
 )
 _sym_db.RegisterEnumDescriptor(_MESSAGETYPEREQUEST)
 
@@ -98,8 +97,8 @@ _MESSAGETYPERESPONSE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=1624,
-  serialized_end=1810,
+  serialized_start=1542,
+  serialized_end=1728,
 )
 _sym_db.RegisterEnumDescriptor(_MESSAGETYPERESPONSE)
 
@@ -180,8 +179,8 @@ _RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=90,
-  serialized_end=357,
+  serialized_start=63,
+  serialized_end=330,
 )
 
 
@@ -232,8 +231,8 @@ _REQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=360,
-  serialized_end=539,
+  serialized_start=333,
+  serialized_end=512,
 )
 
 
@@ -263,8 +262,8 @@ _DEVICEDATAREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=541,
-  serialized_end=580,
+  serialized_start=514,
+  serialized_end=553,
 )
 
 
@@ -294,8 +293,8 @@ _DEVICEDATARESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=582,
-  serialized_end=635,
+  serialized_start=555,
+  serialized_end=608,
 )
 
 
@@ -325,8 +324,8 @@ _DEVICEPROFILERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=637,
-  serialized_end=694,
+  serialized_start=610,
+  serialized_end=667,
 )
 
 
@@ -356,8 +355,8 @@ _APPSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=696,
-  serialized_end=737,
+  serialized_start=669,
+  serialized_end=710,
 )
 
 
@@ -394,8 +393,8 @@ _DEVICEDATAHISTORYREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=739,
-  serialized_end=825,
+  serialized_start=712,
+  serialized_end=798,
 )
 
 
@@ -425,8 +424,8 @@ _DEVICEDATAHISTORYRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=827,
-  serialized_end=887,
+  serialized_start=800,
+  serialized_end=860,
 )
 
 
@@ -456,8 +455,8 @@ _CLIENTDEVICESRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=889,
-  serialized_end=945,
+  serialized_start=862,
+  serialized_end=918,
 )
 
 
@@ -522,8 +521,8 @@ _SENSOR = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=948,
-  serialized_end=1105,
+  serialized_start=921,
+  serialized_end=1078,
 )
 
 
@@ -560,8 +559,8 @@ _PROFILE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1107,
-  serialized_end=1142,
+  serialized_start=1080,
+  serialized_end=1115,
 )
 
 
@@ -598,8 +597,8 @@ _APPS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1144,
-  serialized_end=1180,
+  serialized_start=1117,
+  serialized_end=1153,
 )
 
 
@@ -636,8 +635,8 @@ _HISTORY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1182,
-  serialized_end=1246,
+  serialized_start=1155,
+  serialized_end=1219,
 )
 
 
@@ -670,43 +669,29 @@ _CREATEDEVICEREQUEST = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='measurement', full_name='protos.CreateDeviceRequest.measurement', index=3,
+      name='plant', full_name='protos.CreateDeviceRequest.plant', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='port', full_name='protos.CreateDeviceRequest.port', index=4,
-      number=5, type=14, cpp_type=8, label=1,
-      has_default_value=False, default_value=0,
+      name='appkey', full_name='protos.CreateDeviceRequest.appkey', index=4,
+      number=5, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='plant', full_name='protos.CreateDeviceRequest.plant', index=5,
+      name='application', full_name='protos.CreateDeviceRequest.application', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='appkey', full_name='protos.CreateDeviceRequest.appkey', index=6,
+      name='profile', full_name='protos.CreateDeviceRequest.profile', index=6,
       number=7, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='application', full_name='protos.CreateDeviceRequest.application', index=7,
-      number=8, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='profile', full_name='protos.CreateDeviceRequest.profile', index=8,
-      number=9, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
@@ -723,8 +708,8 @@ _CREATEDEVICEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1249,
-  serialized_end=1439,
+  serialized_start=1222,
+  serialized_end=1357,
 )
 
 _RESPONSE.fields_by_name['devicelist'].message_type = _CLIENTDEVICESRESPONSE
@@ -744,7 +729,6 @@ _CLIENTDEVICESRESPONSE.fields_by_name['sensors'].message_type = _SENSOR
 _SENSOR.fields_by_name['ts'].message_type = google_dot_protobuf_dot_timestamp__pb2._TIMESTAMP
 _SENSOR.fields_by_name['history'].message_type = _HISTORY
 _HISTORY.fields_by_name['ts'].message_type = google_dot_protobuf_dot_timestamp__pb2._TIMESTAMP
-_CREATEDEVICEREQUEST.fields_by_name['port'].enum_type = protos_dot_sibur_dot_device__pb2._DEVICEPORT
 DESCRIPTOR.message_types_by_name['Response'] = _RESPONSE
 DESCRIPTOR.message_types_by_name['Request'] = _REQUEST
 DESCRIPTOR.message_types_by_name['DeviceDataRequest'] = _DEVICEDATAREQUEST
@@ -869,8 +853,8 @@ _IOT = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
-  serialized_start=1812,
-  serialized_end=1868,
+  serialized_start=1730,
+  serialized_end=1786,
   methods=[
   _descriptor.MethodDescriptor(
     name='GetDevices',
