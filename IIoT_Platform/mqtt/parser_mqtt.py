@@ -35,7 +35,7 @@ def timestamp():
 
 def data_hex(js):
     if js['sensorTypeName'] == 'ThingenixSensorHub':
-        hex= js['SensorDataHex'][0]['ValueHex']
+        hex = js['SensorDataHex'][0]['ValueHex']
     else:
         hex = js['dataHex']
     ba = bytearray.fromhex(hex)
@@ -47,5 +47,5 @@ def data_val(js):
         t = js['InternalSensors'][3]['Value']
     else:
         t = js['InternalSensors'][1]['Value']
-    val = float(t) #type(t) is string
-    return val #изменение типа по str to int
+    val = float(t)  # type(t) is string
+    return val  # изменение типа по str to int
