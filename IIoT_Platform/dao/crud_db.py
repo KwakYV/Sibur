@@ -1,8 +1,6 @@
-from sqlalchemy.orm import sessionmaker
 from entities import *
 import logging as lg
 import logging.handlers as handlers
-#from entities.Entities import *
 
 logger = lg.getLogger('crud_db.py')
 logger.setLevel(lg.INFO)
@@ -27,7 +25,7 @@ except Exception as ex:
     logger.error(ex)
     raise
 
-
+"""
 def commit_data_table(devid, gateid, bytedata, effdt, ppndt, fcntup, freq, rssi, sf, snr, value):
     logger.info('Committing info to Data_table')
     data = Data(
@@ -45,6 +43,19 @@ def commit_data_table(devid, gateid, bytedata, effdt, ppndt, fcntup, freq, rssi,
     )
     try:
         s.add(data)
+        s.commit()
+        logger.info('Committed info to Data_table')
+    except Exception as ex:
+        logger.error(ex)
+        raise
+
+"""
+
+
+def insert_device_data(data_list):
+    logger.info('Committing info to Data table')
+    try:
+        s.add_all(data_list)
         s.commit()
         logger.info('Committed info to Data_table')
     except Exception as ex:
@@ -132,4 +143,23 @@ def create_sensor(create_device_request):
         s.commit()
     except Exception as exception:
         logger.error(exception)
+        raise
+
+
+def get_sensor_id_list(dev_eui):
+    try:
+        device_id = get_device_id(dev_eui)
+        sensors = s.query(Sensor).filter(Sensor.device_id == device_id)
+        return list(sensors)
+    except Exception as ex:
+        logger.error(ex)
+        raise
+
+
+def get_port_id(port_code, dev_type_id):
+    try:
+        port = s.query(Port).filter(Port.port_code == port_code, Port.devicetype_id == dev_type_id).first()
+        return port.id
+    except Exception as ex:
+        logger.error(ex)
         raise

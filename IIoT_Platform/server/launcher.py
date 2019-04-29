@@ -34,6 +34,7 @@ def on_connect(client, userdata, flags, rc):
         logger.info("Success subscribed to the topic: %s" %(topic_params['topic_1']))
     except Exception as ex:
         logger.error(ex)
+        raise
 
 
 def on_message(client, userdata, msg):
@@ -46,11 +47,15 @@ def on_message(client, userdata, msg):
         print(parsed_data['gatewayID'])
         logger.info("Committing message to data_base =========> ")
         try:
+            '''
             commit_data_table(get_device_id(deveui(parsed_data)), read_gateway_table(parsed_data['gatewayID']), data_hex(parsed_data),
                               parsed_data['time'], parsed_data['time'], parsed_data['fCnt'], parsed_data['frequency'],
                               parsed_data['RSSI'], 4, 5, data_val(parsed_data))
+            '''
+            insert_device_data(parse_payload_data())  # TODO: Реализовать функцию parse_payload_data
         except Exception as ex:
             logger.error(ex)
+            raise
 
 
 try:
@@ -61,3 +66,4 @@ try:
     client.loop_forever()
 except Exception as ex:
     logger.error(ex)
+    raise

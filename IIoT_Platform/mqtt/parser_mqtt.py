@@ -49,3 +49,10 @@ def data_val(js):
         t = js['InternalSensors'][1]['Value']
     val = float(t)  # type(t) is string
     return val  # изменение типа по str to int
+
+# TODO - Наполнить функцию логикой
+def parse_payload_data():
+    try:
+        return []
+    except Exception as ex:
+        raise
