@@ -111,7 +111,7 @@ def delete_device_db(dev_eui):
         s.rollback()
         data_device = s.query(Device).filter(Device.deveui == bytes.fromhex(dev_eui)).first()
         s.delete(data_device)
-        s.commit();
+        s.commit()
     except Exception as exception:
         logger.error(exception)
         raise
@@ -129,8 +129,7 @@ def create_sensor(create_device_request):
         for port in port_list:
             sensor = Sensor(device_id=device_id, port_id=port.id)
             s.add(sensor)
-        s.commit();
+        s.commit()
     except Exception as exception:
         logger.error(exception)
         raise
-
