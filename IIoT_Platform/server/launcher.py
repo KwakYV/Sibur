@@ -29,9 +29,9 @@ topic_params = config['config.topic']
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code "+str(rc))
     try:
-        logger.info("Trying to subscribe the topic: %s" %(topic_params['topic_1']))
-        client.subscribe(topic_params['topic_1'], qos=2)
-        logger.info("Success subscribed to the topic: %s" %(topic_params['topic_1']))
+        logger.info("Trying to subscribe the topic: %s" %(topic_params['topic_5']))
+        client.subscribe(topic_params['topic_5'], qos=2)
+        logger.info("Success subscribed to the topic: %s" %(topic_params['topic_5']))
     except Exception as ex:
         logger.error(ex)
         raise
@@ -39,23 +39,21 @@ def on_connect(client, userdata, flags, rc):
 
 def on_message(client, userdata, msg):
     logger.info("Getting messages from host %s:%s" %(sub1_params['ip_1'], int(sub1_params['port_1'])))
-    d = msg.topic + " " + str(msg.payload)
-    logger.info("Got message from topic %s" %(msg.topic))
-    if 'innolabs' in msg.topic: # if 'innolabs' in msg.topic: #
-        data = get_message(d)
-        parsed_data = parser_message(data)
-        print(parsed_data['gatewayID'])
-        logger.info("Committing message to data_base =========> ")
-        try:
-            '''
-            commit_data_table(get_device_id(deveui(parsed_data)), read_gateway_table(parsed_data['gatewayID']), data_hex(parsed_data),
-                              parsed_data['time'], parsed_data['time'], parsed_data['fCnt'], parsed_data['frequency'],
-                              parsed_data['RSSI'], 4, 5, data_val(parsed_data))
-            '''
-            insert_device_data(parse_payload_data())  # TODO: Реализовать функцию parse_payload_data
-        except Exception as ex:
-            logger.error(ex)
-            raise
+    topic_msg = msg.topic + " " + str(msg.payload)
+    d = msg.payload
+    logger.info("Got message from topic %s" %(msg.topic)) # if 'innolabs' in msg.topic: #
+    data = d # возможно надо перевсти в формат json, если изначально не переводит
+    logger.info("Committing message to data_base =========> ")
+    try:
+        '''
+        commit_data_table(get_device_id(deveui(parsed_data)), read_gateway_table(parsed_data['gatewayID']), data_hex(parsed_data),
+                            parsed_data['time'], parsed_data['time'], parsed_data['fCnt'], parsed_data['frequency'],
+                            parsed_data['RSSI'], 4, 5, data_val(parsed_data))
+        '''
+        insert_device_data(parse_payload_data(data))  # TODO: Реализовать функцию parse_payload_data
+    except Exception as ex:
+        logger.error(ex)
+        raise
 
 
 try:
