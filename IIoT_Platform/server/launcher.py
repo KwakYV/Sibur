@@ -40,9 +40,8 @@ def on_connect(client, userdata, flags, rc):
 def on_message(client, userdata, msg):
     logger.info("Getting messages from host %s:%s" %(sub1_params['ip_1'], int(sub1_params['port_1'])))
     topic_msg = msg.topic + " " + str(msg.payload)
-    d = msg.payload
+    data = json.loads(msg.payload)
     logger.info("Got message from topic %s" %(msg.topic)) # if 'innolabs' in msg.topic: #
-    data = d # возможно надо перевсти в формат json, если изначально не переводит
     logger.info("Committing message to data_base =========> ")
     try:
         '''

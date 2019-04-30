@@ -100,7 +100,6 @@ def create_device_func(create_device_request):
         delete_device(conn, device_pb2.DeleteDeviceRequest(dev_eui=create_device_request.dev_eui))
         delete_device_db(create_device_request.dev_eui)
         raise
-    finally:
-        conn.close()
+
 
 

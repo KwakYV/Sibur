@@ -165,7 +165,7 @@ def parse_payload_data(data):
                 freq=freq(data),
                 rssi=rssi(data),
                 sf=7,
-                snr=snr,
+                snr=snr(data),
                 value=value_td_11(data),
             )
             data_object_list.append(data)
