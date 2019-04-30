@@ -20,6 +20,7 @@ errorhandler.setFormatter(formatter)
 logger.addHandler(loghandler)
 logger.addHandler(errorhandler)
 
+
 def get_message(msg):
     spisok = []
     if 'innolabs' in msg:
@@ -58,6 +59,7 @@ def data_hex_innolabs(js):
     ba = bytearray.fromhex(hex)
     return ba
 
+
 def data_bytes(json):
     try:
         data = base64.b64decode(json['data'])
@@ -68,6 +70,7 @@ def data_bytes(json):
         logger.error(ex)
         raise
 
+
 def gateway_id(json):
     try:
         gate_id = json['rxInfo'][0]['gatewayID']
@@ -75,6 +78,7 @@ def gateway_id(json):
     except Exception as ex:
         logger.error(ex)
         raise
+
 
 def timest(json):
     try:
@@ -84,6 +88,7 @@ def timest(json):
         logger.error(ex)
         raise
 
+
 def fcnt(json):
     try:
         fcnt = int(json['fCnt'])
@@ -91,6 +96,7 @@ def fcnt(json):
     except Exception as ex:
         logger.error(ex)
         raise
+
 
 def freq(json):
     try:
@@ -100,6 +106,7 @@ def freq(json):
         logger.error(ex)
         raise
 
+
 def rssi(json):
     try:
         rssi = int(json['rxInfo'][0]['rssi'])
@@ -108,6 +115,7 @@ def rssi(json):
         logger.error(ex)
         raise
 
+
 def snr(json):
     try:
         snr = float(json['rxInfo'][0]['loRaSNR'])
@@ -115,6 +123,7 @@ def snr(json):
     except Exception as ex:
         logger.error(ex)
         raise
+
 
 def value_td_11(json):
     try:
@@ -129,6 +138,7 @@ def value_td_11(json):
         logger.error(ex)
         raise
 
+
 def data_val(js):
     if js['sensorTypeName'] == 'ThingenixSensorHub':
         t = js['InternalSensors'][3]['Value']
@@ -137,16 +147,16 @@ def data_val(js):
     val = float(t)  # type(t) is string
     return val  # изменение типа по str to int
 
-# TODO - Наполнить функцию логикой
+
 def parse_payload_data(data):
     try:
         dev_eui = data['devEUI'] # json['devEUI']
         sensors = get_sensor_list(dev_eui)
         data_object_list = []
         logger.info('Forming data_object_list')
-        for sensor in range(len(sensors)):
+        for sensor in sensors:
             data = Data(
-                sensor_id=sensors[sensor].id,
+                sensor_id=sensor.id,
                 gateid=read_gateway_table(gateway_id(data)),
                 data=data_bytes(data),
                 effdt=timest(data),
