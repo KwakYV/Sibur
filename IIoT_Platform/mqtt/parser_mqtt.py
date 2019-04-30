@@ -1,7 +1,24 @@
 import json
 from datetime import datetime
 import datetime
+from dao.crud_db import *
+import base64
+import logging as lg
+import logging.handlers as handlers
 
+logger = lg.getLogger('parser_mqtt.py')
+logger.setLevel(lg.INFO)
+formatter = lg.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s - %(funcName)s')
+
+loghandler = handlers.RotatingFileHandler('../server/info_launcher.log', maxBytes=20000000, backupCount=10)
+loghandler.setFormatter(formatter)
+
+errorhandler = handlers.RotatingFileHandler('../server/error_launcher.log', maxBytes=20000000, backupCount=10)
+errorhandler.setLevel(lg.ERROR)
+errorhandler.setFormatter(formatter)
+
+logger.addHandler(loghandler)
+logger.addHandler(errorhandler)
 
 def get_message(msg):
     spisok = []
@@ -22,7 +39,7 @@ def deveui(js):
     return dev_eui
 
 
-def gateway_id(js):
+def gateway_id_innolabs(js):
     h = js['gatewayID']
     gate_id = bytearray.fromhex(h)
     return gate_id
@@ -33,7 +50,7 @@ def timestamp():
     return t
 
 
-def data_hex(js):
+def data_hex_innolabs(js):
     if js['sensorTypeName'] == 'ThingenixSensorHub':
         hex = js['SensorDataHex'][0]['ValueHex']
     else:
@@ -41,6 +58,76 @@ def data_hex(js):
     ba = bytearray.fromhex(hex)
     return ba
 
+def data_bytes(json):
+    try:
+        data = base64.b64decode(json['data'])
+        data = data.hex()
+        data = bytes.fromhex(data)
+        return data
+    except Exception as ex:
+        logger.error(ex)
+        raise
+
+def gateway_id(json):
+    try:
+        gate_id = json['rxInfo'][0]['gatewayID']
+        return gate_id
+    except Exception as ex:
+        logger.error(ex)
+        raise
+
+def timest(json):
+    try:
+        time = json['rxInfo'][0]['time']
+        return time
+    except Exception as ex:
+        logger.error(ex)
+        raise
+
+def fcnt(json):
+    try:
+        fcnt = int(json['fCnt'])
+        return fcnt
+    except Exception as ex:
+        logger.error(ex)
+        raise
+
+def freq(json):
+    try:
+        freq = int(json['txInfo']['frequency'])
+        return freq
+    except Exception as ex:
+        logger.error(ex)
+        raise
+
+def rssi(json):
+    try:
+        rssi = int(json['rxInfo'][0]['rssi'])
+        return rssi
+    except Exception as ex:
+        logger.error(ex)
+        raise
+
+def snr(json):
+    try:
+        snr = float(json['rxInfo'][0]['loRaSNR'])
+        return snr
+    except Exception as ex:
+        logger.error(ex)
+        raise
+
+def value_td_11(json):
+    try:
+        val = json['data']
+        value = base64.b64decode(val)
+        value = value.hex()
+        value_td = bytes.fromhex(value[14:18])
+        value_td = int.from_bytes(value_td, byteorder='little', signed=True)
+        t_td = float(value_td / 10)
+        return t_td
+    except Exception as ex:
+        logger.error(ex)
+        raise
 
 def data_val(js):
     if js['sensorTypeName'] == 'ThingenixSensorHub':
@@ -51,8 +138,29 @@ def data_val(js):
     return val  # изменение типа по str to int
 
 # TODO - Наполнить функцию логикой
-def parse_payload_data():
+def parse_payload_data(data):
     try:
-        return []
+        dev_eui = data['devEUI'] # json['devEUI']
+        sensors = get_sensor_list(dev_eui)
+        data_object_list = []
+        logger.info('Forming data_object_list')
+        for sensor in range(len(sensors)):
+            data = Data(
+                sensor_id=sensors[sensor].id,
+                gateid=read_gateway_table(gateway_id(data)),
+                data=data_bytes(data),
+                effdt=timest(data),
+                ppndt=timest(data),
+                fcntup=fcnt(data),
+                freq=freq(data),
+                rssi=rssi(data),
+                sf=7,
+                snr=snr,
+                value=value_td_11(data),
+            )
+            data_object_list.append(data)
+            logger.info('Formed data_object_list')
+        return data_object_list
     except Exception as ex:
+        logger.error(ex)
         raise
