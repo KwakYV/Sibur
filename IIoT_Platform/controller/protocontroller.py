@@ -103,3 +103,4 @@ def create_device_func(create_device_request):
         raise
     finally:
         conn.close()
+

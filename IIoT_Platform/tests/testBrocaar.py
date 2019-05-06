@@ -77,16 +77,14 @@ if __name__ == '__main__':
 async def run():
     create_device_request = iiot_pb2.Request()
     create_device_request.type = iiot_pb2.MessageTypeRequest.Name(5)
-    create_device_request.create_device.name = 'MVT_MPLATA'
-    create_device_request.create_device.dev_eui = '363833357B386B11'
+    create_device_request.create_device.name = 'MVT_MPLATA_123'
+    create_device_request.create_device.dev_eui = '363833357B386B13'
     create_device_request.create_device.type = 'MVT'
-    #create_device_request.create_device.measurement = "Celsius"
-    #create_device_request.create_device.port = 0
     create_device_request.create_device.appkey = '7B386310000000007B3863101D481155'
     create_device_request.create_device.profile = 'Sibur profile'
     create_device_request.create_device.application = 'Sibur'
     create_device_request.create_device.plant = 'ZapSib'
-    async with websockets.connect('ws://127.0.0.1:8766/') as ws:
+    async with websockets.connect('ws://172.21.4.105:8766/') as ws:
         await ws.send(create_device_request.SerializeToString())
         response = await ws.recv()
         print(response)
