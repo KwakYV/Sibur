@@ -4,6 +4,7 @@ from integration.brocaar.lora_app_server.apps_methods import *
 from integration.brocaar.lora_app_server.connection import *
 from dao.crud_db import *
 import time
+from protos.sibur import device_pb2
 from protos.aps import device_pb2
 
 
@@ -102,5 +103,3 @@ def create_device_func(create_device_request):
         raise
     finally:
         conn.close()
-
-
