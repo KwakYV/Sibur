@@ -11,7 +11,6 @@ cert_path = config['certificate.settings']
 host_settings = config['host.settings']
 jwt_settings = config['jwt.settings']
 
-
 def connection():
     with open(cert_path['root_cert'], 'rb') as f:
         creds = grpc.ssl_channel_credentials(f.read())
