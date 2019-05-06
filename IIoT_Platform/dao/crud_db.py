@@ -146,7 +146,7 @@ def create_sensor(create_device_request):
         raise
 
 
-def get_sensor_id_list(dev_eui):
+def get_sensor_list(dev_eui):
     try:
         device_id = get_device_id(dev_eui)
         sensors = s.query(Sensor).filter(Sensor.device_id == device_id)
