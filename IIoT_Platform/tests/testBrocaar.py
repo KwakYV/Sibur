@@ -74,7 +74,7 @@ if __name__ == '__main__':
     create_device_request.create_device.plant = 'ZapSib'
 """
 
-async def run():
+def prepareCreateRequest():
     create_device_request = iiot_pb2.Request()
     create_device_request.type = iiot_pb2.MessageTypeRequest.Name(5)
     create_device_request.create_device.name = 'MVT_MPLATA_123'
@@ -84,9 +84,30 @@ async def run():
     create_device_request.create_device.profile = 'Sibur profile'
     create_device_request.create_device.application = 'Sibur'
     create_device_request.create_device.plant = 'ZapSib'
+    return create_device_request
+
+
+def prepareTypeRequest():
+    typeRequest = iiot_pb2.Request()
+    typeRequest.type = iiot_pb2.MessageTypeRequest.Name(6)
+    return typeRequest
+
+
+def preparePlantRequest():
+    plantRequest = iiot_pb2.Request()
+    plantRequest.type = iiot_pb2.MessageTypeRequest.Name(7)
+    return plantRequest
+
+async def run():
+    #create_device_request = prepareCreateRequest()
+    request = prepareTypeRequest()
+    #request = preparePlantRequest()
+    #async with websockets.connect('ws://127.0.0.1:8766/') as ws:
     async with websockets.connect('ws://172.21.4.105:8766/') as ws:
-        await ws.send(create_device_request.SerializeToString())
-        response = await ws.recv()
+        await ws.send(request.SerializeToString())
+        message = await ws.recv()
+        response = iiot_pb2.Response()
+        response.ParseFromString(message)
         print(response)
 
 asyncio.get_event_loop().run_until_complete(run())

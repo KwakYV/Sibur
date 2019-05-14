@@ -76,7 +76,8 @@ def get_device_types():
     response = DeviceTypeResponse()
     for val in types:
         item = response.list.add()
-        item.type = val
+        item.code = str(val[0])
+        item.display_name = str(val[1])
     res = Response(type=MessageTypeResponse.Name(6), type_list=response)
     return res.SerializeToString()
 
@@ -86,9 +87,9 @@ def get_plants():
     response = PlantResponse()
     for plant in plants:
         item = response.plants.add()
-        item.name = plant[0]
-        item.id = plant[1]
-    res = Response(type=MessageTypeResponse.Name(7), type_list=response)
+        item.name = str(plant[0])
+        item.id = str(plant[1])
+    res = Response(type=MessageTypeResponse.Name(7), plants=response)
     return res.SerializeToString()
 
 

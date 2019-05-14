@@ -121,7 +121,8 @@ message CreateDeviceRequest{
 }
 
 message DeviceType{
-    string type = 1;
+    string code = 1;
+    string display_name = 2;
 }
 
 message DeviceTypeResponse{

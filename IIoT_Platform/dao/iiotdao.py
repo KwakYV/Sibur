@@ -44,7 +44,7 @@ def gethistory(devlist, ts):
 
 def get_device_type_dao():
     sql = """
-       select code ||' '|| vendor as dev_type from iiot.devicetype
+       select code, code ||' '|| vendor as disp_name from iiot.devicetype
     """
     session = Session()
     types = session.execute(text(sql)).fetchall()
