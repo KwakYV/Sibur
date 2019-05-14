@@ -98,12 +98,36 @@ def preparePlantRequest():
     plantRequest.type = iiot_pb2.MessageTypeRequest.Name(7)
     return plantRequest
 
+
+def prepare_device_list_request():
+    device_list_request = iiot_pb2.Request()
+    device_list_request.type = iiot_pb2.MessageTypeRequest.Name(0)
+    return device_list_request
+
+
+def prepare_device_data_request():
+    data_request = iiot_pb2.Request()
+    data_request.type = iiot_pb2.MessageTypeRequest.Name(1)
+    data_request.devicedata.devEuiList.extend(['363833357B386B10'])
+    return data_request
+
+
+def prepare_device_data_history():
+    data_history = iiot_pb2.Request()
+    data_history.type = iiot_pb2.MessageTypeRequest.Name(2)
+    data_history.devicehistory.devEuiList.extend(['363833357B386B10'])
+    data_history.devicehistory.ts.seconds =1547516339
+    return data_history
+
 async def run():
     #create_device_request = prepareCreateRequest()
-    request = prepareTypeRequest()
+    #request = prepareTypeRequest()
     #request = preparePlantRequest()
-    #async with websockets.connect('ws://127.0.0.1:8766/') as ws:
-    async with websockets.connect('ws://172.21.4.105:8766/') as ws:
+    #request = prepare_device_list_request()
+    #request = prepare_device_data_request()
+    request = prepare_device_data_history()
+    async with websockets.connect('ws://127.0.0.1:8766/') as ws:
+    #async with websockets.connect('ws://172.21.4.105:8766/') as ws:
         await ws.send(request.SerializeToString())
         message = await ws.recv()
         response = iiot_pb2.Response()

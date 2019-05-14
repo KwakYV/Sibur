@@ -17,9 +17,10 @@ def getdevicedata(devlist):
         select t.deveui, t.value
         from
         (
-        select first_value(d.id) over (partition by devid order by ppndt desc) val, d.*, dev.deveuistr deveui
-        from iiot.data d
-        join iiot.device dev on d.devid = dev.id and dev.deveuistr in (:lst)
+        select first_value(d.id) over (partition by sensor_id order by ppndt desc) val, d.*, dev.deveuistr deveui
+        from iiot.sensor s 
+        Join iiot.device dev on s.device_id = dev.id and dev.deveuistr in (:lst)
+        join iiot.data d on d.sensor_id = s.id
         ) t where  t.val = t.id
     '''
     session = Session()
@@ -32,9 +33,10 @@ def getdevicedata(devlist):
 def gethistory(devlist, ts):
     sql = """
         select dev.deveuistr deveui, d.ppndt ts, COALESCE(d.value,0.0)
-        from iiot.data d
-        join iiot.device dev on d.devid = dev.id and dev.deveuistr in (:lst)
-        where d.effdt < to_timestamp(:ts) AT TIME ZONE 'UTC'
+        from iiot.sensor s 
+        Join iiot.device dev on s.device_id = dev.id and dev.deveuistr in (:lst)
+        join iiot.data d on d.sensor_id = s.id
+        where d.effdt >= to_timestamp(:ts) AT TIME ZONE 'UTC'
     """
     repl = sql.replace(":lst", devlist).replace(":ts", str(ts.seconds))
     session = Session()
