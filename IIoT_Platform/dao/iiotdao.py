@@ -41,3 +41,20 @@ def gethistory(devlist, ts):
     history = session.execute(text(repl)).fetchall()
     return list(history)
 
+
+def get_device_type_dao():
+    sql = """
+       select code ||' '|| vendor as dev_type from iiot.devicetype
+    """
+    session = Session()
+    types = session.execute(text(sql)).fetchall()
+    return list(types)
+
+
+def get_plants_dao():
+    sql = """
+        select id, code from iiot.factory
+    """
+    session = Session()
+    plants = session.execute(text(sql)).fetchall()
+    return list(plants)

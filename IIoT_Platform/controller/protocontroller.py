@@ -1,5 +1,5 @@
 from protos.iiot_pb2 import *
-from dao.iiotdao import getdevices, getdevicedata, gethistory
+from dao.iiotdao import getdevices, getdevicedata, gethistory, get_device_type_dao, get_plants_dao
 from integration.brocaar.lora_app_server.apps_methods import *
 from integration.brocaar.lora_app_server.connection import *
 from dao.crud_db import *
@@ -69,6 +69,27 @@ def getApps():
         prof.appsid = str(value)
     response = Response(type=MessageTypeResponse.Name(4), apps=client_response)
     return response.SerializeToString()
+
+
+def get_device_types():
+    types = get_device_type_dao()
+    response = DeviceTypeResponse()
+    for val in types:
+        item = response.list.add()
+        item.type = val
+    res = Response(type=MessageTypeResponse.Name(6), type_list=response)
+    return res.SerializeToString()
+
+
+def get_plants():
+    plants = get_plants_dao()
+    response = PlantResponse()
+    for plant in plants:
+        item = response.plants.add()
+        item.name = plant[0]
+        item.id = plant[1]
+    res = Response(type=MessageTypeResponse.Name(7), type_list=response)
+    return res.SerializeToString()
 
 
 # Create device function

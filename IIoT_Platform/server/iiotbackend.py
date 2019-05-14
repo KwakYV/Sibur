@@ -73,6 +73,20 @@ async def create_device_request(create_request):
     return 'Device created'
 
 
+async def get_device_type_list():
+    try:
+        return get_device_types()
+    except Exception as ex:
+        raise ex
+
+
+async def get_plant_list():
+    try:
+        return get_plants()
+    except Exception as ex:
+        raise ex
+
+
 async def producer(message):
     try:
         req = Request()
@@ -95,6 +109,12 @@ async def producer(message):
 
         elif req.type == MessageTypeRequest.Name(5):
             return await create_device_request(req.create_device)
+
+        elif req.type == MessageTypeRequest.Name(6):
+            return await get_device_type_list()
+
+        elif req.type == MessageTypeRequest.Name(7):
+            return await get_plant_list()
 
         else:
             return "Bad function name"

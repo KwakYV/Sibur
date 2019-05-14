@@ -137,3 +137,5 @@ def get_port_id(port_code, dev_type_id):
     except Exception as ex:
         logger.error(ex)
         raise
+
+
