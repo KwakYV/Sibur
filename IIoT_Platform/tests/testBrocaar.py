@@ -14,6 +14,7 @@ from protos.sibur import device_pb2 as sib
 
 import asyncio
 import websockets
+from google.protobuf.json_format import *
 
 '''
 device_request = device_pb2.CreateDeviceRequest()
@@ -116,8 +117,16 @@ def prepare_device_data_history():
     data_history = iiot_pb2.Request()
     data_history.type = iiot_pb2.MessageTypeRequest.Name(2)
     data_history.devicehistory.devEuiList.extend(['363833357B386B10'])
-    data_history.devicehistory.ts.seconds =1547516339
+    data_history.devicehistory.ts.seconds = 1547516339
     return data_history
+
+
+def prepare_delete_device_request():
+    delete_device = iiot_pb2.Request()
+    delete_device.type = iiot_pb2.MessageTypeRequest.Name(8)
+    delete_device.delete_device.dev_eui = '363833357B386B13';
+    return delete_device
+
 
 async def run():
     #create_device_request = prepareCreateRequest()
@@ -125,13 +134,15 @@ async def run():
     #request = preparePlantRequest()
     #request = prepare_device_list_request()
     #request = prepare_device_data_request()
-    request = prepare_device_data_history()
+    #request = prepare_device_data_history()
+    request = prepare_delete_device_request()
     async with websockets.connect('ws://127.0.0.1:8766/') as ws:
     #async with websockets.connect('ws://172.21.4.105:8766/') as ws:
-        await ws.send(request.SerializeToString())
+        #await ws.send(request.SerializeToString())
+        await ws.send(MessageToJson(request))
         message = await ws.recv()
         response = iiot_pb2.Response()
-        response.ParseFromString(message)
+        Parse(message, response)
         print(response)
 
 asyncio.get_event_loop().run_until_complete(run())

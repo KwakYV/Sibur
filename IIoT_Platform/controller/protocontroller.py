@@ -5,6 +5,7 @@ from integration.brocaar.lora_app_server.connection import *
 from dao.crud_db import *
 import time
 from protos.aps import device_pb2
+from google.protobuf.json_format import *
 
 
 def get_devices():
@@ -15,7 +16,7 @@ def get_devices():
         sensor.devEui = device[0]
         sensor.description = device[1]
     response = Response(type=MessageTypeResponse.Name(0), devicelist=client_response)
-    return response.SerializeToString()
+    return MessageToJson(response)
 
 
 def get_device_data(data):
@@ -24,10 +25,9 @@ def get_device_data(data):
     for devdata in devicedata:
         sensor = res_device_data.sensors.add()
         sensor.devEui = devdata[0]
-        #TODO: Parse payLoad if there is no parsed data
         sensor.temperature = devdata[1]
     response = Response(type=MessageTypeResponse.Name(1), devicedata=res_device_data)
-    return response.SerializeToString()
+    return MessageToJson(response)
 
 
 def get_device_data_history(dev_lst, ts):
@@ -47,7 +47,7 @@ def get_device_data_history(dev_lst, ts):
             hist.ts.seconds = int(time.mktime(val[0].timetuple()))
             hist.value = float(val[1])
     response = Response(type=MessageTypeResponse.Name(2), devicehistory=hist_response)
-    return response.SerializeToString()
+    return MessageToJson(response)
 
 
 def getDeviceProfileID():
@@ -58,7 +58,8 @@ def getDeviceProfileID():
         prof.name = str(key)
         prof.id = str(value)
     response = Response(type=MessageTypeResponse.Name(3), devprofid=client_response)
-    return response.SerializeToString()
+    return MessageToJson(response)
+
 
 def getApps():
     dict_apps = apps_id(connection())
@@ -68,7 +69,7 @@ def getApps():
         prof.name = str(key)
         prof.appsid = str(value)
     response = Response(type=MessageTypeResponse.Name(4), apps=client_response)
-    return response.SerializeToString()
+    return MessageToJson(response)
 
 
 def get_device_types():
@@ -79,7 +80,7 @@ def get_device_types():
         item.code = str(val[0])
         item.display_name = str(val[1])
     res = Response(type=MessageTypeResponse.Name(6), type_list=response)
-    return res.SerializeToString()
+    return MessageToJson(res)
 
 
 def get_plants():
@@ -90,7 +91,7 @@ def get_plants():
         item.name = str(plant[0])
         item.id = str(plant[1])
     res = Response(type=MessageTypeResponse.Name(7), plants=response)
-    return res.SerializeToString()
+    return MessageToJson(res)
 
 
 # Create device function
@@ -116,12 +117,23 @@ def create_device_func(create_device_request):
         create_keys(conn, create_keys_request)
         commit_device_table(create_device_request)
         create_sensor(create_device_request)
-    except Exception as ex:
-        logger.error(ex)
+    except Exception as exep:
+        logger.error(exep)
         delete_keys(conn, device_pb2.DeleteDeviceKeysRequest(dev_eui=create_device_request.dev_eui))
         delete_device(conn, device_pb2.DeleteDeviceRequest(dev_eui=create_device_request.dev_eui))
         delete_device_db(create_device_request.dev_eui)
         raise
 
 
+def delete_device_func(delete_device_request):
+    delete_request = device_pb2.DeleteDeviceRequest()
+    delete_request.dev_eui = delete_device_request.dev_eui
+    try:
+        conn = connection()
+        delete_keys(conn, device_pb2.DeleteDeviceKeysRequest(dev_eui=delete_device_request.dev_eui))
+        delete_device(conn, delete_request)
+        inactivate_device(delete_device_request.dev_eui)
+    except Exception as exep:
+        logger.error(exep)
+        raise
 

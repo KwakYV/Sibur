@@ -29,6 +29,7 @@ message Request{
     DeviceDataRequest devicedata = 2;
     DeviceDataHistoryRequest devicehistory = 3;
     CreateDeviceRequest create_device = 4;
+    DeleteDeviceRequest delete_device = 5;
 }
 
 // Request message for requesting devices' data
@@ -97,6 +98,7 @@ enum MessageTypeRequest{
     CREATE_DEVICE_REQUEST = 5;
     DEVICE_TYPE_LIST_REQUEST = 6;
     PLANT_LIST_REQUEST = 7;
+    DELETE_DEVICE_REQUEST = 8;
 }
 
 enum MessageTypeResponse{
@@ -108,6 +110,7 @@ enum MessageTypeResponse{
     CREATE_DEVICE_RESPONSE = 5;
     DEVICE_TYPE_LIST_RESPONSE = 6;
     PLANT_LIST_RESPONSE = 7;
+    DELETE_DEVICE_RESPONSE = 8;
 }
 
 message CreateDeviceRequest{
@@ -136,4 +139,8 @@ message Plant{
 
 message PlantResponse{
     repeated Plant plants = 1;
+}
+
+message DeleteDeviceRequest{
+    string dev_eui = 1;
 }

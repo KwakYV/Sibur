@@ -102,6 +102,15 @@ def delete_device_db(dev_eui):
         raise
 
 
+def inactivate_device(dev_eui):
+    try:
+        s.query(Device).filter(Device.deveui == bytes.fromhex(dev_eui)).update({"is_active":'I'})
+        s.commit()
+    except Exception as exception:
+        logger.error(exception)
+        raise
+
+
 def get_port_list(type_id):
     port_list = s.query(Port).filter(Port.devicetype_id == type_id)
     return list(port_list)

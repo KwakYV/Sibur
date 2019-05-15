@@ -6,6 +6,7 @@ def getdevices():
     sql = '''
         select deveuistr, name 
         from iiot.device
+        where is_active = 'A'
     '''
     session = Session()
     devices = session.execute(text(sql)).fetchall()

@@ -7,7 +7,7 @@ import logging.handlers as handlers
 from controller.protocontroller import *
 from protos.iiot_pb2 import *
 from integration.brocaar.lora_app_server.connection import *
-from tests.api_grpc import *
+from google.protobuf.json_format import *
 
 #TODO - Move config reading and logger initialization from here to package controller __init__.py
 ########################################################
@@ -87,10 +87,19 @@ async def get_plant_list():
         raise ex
 
 
+async def delete_device(delete_request):
+    try:
+        delete_device_func(delete_request)
+    except Exception as ex:
+        raise ex
+    return 'Device deleted'
+
+
 async def producer(message):
     try:
         req = Request()
-        req.ParseFromString(message)
+        #req.ParseFromString(message)
+        Parse(message, req, ignore_unknown_fields=False)
 
         if req.type == MessageTypeRequest.Name(0):
             return await get_devices_func()
@@ -116,6 +125,8 @@ async def producer(message):
         elif req.type == MessageTypeRequest.Name(7):
             return await get_plant_list()
 
+        elif req.type == MessageTypeRequest.Name(8):
+            return await delete_device(req.delete_device)
         else:
             return "Bad function name"
     except Exception as ex:
