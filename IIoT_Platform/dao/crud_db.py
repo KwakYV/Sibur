@@ -45,8 +45,14 @@ def commit_device_table(create_device_request):
             name=create_device_request.name,
             devicetypeid=get_device_type_id(create_device_request.type),
             factoryid=get_factory_id(create_device_request.plant),
+            is_active='A'
         )
-        s.add(data)
+        # prepare checking if device is present then just activate it otherwise add new raw.
+        query = s.query(Device).filter(Device.deveui == bytes.fromhex(create_device_request.dev_eui))
+        if query.count() != 0:
+            query.update({"is_active": 'A'})
+        else:
+            s.add(data)
         s.commit()
     except Exception as exception:
         logger.error(exception)
@@ -105,6 +111,24 @@ def delete_device_db(dev_eui):
         raise
 
 
+def inactivate_device(dev_eui):
+    try:
+        s.query(Device).filter(Device.deveui == bytes.fromhex(dev_eui)).update({"is_active":'I'})
+        s.commit()
+    except Exception as exception:
+        logger.error(exception)
+        raise
+
+
+def activate_device(dev_eui):
+    try:
+        s.query(Device).filter(Device.deveui == bytes.fromhex(dev_eui)).update({"is_active":'A'})
+        s.commit()
+    except Exception as exception:
+        logger.error(exception)
+        raise
+
+
 def get_port_list(type_id):
     port_list = s.query(Port).filter(Port.devicetype_id == type_id)
     return list(port_list)
@@ -114,9 +138,11 @@ def create_sensor(create_device_request):
     try:
         device_id = get_device_id(create_device_request.dev_eui)
         port_list = get_port_list(get_device_type_id(create_device_request.type))
-        for port in port_list:
-            sensor = Sensor(device_id=device_id, port_id=port.id)
-            s.add(sensor)
+        count = s.query(Sensor).filter(Sensor.device_id == device_id).count()
+        if count == 0:
+            for port in port_list:
+                sensor = Sensor(device_id=device_id, port_id=port.id)
+                s.add(sensor)
         s.commit()
     except Exception as exception:
         logger.error(exception)
@@ -140,3 +166,5 @@ def get_port_id(port_code, dev_type_id):
     except Exception as ex:
         logger.error(ex)
         raise
+
+

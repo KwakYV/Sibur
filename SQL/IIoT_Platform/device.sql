@@ -12,7 +12,8 @@ CREATE TABLE iiot.device
         deveuistr varchar(50) NOT NULL,
         name varchar(250) NULL,
         devicetypeid integer NULL,
-        factoryid integer NOT NULL
+        factoryid integer NOT NULL,
+        is_active varchar(1)
 )
 TABLESPACE      tbs_iiot
 ;

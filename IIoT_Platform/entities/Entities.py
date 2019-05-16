@@ -68,6 +68,7 @@ class Device(Base):
     name = Column('name', String(250))
     devicetypeid = Column('devicetypeid', Integer, ForeignKey('devicetype.id'))
     factoryid = Column('factoryid', Integer, ForeignKey('factory.id'), nullable=False)
+    is_active = Column('is_active', String(1))
 
 
 class Lndevparam(Base):

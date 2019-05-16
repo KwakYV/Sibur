@@ -14,6 +14,7 @@ from protos.sibur import device_pb2 as sib
 
 import asyncio
 import websockets
+from google.protobuf.json_format import *
 
 '''
 device_request = device_pb2.CreateDeviceRequest()
@@ -74,7 +75,7 @@ if __name__ == '__main__':
     create_device_request.create_device.plant = 'ZapSib'
 """
 
-async def run():
+def prepareCreateRequest():
     create_device_request = iiot_pb2.Request()
     create_device_request.type = iiot_pb2.MessageTypeRequest.Name(5)
     create_device_request.create_device.name = 'MVT_MPLATA_123'
@@ -84,9 +85,75 @@ async def run():
     create_device_request.create_device.profile = 'Sibur profile'
     create_device_request.create_device.application = 'Sibur'
     create_device_request.create_device.plant = 'ZapSib'
-    async with websockets.connect('ws://172.21.4.105:8766/') as ws:
-        await ws.send(create_device_request.SerializeToString())
-        response = await ws.recv()
-        print(response)
+    return create_device_request
+
+
+def prepareTypeRequest():
+    typeRequest = iiot_pb2.Request()
+    typeRequest.type = iiot_pb2.MessageTypeRequest.Name(6)
+    return typeRequest
+
+
+def preparePlantRequest():
+    plantRequest = iiot_pb2.Request()
+    plantRequest.type = iiot_pb2.MessageTypeRequest.Name(7)
+    return plantRequest
+
+
+def prepare_device_list_request():
+    device_list_request = iiot_pb2.Request()
+    device_list_request.type = iiot_pb2.MessageTypeRequest.Name(0)
+    return device_list_request
+
+
+def prepare_device_data_request():
+    data_request = iiot_pb2.Request()
+    data_request.type = iiot_pb2.MessageTypeRequest.Name(1)
+    data_request.devicedata.devEuiList.extend(['363833357B386B10'])
+    return data_request
+
+
+def prepare_device_data_history():
+    data_history = iiot_pb2.Request()
+    data_history.type = iiot_pb2.MessageTypeRequest.Name(2)
+    data_history.devicehistory.devEuiList.extend(['363833357B386B10'])
+    data_history.devicehistory.ts.seconds = 1547516339
+    return data_history
+
+
+def prepare_delete_device_request():
+    delete_device = iiot_pb2.Request()
+    delete_device.type = iiot_pb2.MessageTypeRequest.Name(8)
+    delete_device.delete_device.dev_eui = '363833357B386B13'
+    return delete_device
+
+def prepare_app_request():
+    app_req = iiot_pb2.Request()
+    app_req.type = iiot_pb2.MessageTypeRequest.Name(4)
+    return app_req
+
+
+async def run():
+    request = prepareCreateRequest()
+    #request = prepareTypeRequest()
+    #request = preparePlantRequest()
+    #request = prepare_device_list_request()
+    #request = prepare_device_data_request()
+    #request = prepare_device_data_history()
+    #request = prepare_delete_device_request()
+    #request = prepare_app_request()
+    print('=========================')
+    print(MessageToJson(request))
+    print('=========================')
+    async with websockets.connect('ws://127.0.0.1:8766/') as ws:
+
+    #async with websockets.connect('ws://172.21.4.105:8766/') as ws:
+        #await ws.send(request.SerializeToString())
+        await ws.send(MessageToJson(request))
+        message = await ws.recv()
+        print(message)
+        #response = iiot_pb2.Response()
+        #Parse(message, response)
+        #print(response)
 
 asyncio.get_event_loop().run_until_complete(run())
