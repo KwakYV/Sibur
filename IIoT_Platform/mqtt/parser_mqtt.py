@@ -125,6 +125,46 @@ def snr(json):
         raise
 
 
+def values(json):
+    try:
+        return_val = {
+            "1": value_td_11(json),
+            "2": value_si_22(json),
+            "3": value_rising_hf(json),
+        }
+        return return_val[str(find_device_type_id(deveui(json)))]
+    except Exception as ex:
+        logger.error(ex)
+        raise
+
+
+def value_si_22(json):
+    try:
+        val = json['data']
+        value = base64.b64decode(val)
+        value = value.hex()
+        value = bytes.fromhex(value[14:16])
+        value = int.from_bytes(value, byteorder='little', signed=True)
+        return float(value)
+    except Exception as ex:
+        logger.error(ex)
+        raise
+
+
+def value_rising_hf(json):
+    try:
+        val = json['data']
+        value = base64.b64decode(val)
+        value = value.hex()
+        humidity = bytes.fromhex(value[6:8])
+        humidity = int.from_bytes(humidity, byteorder='big', signed=False)
+        humidity = float(((125 * humidity) / (2 ** 8)) - 6)
+        return humidity
+    except Exception as ex:
+        logger.error(ex)
+        raise
+
+
 def value_td_11(json):
     try:
         val = json['data']
@@ -166,7 +206,7 @@ def parse_payload_data(data):
                 rssi=rssi(data),
                 sf=7,
                 snr=snr(data),
-                value=value_td_11(data),
+                value=values(data),
             )
             data_object_list.append(data)
             logger.info('Formed data_object_list')
