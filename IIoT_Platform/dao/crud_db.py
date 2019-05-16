@@ -78,6 +78,9 @@ def get_factory_id(plant):
     data_factory_id = s.query(Factory).filter(Factory.code == plant).first()
     return data_factory_id.id
 
+def find_device_type_id(deveui):
+    device_type_id = s.query(Device).filter(Device.deveui == deveui).first()
+    return device_type_id.devicetypeid
 
 def read_gateway_table(gate_id):
     logger.info('Reading Gateway_table')
