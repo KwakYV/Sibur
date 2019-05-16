@@ -124,25 +124,36 @@ def prepare_device_data_history():
 def prepare_delete_device_request():
     delete_device = iiot_pb2.Request()
     delete_device.type = iiot_pb2.MessageTypeRequest.Name(8)
-    delete_device.delete_device.dev_eui = '363833357B386B13';
+    delete_device.delete_device.dev_eui = '363833357B386B13'
     return delete_device
+
+def prepare_app_request():
+    app_req = iiot_pb2.Request()
+    app_req.type = iiot_pb2.MessageTypeRequest.Name(4)
+    return app_req
 
 
 async def run():
-    #create_device_request = prepareCreateRequest()
+    request = prepareCreateRequest()
     #request = prepareTypeRequest()
     #request = preparePlantRequest()
     #request = prepare_device_list_request()
     #request = prepare_device_data_request()
     #request = prepare_device_data_history()
-    request = prepare_delete_device_request()
+    #request = prepare_delete_device_request()
+    #request = prepare_app_request()
+    print('=========================')
+    print(MessageToJson(request))
+    print('=========================')
     async with websockets.connect('ws://127.0.0.1:8766/') as ws:
+
     #async with websockets.connect('ws://172.21.4.105:8766/') as ws:
         #await ws.send(request.SerializeToString())
         await ws.send(MessageToJson(request))
         message = await ws.recv()
-        response = iiot_pb2.Response()
-        Parse(message, response)
-        print(response)
+        print(message)
+        #response = iiot_pb2.Response()
+        #Parse(message, response)
+        #print(response)
 
 asyncio.get_event_loop().run_until_complete(run())
