@@ -93,7 +93,6 @@ enum MessageTypeRequest{
     DEVICE_PROFILE_ID_REQUEST = 3;
     APPS_REQUEST = 4;
     CREATE_DEVICE_REQUEST = 5;
-
 }
 
 enum MessageTypeResponse{
